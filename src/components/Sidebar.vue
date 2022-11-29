@@ -242,15 +242,12 @@
       <Button class="menu-content-toggle-btn" v-on:click.native="toggleContent">
         <i class="fas fa-list-ol fa-lg"></i>
       </Button>
-      <Button class="menu-btn" v-on:click.native="zoomIn">
-        <i class="fas fa-plus fa-lg"></i>
-      </Button>
-      <Button class="menu-btn" v-on:click.native="zoomOut">
-        <i class="fas fa-minus fa-lg"></i>
-      </Button>
       <Button class="menu-btn" v-on:click.native="getSelText">
         <i class="fas fa-sticky-note"></i>
       </Button>
+      <Button class="menu-btn" v-on:click.native="block">
+        <i class="fas fa-volume-up"></i>
+      </Button>     
     </div>
     <div class="contents-container">
       <div class="title">{{ $t("table_of_contents") }}</div>
@@ -287,6 +284,9 @@ export default {
     },
     getSelText() {
       this.$parent.getSelText();
+    },
+    block() {
+      this.$parent.block();
     },
     highlight() {
       this.$parent.highlight();
