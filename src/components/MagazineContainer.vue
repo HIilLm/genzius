@@ -1122,6 +1122,9 @@
               <li v-for="note in selects" :key="note.id">
                 <div class="comment">{{ note }}</div>
               </li>
+
+              <!-- KOCAKKKK -->
+              
               <!-- <li v-for="c in comments" v-bind:key="c.id">
                 <div class="comment">
                   <div class="title">
