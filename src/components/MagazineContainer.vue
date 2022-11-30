@@ -1063,7 +1063,7 @@
         :class="{ active: toggleCommentStatus }"
         v-on:click.native="toggleComment"
       >
-        <i class="fas fa-comments fa-lg"></i>
+        <i class="fas fa-sticky-note"></i>
       </Button>
 
       <div
@@ -1121,10 +1121,12 @@
               <!-- <li>kocak</li> -->
               <li v-for="note in selects" :key="note.id">
                 <div class="comment">{{ note }}</div>
+                <button><i class="fas fa-trash"></i></button>
+                <button><i class="fas fa-pen-square"></i></button>
               </li>
 
               <!-- KOCAKKKK -->
-              
+
               <!-- <li v-for="c in comments" v-bind:key="c.id">
                 <div class="comment">
                   <div class="title">
@@ -1501,7 +1503,7 @@ export default {
         txt = window.getSelection();
       }
       if ("" + txt != "") {
-        this.selects.unshift("" + txt);
+        this.selects.push("" + txt);
       } else {
         alert("silahkan pilih text terlebih dahulu");
       }
