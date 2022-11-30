@@ -1463,6 +1463,7 @@ export default {
       tableOfContent: {
         active: false,
       },
+      synth: window.speechSynthesis,
     };
   },
   mounted() {
@@ -1496,6 +1497,22 @@ export default {
       this.localStorage();
       document.getElementById("tambah").value = "";
       console.log(text);
+    },
+    block: function(){
+      var txt = [];
+            if (window.getSelection) {
+                txt = window.getSelection();
+            }
+            console.log(""+ txt)
+            let utterance = new SpeechSynthesisUtterance(""+txt);   
+
+            utterance.lang = 'id-ID'
+            utterance.rate = 1
+            if ("" + txt != "") {
+                this.synth.speak(utterance);
+            } else {
+                alert("silahkan pilih text terlebih dahulu");
+            }
     },
     getSelText: function () {
       var txt = [];
