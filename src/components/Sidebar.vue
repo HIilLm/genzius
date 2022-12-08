@@ -254,8 +254,11 @@
       <Button class="menu-btn" v-on:click.native="star">
         <i class="far fa-star"></i>
       </Button>     
+      <Button class="menu-btn" v-on:click.native="star">
+        <i class="fas fa-microphone"></i>
+      </Button>     
     </div>
-    <div class="contents-container">
+    <div v-if="(isSelected == 1)" class="contents-container">
       <div class="title">{{ $t("table_of_contents") }}</div>
       <div class="list-group">
         <ul>
@@ -263,7 +266,7 @@
         </ul>
       </div>
     </div>
-    <div class="contents-container">
+    <div v-if="(isSelected == 2)" class="contents-container">
       <div class="title">favorit</div>
       <div class="list-group">
         <ul>
@@ -283,7 +286,7 @@ export default {
   },
   data() {
     return {
-      hilang: true,
+      isSelected: 1,
       isActive: false,
       isContentActive: false,
       language: {
@@ -293,15 +296,6 @@ export default {
     };
   },
   methods: {
-    toggle(param) {
-      if(param === 1){
-        console.log("halo");
-      }
-      if(param === 2){
-        console.log("merindu")
-      }
-      this.isActive = !this.isActive;
-    },
     getSelText() {
       this.$parent.getSelText();
     },
@@ -320,8 +314,14 @@ export default {
     // zoomOut() {
     //   this.$parent.zoomOut();
     // },
-    toggleContent() {
-      this.isContentActive = !this.isContentActive;
+    toggleContent(param) {
+      if (param === 1) {
+        this.isContentActive = !this.isContentActive;
+        this.isSelected = 1
+      } else if (param === 2){
+        this.isContentActive = !this.isContentActive;
+        this.isSelected = 2
+      }
     },
     changeLanguage(lang) {
       this.$i18n.locale = lang;

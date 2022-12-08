@@ -1,11 +1,11 @@
 {
   "search": "Pencarian",
   "search_result": "Hasil Pencarian",
-  "comment": "Komentar",
-  "comment_empty": "Belum ada komentar",
+  "comment": "Catatan",
+  "comment_empty": "Belum ada catatan",
   "comment_name": "Nama",
   "comment_email": "Email (Opsional)",
-  "comment_post": "Kirim",
+  "comment_post": "Tambah",
   "table_of_contents": "Daftar Isi",
   "table_of_contents_items": {
     "title1": "Salam Pembuka",

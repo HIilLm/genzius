@@ -1,6 +1,6 @@
 <style lang="scss">
 .cover-landing {
-  background-image: url("/img/pages/genzius-01.jpg");
+  background-image: url("/img/pages/REV-01.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -346,6 +346,8 @@
     padding: 15px;
     position: relative;
     transition: 500ms;
+    bottom: 70px;
+    margin-bottom: 10px;
 
     &.searchFocus {
       background-color: $primary-color;
@@ -1147,7 +1149,6 @@
               </Button> -->
             </div>
             <ul class="comments-list" :class="{ active: !inputComment }">
-              <!-- <li>kocak</li> -->
               <li v-for="(note,index) of selects" :key="note.id" >
                 <div class="comment">{{ note }}</div>
                 <button v-on:click="hps(index)"><i class="fas fa-trash"></i></button>
