@@ -1,5 +1,6 @@
 <style lang="scss">
 .magazine-container {
+  height: 200%;
   display: flex;
   flex: 1;
   flex-flow: column;
@@ -1040,6 +1041,18 @@
             </div>
           </li>
         </template>
+        <template v-slot:Bookmark>
+          <li>
+            <div
+              v-on:click="
+                turnPage(2);
+                tableOfContent.active = false;
+              "
+            >
+              {{ $t("table_of_contents_items.title1") }}
+            </div>
+          </li>
+        </template>
       </Sidebar>
     </div>
 
@@ -1494,7 +1507,9 @@ export default {
       }
       this.localStorage();
       document.getElementById("tambah").value = "";
-      console.log(text);
+      // console.log(text);
+      alert("curent page is: " +  window.jQuery(".magazine").turn("page") )
+      // alert("The current page is: "+$("magazine").turn("page"));
     },
     block: function(){
       var txt = [];

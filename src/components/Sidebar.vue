@@ -201,7 +201,7 @@
 <template>
   <div
     class="sidebar"
-    v-bind:class="{ active: isActive, contentActive: isContentActive }"
+    v-bind:class="{ active: isActive , isMark, contentActive: isBook , isContentActive }"
   >
     <div class="menu-container">
       <Button class="menu-toggle-btn" v-on:click.native="toggle">
@@ -242,6 +242,9 @@
       <Button class="menu-content-toggle-btn" v-on:click.native="toggleContent">
         <i class="fas fa-list-ol fa-lg"></i>
       </Button>
+      <Button class="menu-content-toggle-btn" v-on:click.native="mark">
+        <i class="fas fa-list-ol fa-lg"></i>
+      </Button>
       <Button class="menu-btn" v-on:click.native="getSelText">
         <i class="fas fa-sticky-note"></i>
       </Button>
@@ -255,6 +258,17 @@
         <ul>
           <slot name="table_of_contents"></slot>
         </ul>
+      </div>
+    </div>
+    <div>
+
+      <div class="contents-container">
+        <div class="title">{{ $t("table_of_contents") }}</div>
+        <div class="list-group">
+          <ul>
+            <slot name="table_of_contents"></slot>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -272,6 +286,8 @@ export default {
     return {
       isActive: false,
       isContentActive: false,
+      isMark: false,
+      isBook: false,
       language: {
         active: false,
         data: "id",
@@ -299,6 +315,9 @@ export default {
     },
     toggleContent() {
       this.isContentActive = !this.isContentActive;
+    },
+    mark() {
+      this.isBook = !this.isBook;
     },
     changeLanguage(lang) {
       this.$i18n.locale = lang;

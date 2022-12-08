@@ -1,6 +1,6 @@
 <style lang="scss">
 .p2 {
-  background-image: url("/img/pages/1.jpg");
+  background-image: url("/img/pages/genzius-01.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,8 +11,10 @@
     position: absolute;
     top: 250px;
 
+    // mengatur posisi teks dari atas
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 175px;
+      right: 150px;
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
@@ -24,6 +26,7 @@
     }
 
     .title {
+      // memisahkan title dengan paragraf
       text-align: center;
       margin-bottom: 8px;
 
@@ -52,13 +55,13 @@
 
     .text {
       font-size: 0.8rem;
-      text-align: center;
-      line-height: 14px;
-      padding-left: 36px;
-      padding-right: 36px;
+      text-align: left;
+      line-height: 20px;
+      padding-left: 35px;
+      padding-right: 10px;
 
       @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         line-height: 10px;
       }
 
