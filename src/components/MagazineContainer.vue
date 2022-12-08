@@ -1,5 +1,5 @@
 <style lang="scss">
-.coba {
+.cover-landing {
   background-image: url("/img/pages/genzius-01.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -832,7 +832,7 @@
             
           >
           <!-- :style="{ transform: 'scale(' + zoom + ')' }" -->
-            <div class="coba">
+            <div class="cover-landing">
               <!-- <video
                 id="cover"
                 class="cover"
@@ -1291,7 +1291,7 @@
             {{ $t("table_of_contents_items.title9") }}
           </div>
         </li>
-        <li>
+        <!-- <li>
           <div
             v-on:click="
               turnPage(18);
@@ -1370,7 +1370,7 @@
           >
             {{ $t("table_of_contents_items.title17") }}
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
@@ -1492,6 +1492,7 @@ export default {
       },
       synth: window.speechSynthesis,
       stars:[],
+      lastSeen : "8"
     };
   },
   mounted() {
@@ -1503,15 +1504,28 @@ export default {
     } else {
       magazine.turn({ display: "double" });
     }
-
-    document.getElementById("cover").oncanplay = () => {
-      document.getElementById("cover").style.visibility = "visible";
-      document.getElementById("cover").style.opacity = 1;
-    };
-
+    
     if (localStorage.selects) {
       this.selects = JSON.parse(localStorage.selects);
     }
+    
+    if (localStorage.lastSeen) {
+      this.lastSeen = localStorage.lastSeen;
+    }
+    
+    magazine.bind('turned', (event, page) => {
+      console.log('Page: ', page)
+      this.lastSeen =  window.jQuery(".magazine").turn("page");
+      this.localStorage();
+    })
+
+    window.onload = this.onload()
+
+    // document.getElementById("cover").oncanplay = () => {
+    //   document.getElementById("cover").style.visibility = "visible";
+    //   document.getElementById("cover").style.opacity = 1;
+    // }; 
+    
   },
   methods: {
     // DARI HIL
@@ -1586,10 +1600,9 @@ export default {
     },
     localStorage: function () {
       localStorage.setItem("selects", JSON.stringify(this.selects));
+      localStorage.setItem("lastSeen", JSON.stringify(this.lastSeen));
     },
-
     // DARI HIL
-
 
     turnPage(page) {
       const magazine = window.jQuery(".magazine");
@@ -1777,6 +1790,10 @@ export default {
       document
         .getElementById("image-modal")
         .getElementsByTagName("img")[0].src = url;
+    },
+
+    onload(){
+      this.turnPage(this.lastSeen)
     },
   },
 };
