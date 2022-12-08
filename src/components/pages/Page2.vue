@@ -1,6 +1,6 @@
 <style lang="scss">
 .p3 {
-  background-image: url("/img/pages/2.jpg");
+  background-image: url("/img/pages/genzius-03.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,7 +53,7 @@
           font-size: 1rem;
         }
 
-        @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+        @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) { 
           font-size: 1.2rem;
         }
 
@@ -138,7 +138,7 @@
 
 <template>
   <div>
-    <div style="display: none">
+    <!-- <div style="display: none">
       <div id="p2t">{{ $t("p2.title") }}</div>
       <div id="p2s">{{ $t("p2.subtitle") }}</div>
       <div id="p2p1s">{{ $t("p2.paragraph1") }}</div>
@@ -147,7 +147,7 @@
       <div id="p2t_" class="title"></div>
       <div id="p2s_" class="subtitle"></div>
       <div id="p2p1s_" class="text"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 

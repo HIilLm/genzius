@@ -1,4 +1,12 @@
 <style lang="scss">
+.coba {
+  background-image: url("/img/pages/genzius-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .magazine-container {
   display: flex;
   flex: 1;
@@ -781,12 +789,18 @@
         >
           <i class="fas fa-list-ol fa-lg"></i>
         </Button>
-        <Button class="menu-btn" v-on:click.native="zoomIn">
+        <!-- <Button class="menu-btn" v-on:click.native="zoomIn">
           <i class="fas fa-plus fa-lg"></i>
         </Button>
         <Button class="menu-btn" v-on:click.native="zoomOut">
           <i class="fas fa-minus fa-lg"></i>
+        </Button> -->
+        <Button class="menu-btn" v-on:click.native="getSelText">
+          <i class="fas fa-sticky-note"></i>
         </Button>
+        <Button class="menu-btn" v-on:click.native="speech">
+          <i class="fas fa-volume-up"></i>
+        </Button>  
       </div>
     </div>
 
@@ -815,10 +829,11 @@
           <div
             id="magazine"
             class="magazine"
-            :style="{ transform: 'scale(' + zoom + ')' }"
+            
           >
-            <div>
-              <video
+          <!-- :style="{ transform: 'scale(' + zoom + ')' }" -->
+            <div class="coba">
+              <!-- <video
                 id="cover"
                 class="cover"
                 autoplay
@@ -826,10 +841,10 @@
                 muted
                 data-keepplaying
               >
-                <source src="/video/cover.mp4" type="video/mp4" />
-                <source src="/video/cover.webm" type="video/webm" />
+              <source src="/video/cover.mp4" type="video/mp4" />
+              <source src="/video/cover.webm" type="video/webm" />
                 <source src="/video/cover.ogv" type="video/ogg" />
-              </video>
+              </video> -->
             </div>
             <Page1 />
             <Page2 />
@@ -847,7 +862,7 @@
             <Page14 />
             <Page15 />
             <Page16 />
-            <Page17 />
+            <!-- <Page17 />
             <Page18 />
             <Page19 />
             <Page20 />
@@ -862,12 +877,13 @@
             <Page29 />
             <Page30 />
             <Page31 />
-            <Page32 />
+            <Page32 /> -->
           </div>
         </div>
       </div>
 
       <Sidebar>
+        
         <template v-slot:table_of_contents>
           <li>
             <div
@@ -959,7 +975,7 @@
               {{ $t("table_of_contents_items.title9") }}
             </div>
           </li>
-          <li>
+          <!-- <li>
             <div
               v-on:click="
                 turnPage(18);
@@ -1028,7 +1044,7 @@
             >
               {{ $t("table_of_contents_items.title16") }}
             </div>
-          </li>
+          </li> 
           <li>
             <div
               v-on:click="
@@ -1037,6 +1053,19 @@
               "
             >
               {{ $t("table_of_contents_items.title17") }}
+            </div>
+          </li>-->
+        </template>
+        <template v-slot:favorit >
+          <li v-for="star of stars" v-bind:key="star">
+            <div
+              v-on:click="
+                turnPage(star);
+                tableOfContent.active = false;
+              "
+            >
+              <!-- {{ $t("table_of_contents_items.title1") }} -->
+              {{ star }}
             </div>
           </li>
         </template>
@@ -1119,13 +1148,11 @@
             </div>
             <ul class="comments-list" :class="{ active: !inputComment }">
               <!-- <li>kocak</li> -->
-              <li v-for="note in selects" :key="note.id">
+              <li v-for="(note,index) of selects" :key="note.id" >
                 <div class="comment">{{ note }}</div>
-                <button><i class="fas fa-trash"></i></button>
+                <button v-on:click="hps(index)"><i class="fas fa-trash"></i></button>
                 <button><i class="fas fa-pen-square"></i></button>
               </li>
-
-              <!-- KOCAKKKK -->
 
               <!-- <li v-for="c in comments" v-bind:key="c.id">
                 <div class="comment">
@@ -1368,22 +1395,22 @@ import Page13 from "@/components/pages/Page13.vue";
 import Page14 from "@/components/pages/Page14.vue";
 import Page15 from "@/components/pages/Page15.vue";
 import Page16 from "@/components/pages/Page16.vue";
-import Page17 from "@/components/pages/Page17.vue";
-import Page18 from "@/components/pages/Page18.vue";
-import Page19 from "@/components/pages/Page19.vue";
-import Page20 from "@/components/pages/Page20.vue";
-import Page21 from "@/components/pages/Page21.vue";
-import Page22 from "@/components/pages/Page22.vue";
-import Page23 from "@/components/pages/Page23.vue";
-import Page24 from "@/components/pages/Page24.vue";
-import Page25 from "@/components/pages/Page25.vue";
-import Page26 from "@/components/pages/Page26.vue";
-import Page27 from "@/components/pages/Page27.vue";
-import Page28 from "@/components/pages/Page28.vue";
-import Page29 from "@/components/pages/Page29.vue";
-import Page30 from "@/components/pages/Page30.vue";
-import Page31 from "@/components/pages/Page31.vue";
-import Page32 from "@/components/pages/Page32.vue";
+// import Page17 from "@/components/pages/Page17.vue";
+// import Page18 from "@/components/pages/Page18.vue";
+// import Page19 from "@/components/pages/Page19.vue";
+// import Page20 from "@/components/pages/Page20.vue";
+// import Page21 from "@/components/pages/Page21.vue";
+// import Page22 from "@/components/pages/Page22.vue";
+// import Page23 from "@/components/pages/Page23.vue";
+// import Page24 from "@/components/pages/Page24.vue";
+// import Page25 from "@/components/pages/Page25.vue";
+// import Page26 from "@/components/pages/Page26.vue";
+// import Page27 from "@/components/pages/Page27.vue";
+// import Page28 from "@/components/pages/Page28.vue";
+// import Page29 from "@/components/pages/Page29.vue";
+// import Page30 from "@/components/pages/Page30.vue";
+// import Page31 from "@/components/pages/Page31.vue";
+// import Page32 from "@/components/pages/Page32.vue";
 import jQuery from "jquery";
 
 window.jQuery = jQuery;
@@ -1411,27 +1438,27 @@ export default {
     Page14,
     Page15,
     Page16,
-    Page17,
-    Page18,
-    Page19,
-    Page20,
-    Page21,
-    Page22,
-    Page23,
-    Page24,
-    Page25,
-    Page26,
-    Page27,
-    Page28,
-    Page29,
-    Page30,
-    Page31,
-    Page32,
+    // Page17,
+    // Page18,
+    // Page19,
+    // Page20,
+    // Page21,
+    // Page22,
+    // Page23,
+    // Page24,
+    // Page25,
+    // Page26,
+    // Page27,
+    // Page28,
+    // Page29,
+    // Page30,
+    // Page31,
+    // Page32,
   },
   data() {
     return {
       selects: [],
-      zoom: 1,
+      // zoom: 1,
       isSearchFocus: false,
       searchField: "",
       searchResult: [],
@@ -1464,6 +1491,7 @@ export default {
         active: false,
       },
       synth: window.speechSynthesis,
+      stars:[],
     };
   },
   mounted() {
@@ -1498,7 +1526,11 @@ export default {
       document.getElementById("tambah").value = "";
       console.log(text);
     },
-    block: function(){
+    hps(id) {
+      this.selects.splice(id, 1)
+      this.localStorage()
+    },
+    speech: function(){
       var txt = [];
             if (window.getSelection) {
                 txt = window.getSelection();
@@ -1506,11 +1538,12 @@ export default {
             console.log(""+ txt)
             let utterance = new SpeechSynthesisUtterance(""+txt);   
 
-            utterance.lang = 'id-ID'
+            // utterance.lang = 'id-ID'
             utterance.rate = 1
             if ("" + txt != "") {
                 this.synth.speak(utterance);
             } else {
+              
                 alert("silahkan pilih text terlebih dahulu");
             }
     },
@@ -1526,10 +1559,38 @@ export default {
       }
       this.localStorage();
     },
+    star: function(id){
+      let text = window.jQuery(".magazine").turn("page");
+      console.log(text)
+      // if (this.stars.includes(text)) {
+      //   console.log("sudah ada")
+      //   let str = this.stars.find(kocak => kocak.id == 1);
+      //     this.stars.splice(str,1);
+      // } else {
+      //   let masuk = {
+      //     "id" : text,
+      //     "page": text
+      //   }
+      //   this.stars.push(masuk);
+      //   console.log(this.stars)
+      // }
+
+      if (this.stars.includes(text)) {
+        console.log("sudah ada")
+        this.stars.splice(id, 1)
+      } else {
+        this.stars.push(text)
+        console.log(this.stars)
+      }
+      
+    },
     localStorage: function () {
       localStorage.setItem("selects", JSON.stringify(this.selects));
     },
+
     // DARI HIL
+
+
     turnPage(page) {
       const magazine = window.jQuery(".magazine");
       if (magazine.turn("hasPage", page)) magazine.turn("page", page);
@@ -1558,16 +1619,16 @@ export default {
         magazine.turn("page", page);
       else magazine.turn("page", 1);
     },
-    zoomIn() {
-      this.zoom += 0.1;
-      window.jQuery(".magazine").turn("disable", this.zoom != 1);
-    },
-    zoomOut() {
-      if (this.zoom > 1) {
-        this.zoom -= 0.1;
-        window.jQuery(".magazine").turn("disable", this.zoom != 1);
-      }
-    },
+    // zoomIn() {
+    //   this.zoom += 0.1;
+    //   window.jQuery(".magazine").turn("disable", this.zoom != 1);
+    // },
+    // zoomOut() {
+    //   if (this.zoom > 1) {
+    //     this.zoom -= 0.1;
+    //     window.jQuery(".magazine").turn("disable", this.zoom != 1);
+    //   }
+    // },
     highlight() {
       const range = window.getSelection().getRangeAt(0),
       span = document.createElement("mark");
@@ -1610,7 +1671,6 @@ export default {
               page: page,
               text: text,
             });
-
             id++;
           } else if (value.indexOf(searched) !== -1) {
             // let parent = window.jQuery(val).parent().parent().parent().parent();

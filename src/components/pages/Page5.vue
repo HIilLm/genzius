@@ -1,6 +1,6 @@
 <style lang="scss">
 .p6 {
-  background-image: url("/img/pages/5.jpg");
+  background-image: url("/img/pages/genzius-07.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,7 +111,7 @@
 
 <template>
   <div>
-    <div style="display: none">
+    <!-- <div style="display: none">
       <div id="p5t">{{ $t("p5.title") }}</div>
       <div id="p5p1">{{ $t("p5.paragraph1") }}</div>
       <div id="p5p2">{{ $t("p5.paragraph2") }}</div>
@@ -122,7 +122,7 @@
     <div class="content2">
       <div id="p5p1_" class="text text1"></div>
       <div id="p5p2_" class="text"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 
