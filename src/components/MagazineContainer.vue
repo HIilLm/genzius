@@ -8,6 +8,7 @@
 }
 
 .magazine-container {
+  height: 200%;
   display: flex;
   flex: 1;
   flex-flow: column;
@@ -343,11 +344,11 @@
   .footer {
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 0px;
     position: relative;
     transition: 500ms;
-    bottom: 70px;
-    margin-bottom: 10px;
+    bottom: 45px;
+    // margin: 25px;
 
     &.searchFocus {
       background-color: $primary-color;
@@ -1066,7 +1067,6 @@
                 tableOfContent.active = false;
               "
             >
-              <!-- {{ $t("table_of_contents_items.title1") }} -->
               {{ star }}
             </div>
           </li>
@@ -1539,7 +1539,9 @@ export default {
       }
       this.localStorage();
       document.getElementById("tambah").value = "";
-      console.log(text);
+      // console.log(text);
+      alert("curent page is: " +  window.jQuery(".magazine").turn("page") )
+      // alert("The current page is: "+$("magazine").turn("page"));
     },
     hps(id) {
       this.selects.splice(id, 1)

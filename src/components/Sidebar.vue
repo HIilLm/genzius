@@ -201,7 +201,7 @@
 <template>
   <div
     class="sidebar"
-    v-bind:class="{ active: isActive, contentActive: isContentActive }"
+    v-bind:class="{ active: isActive , isMark, contentActive: isContentActive  }"
   >
     <div class="menu-container">
       <Button class="menu-toggle-btn" v-on:click.native="toggle">
@@ -242,6 +242,9 @@
       <Button class="menu-content-toggle-btn" v-on:click.native="toggleContent(1)">
         <i class="fas fa-list-ol fa-lg"></i>
       </Button>
+      <!-- <Button class="menu-content-toggle-btn" v-on:click.native="mark">
+        <i class="fas fa-list-ol fa-lg"></i>
+      </Button> -->
       <Button class="menu-btn" v-on:click.native="getSelText">
         <i class="fas fa-sticky-note"></i>
       </Button>
@@ -289,6 +292,8 @@ export default {
       isSelected: 1,
       isActive: false,
       isContentActive: false,
+      isMark: false,
+      isBook: false,
       language: {
         active: false,
         data: "id",
@@ -308,12 +313,6 @@ export default {
     star(){
       this.$parent.star();
     },
-    // zoomIn() {
-    //   this.$parent.zoomIn();
-    // },
-    // zoomOut() {
-    //   this.$parent.zoomOut();
-    // },
     toggleContent(param) {
       if (param === 1) {
         this.isContentActive = !this.isContentActive;
