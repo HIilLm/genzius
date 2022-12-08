@@ -6,19 +6,96 @@
   background-size: cover;
   position: relative;
 
-  .content {
+  .content1{
     color: #ffffff;
-    position: absolute;
-    top: 250px;
+    // position: absolute;
+    // top: 110px;
+    // left: 20px;
+    
 
     // mengatur posisi teks dari atas
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 175px;
-      right: 150px;
+      top: 50px;
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
       top: 215px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+      top: 165px;
+    }
+
+    .title {
+      // memisahkan title dengan paragraf
+      text-align: center;
+      margin-bottom: 5px;
+      text-align: left;
+      margin-left: 10px;
+      margin-top: 50px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+        margin-bottom: 0px;
+      }
+
+      span {
+        font-weight: 700;
+        font-size: 3rem;
+
+        @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+          font-size: 2rem;
+        }
+
+        @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+          font-size: 1.6rem;
+        }
+
+        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+          margin-bottom: 0px;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .text {
+      font-size: rem;
+      text-align:left;
+      line-height: 20px;
+      padding-left: 35px;
+      padding-right: 10px;
+
+      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 2rem;
+        line-height: 10px;
+      }
+
+      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 0.7rem;
+        line-height: 12px;
+      }
+
+      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+        font-size: 0.5rem;
+        line-height: 9px;
+      }
+    }
+  }
+  .content2{
+    color: #ffffff;
+    position: relative;
+    top: 50px;
+    left: 10px;
+    text-align: center;
+    margin-right: 25px;
+
+    // mengatur posisi teks dari atas
+    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 275px;
+      left: 5px;
+    }
+
+    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 400px;
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
@@ -55,9 +132,9 @@
 
     .text {
       font-size: 0.8rem;
-      text-align: left;
+      text-align:center;
       line-height: 20px;
-      padding-left: 35px;
+      padding-left: 20px;
       padding-right: 10px;
 
       @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
@@ -81,14 +158,17 @@
 
 <template>
   <div>
-    <!-- <div style="display: none">
+    <div style="display: none">
       <div id="p1t">{{ $t("p1.title") }}</div>
       <div id="p1p1">{{ $t("p1.paragraph1") }}</div>
     </div>
-    <div class="content">
+    <div class="content1">
       <div id="p1t_" class="title"></div>
+    </div>
+    
+    <div class="content2"> 
       <div id="p1p1_" class="text paragraph1"></div>
-    </div> -->
+    </div>
   </div>
 </template>
 

@@ -344,9 +344,10 @@
   .footer {
     display: flex;
     justify-content: center;
-    padding: 15px;
+    // padding: 0px;
     position: relative;
     transition: 500ms;
+    
 
     &.searchFocus {
       background-color: $primary-color;
