@@ -239,7 +239,7 @@
           <svg-icon icon="surabaya" />
         </Button>
       </div>
-      <Button class="menu-content-toggle-btn" v-on:click.native="toggleContent">
+      <Button class="menu-content-toggle-btn" v-on:click.native="toggleContent(1)">
         <i class="fas fa-list-ol fa-lg"></i>
       </Button>
       <Button class="menu-content-toggle-btn" v-on:click.native="mark">
@@ -248,8 +248,14 @@
       <Button class="menu-btn" v-on:click.native="getSelText">
         <i class="fas fa-sticky-note"></i>
       </Button>
-      <Button class="menu-btn" v-on:click.native="block">
+      <Button class="menu-btn" v-on:click.native="speech">
         <i class="fas fa-volume-up"></i>
+      </Button>     
+      <Button class="menu-btn" v-on:click.native="toggleContent(2)">
+        <i class="far fa-bookmark"></i>
+      </Button>     
+      <Button class="menu-btn" v-on:click.native="star">
+        <i class="far fa-star"></i>
       </Button>     
     </div>
     <div class="contents-container">
@@ -260,15 +266,12 @@
         </ul>
       </div>
     </div>
-    <div>
-
-      <div class="contents-container">
-        <div class="title">{{ $t("table_of_contents") }}</div>
-        <div class="list-group">
-          <ul>
-            <slot name="table_of_contents"></slot>
-          </ul>
-        </div>
+    <div class="contents-container">
+      <div class="title">favorit</div>
+      <div class="list-group">
+        <ul>
+          <slot name="favorit"></slot>
+        </ul>
       </div>
     </div>
   </div>
@@ -276,7 +279,6 @@
 
 <script>
 import Button from "@/components/Button.vue";
-
 export default {
   name: "Sidebar",
   components: {
@@ -284,6 +286,7 @@ export default {
   },
   data() {
     return {
+      hilang: true,
       isActive: false,
       isContentActive: false,
       isMark: false,
@@ -295,24 +298,33 @@ export default {
     };
   },
   methods: {
-    toggle() {
+    toggle(param) {
+      if(param === 1){
+        console.log("halo");
+      }
+      if(param === 2){
+        console.log("merindu")
+      }
       this.isActive = !this.isActive;
     },
     getSelText() {
       this.$parent.getSelText();
     },
-    block() {
-      this.$parent.block();
+    speech() {
+      this.$parent.speech();
     },
     highlight() {
       this.$parent.highlight();
     },
-    zoomIn() {
-      this.$parent.zoomIn();
+    star(){
+      this.$parent.star();
     },
-    zoomOut() {
-      this.$parent.zoomOut();
-    },
+    // zoomIn() {
+    //   this.$parent.zoomIn();
+    // },
+    // zoomOut() {
+    //   this.$parent.zoomOut();
+    // },
     toggleContent() {
       this.isContentActive = !this.isContentActive;
     },
