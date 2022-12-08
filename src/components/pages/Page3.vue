@@ -1,6 +1,6 @@
 <style lang="scss">
 .p4 {
-  background-image: url("/img/pages/genzius-04.jpg");
+  background-image: url("/img/pages/REV-04.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +12,7 @@
     left: 20px;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 75px;
+      top: 40px;
       left: 10px;
     }
 
@@ -28,7 +28,6 @@
 
     .title {
       span {
-        color: #000000;
         font-weight: 700;
         font-size: 1.7rem;
         letter-spacing: 3px;
@@ -51,12 +50,14 @@
     .subtitle {
       span {
         color: #ffffff;
-        font-weight: 600;
-        letter-spacing: 3px;
-        font-size: 1.7rem;
+        font-weight: 1000;
+        text-align: center;
+        margin-left: 20px;
+        letter-spacing: 2px;
+        font-size: 2rem;
 
         @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-          font-size: 1.1rem;
+          font-size: 2rem;
         }
 
         @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
@@ -71,6 +72,7 @@
   }
 
   .content2 {
+    color: #ffffff;
     position: absolute;
     top: 228px;
     width: 264px;
@@ -79,10 +81,10 @@
     text-align: justify;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 162px;
-      width: 172px;
-      left: 155px;
-      font-size: 0.5rem;
+      top: 80px;
+      width: 300px;
+      left: 30px;
+      font-size: 8.8px;
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
@@ -123,12 +125,12 @@
       text-indent: 10px;
     }
 
-    .text1::first-letter {
-      color: #a9203e;
-      font-size: 3rem;
-      float: left;
-      line-height: 40px;
-    }
+    // .text1::first-letter {
+    //   color: #a9203e;
+    //   font-size: 3rem;
+    //   float: left;
+    //   line-height: 40px;
+    // }
   }
 }
 </style>
@@ -165,9 +167,10 @@ export default {
     ref.processText("p3p1");
     ref.processText("p3p2");
     ref.processText("p3p3");
+    ref.processText("p3p4");
     window
       .jQuery("body")
-      .on("DOMSubtreeModified", "#p3t, #p3s, #p3p1, #p3p2, #p3p3", function () {
+      .on("DOMSubtreeModified", "#p3t, #p3s, #p3p1, #p3p2, #p3p3, #p3p4", function () {
         ref.processText(window.jQuery(this).attr("id"));
       });
   },

@@ -239,9 +239,9 @@
           <svg-icon icon="surabaya" />
         </Button>
       </div>
-      <Button class="menu-content-toggle-btn" v-on:click.native="toggleContent(1)">
+      <!-- <Button class="menu-content-toggle-btn" v-on:click.native="toggleContent(1)">
         <i class="fas fa-list-ol fa-lg"></i>
-      </Button>
+      </Button> -->
       <Button class="menu-content-toggle-btn" v-on:click.native="mark">
         <i class="fas fa-list-ol fa-lg"></i>
       </Button>
