@@ -13,7 +13,7 @@
     grid-template-columns: 50% 50%;
     font-size: 11px;
     line-height: 14px;
-    color: white;
+    color: #f9d8c9;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       font-size: 0.5rem;
@@ -49,6 +49,7 @@
     }
 
     .top2 {
+      color: white;
       text-indent: 10px;
       margin-top: 50px;
       font-weight: 900;
