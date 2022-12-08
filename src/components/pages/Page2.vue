@@ -133,20 +133,83 @@
       }
     }
   }
+  .content2 {
+    position: absolute;
+    top: 228px;
+    width: 264px;
+    left: 215px;
+    font-size: 0.7rem;
+    text-align: justify;
+
+    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 162px;
+      width: 172px;
+      left: 155px;
+      font-size: 0.5rem;
+    }
+
+    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 202px;
+      width: 210px;
+      left: 185px;
+      font-size: 0.65rem;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+      top: 134px;
+      width: 177px;
+      left: 141px;
+      font-size: 0.5rem;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+      line-height: 14px;
+      margin-top: 5px;
+
+      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+        line-height: 10px;
+      }
+
+      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+        line-height: 11px;
+      }
+
+      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+        line-height: 11px;
+      }
+    }
+
+    .text2,
+    .text3 {
+      text-indent: 10px;
+    }
+
+    .text1::first-letter {
+      color: #a9203e;
+      font-size: 3rem;
+      float: left;
+      line-height: 40px;
+    }
+  }
 }
 </style>
 
 <template>
   <div>
     <div style="display: none">
-      <div id="p2t">{{ $t("p2.title") }}</div>
-      <div id="p2s">{{ $t("p2.subtitle") }}</div>
-      <div id="p2p1s">{{ $t("p2.paragraph1") }}</div>
+      <div id="p3t">{{ $t("p3.title") }}</div>
+      <div id="p3s">{{ $t("p3.subtitle") }}</div>
+      <div id="p3p1">{{ $t("p3.paragraph1") }}</div>
+      <div id="p3p2">{{ $t("p3.paragraph2") }}</div>
+      <div id="p3p3">{{ $t("p3.paragraph3") }}</div>
     </div>
-    <div class="content">
-      <div id="p2t_" class="title"></div>
-      <div id="p2s_" class="subtitle"></div>
-      <div id="p2p1s_" class="text"></div>
+
+    <div class="content2">
+      <div id="p3p1_" class="text1"></div>
+      <div id="p3p2_" class="text2"></div>
+      <div id="p3p3_" class="text3"></div>
     </div>
   </div>
 </template>

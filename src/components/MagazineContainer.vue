@@ -1,6 +1,6 @@
 <style lang="scss">
 .cover-landing {
-  background-image: url("/img/pages/genzius-01.jpg");
+  background-image: url("/img/pages/REV-01.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -344,10 +344,11 @@
   .footer {
     display: flex;
     justify-content: center;
-    // padding: 0px;
+    padding: 0px;
     position: relative;
     transition: 500ms;
-    
+    bottom: 40px;
+    margin: 25px;
 
     &.searchFocus {
       background-color: $primary-color;

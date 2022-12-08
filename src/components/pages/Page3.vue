@@ -142,7 +142,7 @@
       <div id="p3p2">{{ $t("p3.paragraph2") }}</div>
       <div id="p3p3">{{ $t("p3.paragraph3") }}</div>
     </div>
-    <div class="cont  ent1">
+    <div class="content1">
       <div id="p3t_" class="title"></div>
       <div id="p3s_" class="subtitle"></div>
     </div>
