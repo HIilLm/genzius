@@ -348,7 +348,7 @@
     position: relative;
     transition: 500ms;
     bottom: 45px;
-    // margin: 25px;
+    margin: 25px;
 
     &.searchFocus {
       background-color: $primary-color;

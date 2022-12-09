@@ -239,15 +239,10 @@
           <svg-icon icon="surabaya" />
         </Button>
       </div>
-      <!-- <Button class="menu-content-toggle-btn" v-on:click.native="toggleContent(1)">
+      <Button class="menu-content-toggle-btn" v-on:click.native="toggleContent(1)">
         <i class="fas fa-list-ol fa-lg"></i>
-<<<<<<< HEAD
-      </Button> -->
-      <Button class="menu-content-toggle-btn" v-on:click.native="mark">
-=======
       </Button>
       <!-- <Button class="menu-content-toggle-btn" v-on:click.native="mark">
->>>>>>> 6dd091be03a41d35553a27b1feb2b438c15dff1f
         <i class="fas fa-list-ol fa-lg"></i>
       </Button> -->
       <Button class="menu-btn" v-on:click.native="getSelText">

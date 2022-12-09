@@ -13,11 +13,11 @@
     grid-template-columns: 50% 50%;
     font-size: 11px;
     line-height: 14px;
-    color: #f9d8c9;
+    color: #ffffff;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      font-size: 0.5rem;
-      top: 259px;
+      font-size: 0.6rem;
+      top: 50px;
       line-height: 10px;
     }
 
@@ -34,24 +34,25 @@
     }
 
     .col {
-      padding-left: 30px;
+      padding-left: 15px;
       padding-right: 30px;
       text-align: justify;
 
      
     } 
     .top {
-      margin-top: 30px;
+      margin-top: 5px;
     }
 
     .top1{
-      margin-top: 24px;
+      margin-top: 5px;
     }
 
     .top2 {
+      text-align: center;
       color: white;
       text-indent: 10px;
-      margin-top: 50px;
+      margin-top: 25px;
       font-weight: 900;
       font-size: 20px;
     }
