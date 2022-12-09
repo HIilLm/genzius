@@ -1,6 +1,6 @@
 <style lang="scss">
 .p5 {
-  background-image: url("/img/pages/genzius-05.jpg");
+  background-image: url("/img/pages/REV-05.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,11 +8,12 @@
 
   .content {
     position: absolute;
-    top: 363px;
-    display: grid;
+    top: 60px;
+    // display: grid;
     grid-template-columns: 50% 50%;
-    font-size: 0.7rem;
+    font-size: 11px;
     line-height: 14px;
+    color: #f9d8c9;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       font-size: 0.5rem;
@@ -37,22 +38,39 @@
       padding-right: 30px;
       text-align: justify;
 
-      .text1 {
-        text-indent: 10px;
-      }
-
-      .text {
-        margin-top: 5px;
-        text-indent: 10px;
-      }
+     
+    } 
+    .top {
+      margin-top: 30px;
     }
+
+    .top1{
+      margin-top: 24px;
+    }
+
+    .top2 {
+      color: white;
+      text-indent: 10px;
+      margin-top: 50px;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    // .text1 {
+      //   text-indent: 10px;
+      // }
+
+      // .text {
+      //   margin-top: 5px;
+      //   text-indent: 10px;
+      // }
   }
 }
 </style>
 
 <template>
   <div>
-    <!-- <div style="display: none">
+    <div style="display: none">
       <div id="p4p1">{{ $t("p4.paragraph1") }}</div>
       <div id="p4p2">{{ $t("p4.paragraph2") }}</div>
       <div id="p4p3">{{ $t("p4.paragraph3") }}</div>
@@ -60,14 +78,14 @@
     </div>
     <div class="content">
       <div class="col">
-        <div id="p4p1_" class="text1"></div>
-        <div id="p4p2_" class="text"></div>
+        <div id="p4p1_"></div>
+        <div id="p4p2_" class="top"></div>
       </div>
       <div class="col">
-        <div id="p4p3_" class="text1"></div>
-        <div id="p4p4_" class="text"></div>
+        <div id="p4p3_" class="top1"></div>
+        <div id="p4p4_" class="top2"></div>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -89,12 +107,12 @@ export default {
   methods: {
     processText(id) {
       let text = document.getElementById(id).textContent;
-      let r = text.split(".");
+      let r = text.split("`");
       document.getElementById(id + "_").innerHTML = "";
       window.jQuery.each(r, function (i, w) {
         var node = document.createElement("span");
         var textnode = document.createTextNode(
-          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : ".")
+          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : "")
         );
         node.appendChild(textnode);
         document.getElementById(id + "_").appendChild(node);

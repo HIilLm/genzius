@@ -347,8 +347,8 @@
     padding: 0px;
     position: relative;
     transition: 500ms;
-    bottom: 40px;
-    margin: 25px;
+    bottom: 45px;
+    // margin: 25px;
 
     &.searchFocus {
       background-color: $primary-color;
@@ -1067,20 +1067,7 @@
                 tableOfContent.active = false;
               "
             >
-              <!-- {{ $t("table_of_contents_items.title1") }} -->
               {{ star }}
-            </div>
-          </li>
-        </template>
-        <template v-slot:Bookmark>
-          <li>
-            <div
-              v-on:click="
-                turnPage(2);
-                tableOfContent.active = false;
-              "
-            >
-              {{ $t("table_of_contents_items.title1") }}
             </div>
           </li>
         </template>
@@ -1162,7 +1149,6 @@
               </Button> -->
             </div>
             <ul class="comments-list" :class="{ active: !inputComment }">
-              <!-- <li>kocak</li> -->
               <li v-for="(note,index) of selects" :key="note.id" >
                 <div class="comment">{{ note }}</div>
                 <button v-on:click="hps(index)"><i class="fas fa-trash"></i></button>
