@@ -1,6 +1,17 @@
 <style lang="scss">
+.ok{
+  background-color: #ffffff;
+      color: $primary-color-v;
+      border-radius: 50px;
+      height: 40px;
+      position: absolute;
+      margin-left: 270px;
+      margin-top: -40px;
+      // left: 15px;
+      // width: 40px;
+}
 .cover-landing {
-  background-image: url("/img/pages/REV-01.jpg");
+  background-image: url("/img/pages/g-01.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -864,8 +875,8 @@
             <Page13 />
             <Page14 />
             <Page15 />
-            <Page16 />
-            <!-- <Page17 />
+       <!-- <Page16 /> 
+            <Page17 />
             <Page18 />
             <Page19 />
             <Page20 />
@@ -1060,15 +1071,15 @@
           </li>-->
         </template>
         <template v-slot:favorit >
-          <li v-for="star of stars" v-bind:key="star">
+          <li v-for="(star,index) of stars" v-bind:key="star">
             <div
               v-on:click="
                 turnPage(star);
                 tableOfContent.active = false;
               "
             >
-              {{ star }}
-            </div>
+              {{ star == 1 ? "Genzius Berbagi Informasi" : ""}} {{ star == 2 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 3 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 4 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 5 ? "puki" : ""}} {{ star == 6 ? "Salam" : ""}} {{ star == 7 ? "Salam" : ""}} {{ star == 8 ? "Salam" : ""}} {{ star == 9 ? "Salam" : ""}} {{ star == 10 ? "Salam" : ""}} {{ star == 11 ? "Salam" : ""}} {{ star == 12 ? "Salam" : ""}} {{ star == 13 ? "Salam" : ""}} {{ star == 14 ? "Salam" : ""}} {{ star == 15 ? "Salam" : ""}} {{ star == 16 ? "Salam" : ""}}
+            </div> <button v-on:click="hpsf(index)" class="ok"><i class="fas fa-trash"></i></button> 
           </li>
         </template>
       </Sidebar>
@@ -1152,7 +1163,6 @@
               <li v-for="(note,index) of selects" :key="note.id" >
                 <div class="comment">{{ note }}</div>
                 <button v-on:click="hps(index)"><i class="fas fa-trash"></i></button>
-                <button><i class="fas fa-pen-square"></i></button>
               </li>
 
               <!-- <li v-for="c in comments" v-bind:key="c.id">
@@ -1395,7 +1405,7 @@ import Page12 from "@/components/pages/Page12.vue";
 import Page13 from "@/components/pages/Page13.vue";
 import Page14 from "@/components/pages/Page14.vue";
 import Page15 from "@/components/pages/Page15.vue";
-import Page16 from "@/components/pages/Page16.vue";
+// import Page16 from "@/components/pages/Page16.vue";
 // import Page17 from "@/components/pages/Page17.vue";
 // import Page18 from "@/components/pages/Page18.vue";
 // import Page19 from "@/components/pages/Page19.vue";
@@ -1438,7 +1448,7 @@ export default {
     Page13,
     Page14,
     Page15,
-    Page16,
+    // Page16,
     // Page17,
     // Page18,
     // Page19,
@@ -1509,6 +1519,10 @@ export default {
     if (localStorage.selects) {
       this.selects = JSON.parse(localStorage.selects);
     }
+
+    if (localStorage.stars) {
+      this.stars = JSON.parse(localStorage.stars);
+    }
     
     if (localStorage.lastSeen) {
       this.lastSeen = localStorage.lastSeen;
@@ -1547,6 +1561,10 @@ export default {
       this.selects.splice(id, 1)
       this.localStorage()
     },
+    hpsf(id) {
+      this.stars.splice(id, 1)
+      this.localStorage()
+    },
     speech: function(){
       var txt = [];
             if (window.getSelection) {
@@ -1555,7 +1573,7 @@ export default {
             console.log(""+ txt)
             let utterance = new SpeechSynthesisUtterance(""+txt);   
 
-            // utterance.lang = 'id-ID'
+            utterance.lang = 'id-ID'
             utterance.rate = 1
             if ("" + txt != "") {
                 this.synth.speak(utterance);
@@ -1576,7 +1594,7 @@ export default {
       }
       this.localStorage();
     },
-    star: function(id){
+    star: function(){
       let text = window.jQuery(".magazine").turn("page");
       console.log(text)
       // if (this.stars.includes(text)) {
@@ -1594,15 +1612,17 @@ export default {
 
       if (this.stars.includes(text)) {
         console.log("sudah ada")
-        this.stars.splice(id, 1)
+        // this.stars.splice(id, 1)
       } else {
         this.stars.push(text)
+        this.localStorage()
         console.log(this.stars)
       }
       
     },
     localStorage: function () {
       localStorage.setItem("selects", JSON.stringify(this.selects));
+      localStorage.setItem("stars", JSON.stringify(this.stars));
       localStorage.setItem("lastSeen", JSON.stringify(this.lastSeen));
     },
     // DARI HIL

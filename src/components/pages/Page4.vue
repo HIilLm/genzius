@@ -1,6 +1,6 @@
 <style lang="scss">
 .p5 {
-  background-image: url("/img/pages/REV-05.jpg");
+  background-image: url("/img/pages/g-07.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,7 +52,7 @@
       color: white;
       text-indent: 10px;
       margin-top: 50px;
-      font-weight: 900;
+      
       font-size: 20px;
     }
 
@@ -70,7 +70,7 @@
 
 <template>
   <div>
-    <div style="display: none">
+    <!-- <div style="display: none">
       <div id="p4p1">{{ $t("p4.paragraph1") }}</div>
       <div id="p4p2">{{ $t("p4.paragraph2") }}</div>
       <div id="p4p3">{{ $t("p4.paragraph3") }}</div>
@@ -83,9 +83,9 @@
       </div>
       <div class="col">
         <div id="p4p3_" class="top1"></div>
-        <div id="p4p4_" class="top2"></div>
+        <div id="p4p4_" class="top2" style="font-weight: 900;"></div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

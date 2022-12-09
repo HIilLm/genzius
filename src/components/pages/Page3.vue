@@ -1,6 +1,6 @@
 <style lang="scss">
 .p4 {
-  background-image: url("/img/pages/genzius-05.jpg");
+  background-image: url("/img/pages/g-04.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

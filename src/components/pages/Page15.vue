@@ -1,6 +1,6 @@
 <style lang="scss" scoped>
 .p16 {
-  background-image: url("/img/pages/15.jpg");
+  background-image: url("/img/pages/g-16.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,7 +76,7 @@
 
 <template>
   <div>
-    <div style="display: none">
+    <!-- <div style="display: none">
       <div id="p15t">{{ $t("p15.title") }}</div>
       <div id="p15p1">{{ $t("p15.paragraph1") }}</div>
       <div id="p15p2">{{ $t("p15.paragraph2") }}</div>
@@ -86,7 +86,7 @@
     <div class="content2">
       <div id="p15p1_"></div>
       <div id="p15p2_"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 
