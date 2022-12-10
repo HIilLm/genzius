@@ -1,11 +1,11 @@
 <style lang="scss">
 .p3 {
-  background-image: url("/img/pages/genzius-03.jpg");
+  background-image: url("/img/pages/g-03.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
+///////
   .content {
     top: 520px;
     position: absolute;

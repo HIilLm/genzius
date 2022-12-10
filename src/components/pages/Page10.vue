@@ -1,6 +1,6 @@
 <style lang="scss">
 .p11 {
-  background-image: url("/img/pages/genzius-12.jpg");
+  background-image: url("/img/pages/g-11.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,7 +89,7 @@
 
 <template>
   <div>
-    <!-- <div style="display: none">
+    <div style="display: none">
       <div id="p10p1">{{ $t("p10.paragraph1") }}</div>
       <div id="p10p2">{{ $t("p10.paragraph2") }}</div>
     </div>
@@ -108,7 +108,7 @@
         src="/img/pages/10_2.jpg"
         v-on:click="showImage('/img/pages/10_2.jpg')"
       />
-    </div> -->
+    </div>
   </div>
 </template>
 
