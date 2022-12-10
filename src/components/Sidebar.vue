@@ -257,7 +257,7 @@
       <Button class="menu-btn" v-on:click.native="star">
         <i class="far fa-star"></i>
       </Button>     
-      <Button class="menu-btn" v-on:click.native="star">
+      <Button class="menu-btn" v-on:click.native="searchSpeak">
         <i class="fas fa-microphone"></i>
       </Button>     
     </div>
@@ -315,6 +315,9 @@ export default {
     },
     star(){
       this.$parent.star();
+    },
+    searchSpeak(){
+      this.$parent.searchSpeak();
     },
     toggleContent(param) {
       if (param === 1) {
