@@ -137,7 +137,7 @@
 
 <template>
   <div>
-    <div style="display: none">
+    <!-- <div style="display: none">
       <div id="p3t">{{ $t("p3.title") }}</div>
       <div id="p3s">{{ $t("p3.subtitle") }}</div>
       <div id="p3p1">{{ $t("p3.paragraph1") }}</div>
@@ -153,7 +153,7 @@
       <div id="p3p1_" class="text1"></div>
       <div id="p3p2_" class="text2"></div>
       <div id="p3p3_" class="text3"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 

@@ -4,7 +4,7 @@
       color: $primary-color-v;
       border-radius: 50px;
       height: 40px;
-      position: absolute;
+      position:absolute;
       margin-left: 270px;
       margin-top: -40px;
       // left: 15px;
@@ -698,7 +698,7 @@
   ul {
     list-style-type: none;
     flex: 1;
-    overflow: auto;
+    overflow: visible;
 
     &::-webkit-scrollbar {
       width: 5px;

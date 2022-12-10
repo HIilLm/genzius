@@ -194,6 +194,49 @@
         }
       }
     }
+    .list-group2{
+      flex: 1;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #eeeeee;
+        border-radius: 50px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $secondary-color-v;
+        border-radius: 50px;
+      }
+
+      ul {
+        list-style-type: none;
+
+        li {
+          background-color: $primary-color-v;
+          border-radius: 10px;
+          color: #ffffff;
+          font-size: 0.8rem;
+          margin-bottom: 15px;
+          margin-left: 15px;
+          margin-right: 15px;
+          transition: 500ms;
+
+          // &:hover {
+          //   background-color: rgba($color: $primary-color-v, $alpha: 0.5);
+          //   transform: scale(1.05);
+          // }
+
+          div {
+            cursor: pointer;
+            padding: 10px;
+          }
+        }
+      }
+    }
   }
 }
 </style>
@@ -271,7 +314,7 @@
     </div>
     <div v-if="(isSelected == 2)" class="contents-container">
       <div class="title">favorit</div>
-      <div class="list-group">
+      <div class="list-group2">
         <ul>
           <slot name="favorit"></slot>
         </ul>
