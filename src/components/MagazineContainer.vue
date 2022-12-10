@@ -803,18 +803,27 @@
         >
           <i class="fas fa-list-ol fa-lg"></i>
         </Button>
-        <!-- <Button class="menu-btn" v-on:click.native="zoomIn">
-          <i class="fas fa-plus fa-lg"></i>
+        <Button
+          class="menu-btn menu-content-toggle-btn"
+          v-on:click.native="
+            tableOfContent.active = !tableOfContent.active;
+            menu.toggled = false;
+          "
+        >
+          <i class="far fa-bookmark"></i>
         </Button>
-        <Button class="menu-btn" v-on:click.native="zoomOut">
-          <i class="fas fa-minus fa-lg"></i>
-        </Button> -->
         <Button class="menu-btn" v-on:click.native="getSelText">
           <i class="fas fa-sticky-note"></i>
         </Button>
         <Button class="menu-btn" v-on:click.native="speech">
           <i class="fas fa-volume-up"></i>
         </Button>  
+        <Button class="menu-btn" v-on:click.native="star">
+        <i class="far fa-star"></i>
+      </Button>     
+      <Button class="menu-btn" v-on:click.native="searchSpeak">
+        <i class="fas fa-microphone"></i>
+      </Button>     
       </div>
     </div>
 
@@ -989,86 +998,7 @@
               {{ $t("table_of_contents_items.title9") }}
             </div>
           </li>
-          <!-- <li>
-            <div
-              v-on:click="
-                turnPage(18);
-                tableOfContent.active = false;
-              "
-            >
-              {{ $t("table_of_contents_items.title10") }}
-            </div>
-          </li>
-          <li>
-            <div
-              v-on:click="
-                turnPage(20);
-                tableOfContent.active = false;
-              "
-            >
-              {{ $t("table_of_contents_items.title11") }}
-            </div>
-          </li>
-          <li>
-            <div
-              v-on:click="
-                turnPage(21);
-                tableOfContent.active = false;
-              "
-            >
-              {{ $t("table_of_contents_items.title12") }}
-            </div>
-          </li>
-          <li>
-            <div
-              v-on:click="
-                turnPage(22);
-                tableOfContent.active = false;
-              "
-            >
-              {{ $t("table_of_contents_items.title13") }}
-            </div>
-          </li>
-          <li>
-            <div
-              v-on:click="
-                turnPage(26);
-                tableOfContent.active = false;
-              "
-            >
-              {{ $t("table_of_contents_items.title14") }}
-            </div>
-          </li>
-          <li>
-            <div
-              v-on:click="
-                turnPage(28);
-                tableOfContent.active = false;
-              "
-            >
-              {{ $t("table_of_contents_items.title15") }}
-            </div>
-          </li>
-          <li>
-            <div
-              v-on:click="
-                turnPage(30);
-                tableOfContent.active = false;
-              "
-            >
-              {{ $t("table_of_contents_items.title16") }}
-            </div>
-          </li> 
-          <li>
-            <div
-              v-on:click="
-                turnPage(32);
-                tableOfContent.active = false;
-              "
-            >
-              {{ $t("table_of_contents_items.title17") }}
-            </div>
-          </li>-->
+          
         </template>
         <template v-slot:favorit >
           <li v-for="(star,index) of stars" v-bind:key="star">
@@ -1425,7 +1355,6 @@ import Page15 from "@/components/pages/Page15.vue";
 import jQuery from "jquery";
 
 window.jQuery = jQuery;
-
 require("@/assets/turn.min.js");
 
 export default {
@@ -1503,7 +1432,8 @@ export default {
       },
       synth: window.speechSynthesis,
       stars:[],
-      lastSeen : "8"
+      lastSeen : "1",
+      lang_: "en-EN"
     };
   },
   mounted() {
@@ -1619,6 +1549,38 @@ export default {
         console.log(this.stars)
       }
       
+    },
+    searchSpeak: function (){
+      // console.log("ksodask");
+    // initialisation of voicereco
+    window.SpeechRecognition =
+    window.SpeechRecognition || 
+    window.webkitSpeechRecognition;
+    const recognition = new window.SpeechRecognition();
+    recognition.lang = this.lang_;
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+    // recognition.interimResults = true;
+
+    // event current voice reco word
+    recognition.addEventListener("result", event => {      
+      // var text = Array.from(event.results)
+      //   .map(result => result[0])
+      //   .map(result => result.transcript)
+      //   .join("");
+      // this.runtimeTranscription_ = text;
+      var page = event.results[0][0].transcript;
+      console.log(page)
+      this.turnPage(page);
+    });
+    // end of transcription
+    recognition.addEventListener("end", () => {
+      // this.transcription_.push(this.runtimeTranscription_);
+      // this.runtimeTranscription_ = "";
+      recognition.stop();
+    });
+     recognition.start();
     },
     localStorage: function () {
       localStorage.setItem("selects", JSON.stringify(this.selects));
