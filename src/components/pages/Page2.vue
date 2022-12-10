@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
+///////
   .content {
     top: 520px;
     position: absolute;
