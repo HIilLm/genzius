@@ -760,7 +760,6 @@
           <i class="fas fa-times"></i>
         </Button>
       </div>
-
       <div class="menu-container" :class="{ active: menu.toggled }">
         <Button class="menu-btn" v-on:click.native="highlight">
           <i class="fas fa-highlighter fa-lg"></i>
@@ -806,7 +805,7 @@
         <Button
           class="menu-btn menu-content-toggle-btn"
           v-on:click.native="
-            tableOfContent.active = !tableOfContent.active;
+            bookmark.active = !bookmark.active;
             menu.toggled = false;
           "
         >
@@ -852,22 +851,8 @@
           <div
             id="magazine"
             class="magazine"
-            
           >
-          <!-- :style="{ transform: 'scale(' + zoom + ')' }" -->
             <div class="cover-landing">
-              <!-- <video
-                id="cover"
-                class="cover"
-                autoplay
-                loop
-                muted
-                data-keepplaying
-              >
-              <source src="/video/cover.mp4" type="video/mp4" />
-              <source src="/video/cover.webm" type="video/webm" />
-                <source src="/video/cover.ogv" type="video/ogg" />
-              </video> -->
             </div>
             <Page1 />
             <Page2 />
@@ -884,23 +869,6 @@
             <Page13 />
             <Page14 />
             <Page15 />
-       <!-- <Page16 /> 
-            <Page17 />
-            <Page18 />
-            <Page19 />
-            <Page20 />
-            <Page21 />
-            <Page22 />
-            <Page23 />
-            <Page24 />
-            <Page25 />
-            <Page26 />
-            <Page27 />
-            <Page28 />
-            <Page29 />
-            <Page30 />
-            <Page31 />
-            <Page32 /> -->
           </div>
         </div>
       </div>
@@ -1005,7 +973,7 @@
             <div
               v-on:click="
                 turnPage(star);
-                tableOfContent.active = false;
+                bookmark.active = false;
               "
             >
               {{ star == 1 ? "Genzius Berbagi Informasi" : ""}} {{ star == 2 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 3 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 4 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 5 ? "puki" : ""}} {{ star == 6 ? "Salam" : ""}} {{ star == 7 ? "Salam" : ""}} {{ star == 8 ? "Salam" : ""}} {{ star == 9 ? "Salam" : ""}} {{ star == 10 ? "Salam" : ""}} {{ star == 11 ? "Salam" : ""}} {{ star == 12 ? "Salam" : ""}} {{ star == 13 ? "Salam" : ""}} {{ star == 14 ? "Salam" : ""}} {{ star == 15 ? "Salam" : ""}} {{ star == 16 ? "Salam" : ""}}
@@ -1057,17 +1025,6 @@
           </div>
           <div class="comments-card">
             <div class="comment-input" :class="{ active: inputComment }">
-              <!-- <div class="input-group" :class="{ invalid: !commentName.valid }">
-                <label for="name">{{ $t("comment_name") }}</label>
-                <input id="name" type="text" v-model="commentName.data" />
-              </div>
-              <div
-                class="input-group"
-                :class="{ invalid: !commentEmail.valid }"
-              >
-                <label for="email">{{ $t("comment_email") }}</label>
-                <input id="email" type="email" v-model="commentEmail.data" />
-              </div> -->
               <div class="input-group" :class="{ invalid: !commentText.valid }">
                 <label for="text">{{ $t("comment") }}</label>
                 <textarea
@@ -1077,17 +1034,6 @@
                 <!-- <input type="text" id="tambah" /> -->
               </div>
               <button v-on:click="tambah">{{ $t("comment_post") }}</button>
-              <!-- <Button
-                v-on:click.native="
-                  postComment(  
-                    commentName.data,
-                    commentEmail.data,
-                    commentText.data
-                  )
-                "
-              >
-                {{ $t("comment_post") }}
-              </Button> -->
             </div>
             <ul class="comments-list" :class="{ active: !inputComment }">
               <li v-for="(note,index) of selects" :key="note.id" >
@@ -1232,86 +1178,27 @@
             {{ $t("table_of_contents_items.title9") }}
           </div>
         </li>
-        <!-- <li>
+      </ul>
+    </div>
+    
+    <div id="table_of_contents" :class="{ active: bookmark.active }">
+      <div class="menu-container">
+        <span class="title">FAVORIT</span>
+        <Button class="close" v-on:click.native="bookmark.active = false"
+          ><i class="fas fa-times"></i
+        ></Button>
+      </div>
+      <ul>
+        <li v-for="(star,index) of stars" v-bind:key="star">
           <div
             v-on:click="
-              turnPage(18);
-              tableOfContent.active = false;
+              turnPage(star);
+              bookmark.active = false;
             "
           >
-            {{ $t("table_of_contents_items.title10") }}
-          </div>
+          {{ star == 1 ? "Genzius Berbagi Informasi" : ""}} {{ star == 2 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 3 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 4 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 5 ? "puki" : ""}} {{ star == 6 ? "Salam" : ""}} {{ star == 7 ? "Salam" : ""}} {{ star == 8 ? "Salam" : ""}} {{ star == 9 ? "Salam" : ""}} {{ star == 10 ? "Salam" : ""}} {{ star == 11 ? "Salam" : ""}} {{ star == 12 ? "Salam" : ""}} {{ star == 13 ? "Salam" : ""}} {{ star == 14 ? "Salam" : ""}} {{ star == 15 ? "Salam" : ""}} {{ star == 16 ? "Salam" : ""}}
+            </div> <button v-on:click="hpsf(index)" class="ok"><i class="fas fa-trash"></i></button> 
         </li>
-        <li>
-          <div
-            v-on:click="
-              turnPage(20);
-              tableOfContent.active = false;
-            "
-          >
-            {{ $t("table_of_contents_items.title11") }}
-          </div>
-        </li>
-        <li>
-          <div
-            v-on:click="
-              turnPage(21);
-              tableOfContent.active = false;
-            "
-          >
-            {{ $t("table_of_contents_items.title12") }}
-          </div>
-        </li>
-        <li>
-          <div
-            v-on:click="
-              turnPage(22);
-              tableOfContent.active = false;
-            "
-          >
-            {{ $t("table_of_contents_items.title13") }}
-          </div>
-        </li>
-        <li>
-          <div
-            v-on:click="
-              turnPage(26);
-              tableOfContent.active = false;
-            "
-          >
-            {{ $t("table_of_contents_items.title14") }}
-          </div>
-        </li>
-        <li>
-          <div
-            v-on:click="
-              turnPage(28);
-              tableOfContent.active = false;
-            "
-          >
-            {{ $t("table_of_contents_items.title15") }}
-          </div>
-        </li>
-        <li>
-          <div
-            v-on:click="
-              turnPage(30);
-              tableOfContent.active = false;
-            "
-          >
-            {{ $t("table_of_contents_items.title16") }}
-          </div>
-        </li>
-        <li>
-          <div
-            v-on:click="
-              turnPage(32);
-              tableOfContent.active = false;
-            "
-          >
-            {{ $t("table_of_contents_items.title17") }}
-          </div>
-        </li> -->
       </ul>
     </div>
   </div>
@@ -1430,10 +1317,14 @@ export default {
       tableOfContent: {
         active: false,
       },
+      bookmark: {
+        active: false
+      },
       synth: window.speechSynthesis,
       stars:[],
       lastSeen : "1",
-      lang_: "en-EN"
+      lang_: "en-EN",
+      isSpeak: false
     };
   },
   mounted() {
@@ -1465,12 +1356,6 @@ export default {
     })
 
     window.onload = this.onload()
-
-    // document.getElementById("cover").oncanplay = () => {
-    //   document.getElementById("cover").style.visibility = "visible";
-    //   document.getElementById("cover").style.opacity = 1;
-    // }; 
-    
   },
   methods: {
     // DARI HIL
@@ -1483,9 +1368,6 @@ export default {
       }
       this.localStorage();
       document.getElementById("tambah").value = "";
-      // console.log(text);
-      alert("curent page is: " +  window.jQuery(".magazine").turn("page") )
-      // alert("The current page is: "+$("magazine").turn("page"));
     },
     hps(id) {
       this.selects.splice(id, 1)
@@ -1497,20 +1379,22 @@ export default {
     },
     speech: function(){
       var txt = [];
-            if (window.getSelection) {
-                txt = window.getSelection();
-            }
-            console.log(""+ txt)
-            let utterance = new SpeechSynthesisUtterance(""+txt);   
-
-            utterance.lang = 'id-ID'
-            utterance.rate = 1
-            if ("" + txt != "") {
-                this.synth.speak(utterance);
-            } else {
-              
-                alert("silahkan pilih text terlebih dahulu");
-            }
+      if (window.getSelection) {
+        txt = window.getSelection();
+      }
+      let utterance = new SpeechSynthesisUtterance(""+txt);   
+      utterance.lang = 'id-ID'
+      utterance.rate = 1
+      if ("" + txt != "") {
+        this.isSpeak = !this.isSpeak;
+        if(this.speak == true){
+          this.synth.speak(utterance);
+        } else {
+          this.synth.cancel();
+        }
+      } else {
+          alert("silahkan pilih text terlebih dahulu");
+      }
     },
     getSelText: function () {
       var txt = [];
@@ -1526,23 +1410,8 @@ export default {
     },
     star: function(){
       let text = window.jQuery(".magazine").turn("page");
-      console.log(text)
-      // if (this.stars.includes(text)) {
-      //   console.log("sudah ada")
-      //   let str = this.stars.find(kocak => kocak.id == 1);
-      //     this.stars.splice(str,1);
-      // } else {
-      //   let masuk = {
-      //     "id" : text,
-      //     "page": text
-      //   }
-      //   this.stars.push(masuk);
-      //   console.log(this.stars)
-      // }
-
       if (this.stars.includes(text)) {
         console.log("sudah ada")
-        // this.stars.splice(id, 1)
       } else {
         this.stars.push(text)
         this.localStorage()
@@ -1559,25 +1428,18 @@ export default {
     const recognition = new window.SpeechRecognition();
     recognition.lang = this.lang_;
     recognition.continuous = false;
-    recognition.interimResults = false;
+    recognition.interimResults = true;
     recognition.maxAlternatives = 1;
     // recognition.interimResults = true;
 
     // event current voice reco word
     recognition.addEventListener("result", event => {      
-      // var text = Array.from(event.results)
-      //   .map(result => result[0])
-      //   .map(result => result.transcript)
-      //   .join("");
-      // this.runtimeTranscription_ = text;
-      var page = event.results[0][0].transcript;
-      console.log(page)
-      this.turnPage(page);
+      var pages = event.results[0][0].transcript;
+      var page = parseInt(pages)
+      this.turnPage(page+1);
     });
     // end of transcription
     recognition.addEventListener("end", () => {
-      // this.transcription_.push(this.runtimeTranscription_);
-      // this.runtimeTranscription_ = "";
       recognition.stop();
     });
      recognition.start();
@@ -1586,6 +1448,9 @@ export default {
       localStorage.setItem("selects", JSON.stringify(this.selects));
       localStorage.setItem("stars", JSON.stringify(this.stars));
       localStorage.setItem("lastSeen", JSON.stringify(this.lastSeen));
+    },
+    onload(){
+      this.turnPage(this.lastSeen)
     },
     // DARI HIL
 
@@ -1617,16 +1482,6 @@ export default {
         magazine.turn("page", page);
       else magazine.turn("page", 1);
     },
-    // zoomIn() {
-    //   this.zoom += 0.1;
-    //   window.jQuery(".magazine").turn("disable", this.zoom != 1);
-    // },
-    // zoomOut() {
-    //   if (this.zoom > 1) {
-    //     this.zoom -= 0.1;
-    //     window.jQuery(".magazine").turn("disable", this.zoom != 1);
-    //   }
-    // },
     highlight() {
       const range = window.getSelection().getRangeAt(0),
       span = document.createElement("mark");
@@ -1712,60 +1567,11 @@ export default {
       }
     },
     toggleComment() {
-      // this.inputComment = false;
       this.toggleCommentStatus = !this.toggleCommentStatus;
-      // if (this.toggleCommentStatus) this.fetchComments();
     },
-    // fetchComments() {
-    //   this.$http
-    //     .get("http://oracleapi.erpaserver.com/comments")
-    //     .then((result) => {
-    //       this.comments = result.data;
-    //     })
-    //     .catch((error) => {
-    //       console.log(error.response);
-    //     });
-    // },
     toggleCommentInput() {
       this.inputComment = !this.inputComment;
-      // this.commentName.valid =
-      //   this.commentEmail.valid =
-      //   this.commentText.valid =
-      //     true;
     },
-    // postComment() {
-    //   let valid = true;
-
-    //   if (this.commentName.data.length == 0)
-    //     this.commentName.valid = valid = false;
-    //   else this.commentName.valid = true;
-    //   if (this.commentText.data.length == 0)
-    //     this.commentText.valid = valid = false;
-    //   else this.commentText.valid = true;
-
-    //   if (!valid) return;
-
-    //   this.commentName.valid = this.commentText.valid = true;
-
-    //   this.$http
-    //     .post("http://oracleapi.erpaserver.com/comments", {
-    //       name: this.commentName.data,
-    //       email: this.commentEmail.data,
-    //       text: this.commentText.data,
-    //     })
-    //     .then(() => {
-    //       this.fetchComments();
-    //       this.inputComment = false;
-
-    //       this.commentName.data =
-    //         this.commentEmail.data =
-    //         this.commentText.data =
-    //           "";
-    //     })
-    //     .catch((error) => {
-    //       console.log(error.response);
-    //     });
-    // },
     changeLanguage(lang) {
       this.$i18n.locale = lang;
       this.language.data = lang;
@@ -1775,10 +1581,6 @@ export default {
       document
         .getElementById("image-modal")
         .getElementsByTagName("img")[0].src = url;
-    },
-
-    onload(){
-      this.turnPage(this.lastSeen)
     },
   },
 };
