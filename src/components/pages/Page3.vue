@@ -11,6 +11,11 @@
     top: 110px;
     left: 20px;
 
+    @media (min-width: 1440px) {
+      top: 70px;
+      left: 50px;
+    }
+
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 50px;
       left: 10px;
@@ -74,8 +79,13 @@
     position: absolute;
     top: 110px;
     color: #ffffff;
-    left: 20px;
+    // left: 20px;
     font-size: 20px;
+
+    @media (min-width: 1440px) {
+      top: 110px;
+      left: 170px;
+    }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 85px;
@@ -121,7 +131,7 @@
         margin-left: 20px;
         letter-spacing: 2px;
         font-size: 2rem;
-
+        
         @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
           font-size: 25px;
         }
@@ -145,6 +155,14 @@
     left: 215px;
     font-size: 0.7rem;
     text-align: justify;
+
+    @media (min-width:1440px) {
+      top: 155px;
+      left: 70px;
+      width: 350px;
+      font-size: 12px;
+      font-weight: 100px;
+    }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 130px;
@@ -189,6 +207,7 @@
     .text2::first-letter {
       color: #ffffff;
       font-size: 2rem;
+      font-weight: 400px;
       float:left;
       line-height: 20px;
       margin-left: 0px;

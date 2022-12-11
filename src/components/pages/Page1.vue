@@ -7,12 +7,7 @@
   position: relative;
 
   .content{
-    color: #000000;
-
-    // position: absolute;
-    // top: 110px;
-    // left: 20px;
-    
+    color: orangered;
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 50px;
     }
@@ -26,20 +21,21 @@
     }
 
     .title {
-      // memisahkan title dengan paragraf
       text-align: center;
       margin-bottom: 5px;
       text-align: left;
       margin-left: 10px;
-      margin-top: 35px;
+      margin-top: 50px;
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
         margin-bottom: 0px;
       }
 
       span {
-        font-weight: 500;
-        font-size: 1px;
+        font-weight: 700;
+        font-size: 25px;
+        margin-left: 105px;
+        background-color: #ffffff;
 
         @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
           font-size: 20px;
@@ -49,7 +45,7 @@
 
         @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
           font-size: 20px;
-          margin-left: 70px;
+          margin-left: 105px;
           background-color: #ffffff;
         }
 
@@ -86,12 +82,6 @@
   }
   .content2{
     color: #ffffff;
-
-    // position: absolute;
-    // top: 110px;
-    // left: 20px;
-    
-
     // mengatur posisi teks dari atas
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 50px;
@@ -106,44 +96,43 @@
     }
 
     .text {
-        font-size: 1px;
-        text-align:justify;
-        line-height: 20px;
-        padding-left: 80px;
-        padding-right: 20px;
-        padding-top: 5px;
-
-      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8.7px;
-        line-height: 10px;
-      }
-
-      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        font-size: 8.7px;
-        line-height: 10px;
-      }
-
-      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 8.7px;
-        line-height: 10px;
+      text-align:justify;
+      line-height: 15px;
+      padding-left: 117px;
+      padding-right: 20px;
+      padding-top: 5px;
+      font-size: 10px;
+        
+        @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+          font-size: 8.7px;
+          line-height: 10px;
+          padding-top: 5px;
+        }
+        
+        @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+          font-size: 8.7px;
+          line-height: 10px;
+          padding-top: 5px;
+        }
+        
+        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+          font-size: 8.7px;
+          line-height: 10px;
+          padding-top: 5px;
       }
     }
     .text::first-letter {
-      color:#ffffff;
+      color: white;
       font-size: 2rem;
-      float: left;
+      font-weight: 600;
+      float:left;
       line-height: 20px;
+      margin-left: 0px;
     }
   }
   .content3{
     color: #ffffff;
 
-    // position: absolute;
-    // top: 110px;
-    // left: 20px;
-    
-
-    // mengatur posisi teks dari atas
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 50px;
     }
@@ -157,10 +146,10 @@
     }
 
     .text {
-      font-size: 1px;
+      font-size: 10px;
       text-align:justify;
-      line-height: 20px;
-      padding-left: 80px;
+      line-height: 15px;
+      padding-left: 117px;
       padding-right: 20px;
       padding-top: 5px;
 
@@ -182,12 +171,7 @@
   }
   .content1{
     color: orangered;
-    // position: absolute;
-    // top: 110px;
-    // left: 20px;
-    
 
-    // mengatur posisi teks dari atas
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 60px;
     }
@@ -201,7 +185,6 @@
     }
 
     .title {
-      // memisahkan title dengan paragraf
       text-align: center;
       margin-bottom: 5px;
       text-align: left;
@@ -214,7 +197,9 @@
 
       span {
         font-weight: 700;
-        font-size: 1px;
+        font-size: 25px;
+        margin-left: 105px;
+        background-color: #ffffff;
 
         @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
           font-size: 18px;
@@ -224,7 +209,7 @@
 
         @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
           font-size: 18px;
-          margin-left: 70px;
+          margin-left: 105px;
           background-color: #ffffff;
         }
 
