@@ -1,7 +1,7 @@
 <style lang="scss">
 
 .cover{
-  background-image: url("/img/pages/g-0.jpg");
+  background-image: url("/img/g-0.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
