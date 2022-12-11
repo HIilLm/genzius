@@ -7,102 +7,125 @@
   position: relative;
 
   .content1 {
+    color: orange;
     position: absolute;
-    top: 235px;
-    left: 10px;
-    width: 444px;
-
-    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 162px;
-      width: 399px;
-    }
-
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      top: 201px;
-      width: 358px;
-    }
-
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 152px;
-      width: 297px;
-    }
-
+    top: 20px;
+    left: 85px;
+    padding-left: 15px;
+    width: 140px;
     .title {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        width: 160px;
+      }
+
       span {
-        font-size: 1.4rem;
-        color: #ffffff;
-        font-weight: 700;
-        line-height: 20px;
-
-        @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-          font-size: 1rem;
-        }
-
-        @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-          font-size: 1.2rem;
-        }
-
-        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-          font-size: 1rem;
-        }
+        font-weight: 800;
       }
     }
   }
-
   .content2 {
+    ::first-letter{
+      color: black;
+      font-size: 2rem;
+      font-weight: 500;
+      float:left;
+      line-height: 20px;
+      margin-left: 0px;
+    }
     position: absolute;
-    top: 302px;
-    left: 43px;
-    width: 404px;
     text-align: justify;
-    text-indent: 10px;
-
-    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 217px;
-      left: 29px;
-      width: 286px;
-    }
-
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      top: 259px;
-      left: 31px;
-      width: 356px;
-    }
-
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 204px;
-      left: 29px;
-      width: 270px;
-    }
+    top: 95px;
+    left: 20px;
+    width: 150px;
 
     .text {
-      font-size: 0.7rem;
+      font-size: 2rem;
+      line-height: 30px;
 
-      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 0.5rem;
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 6px;
         line-height: 10px;
+        width: 150px;
+
       }
 
-      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        font-size: 0.65rem;
-        line-height: 11px;
+      span {
+        font-weight: 700;
       }
+    }
+  }
+  .content3 {
+    position: absolute;
+    text-align: justify;
+    top: 210px;
+    left: 20px;
+    width: 150px;
 
-      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 0.5rem;
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 6px;
         line-height: 10px;
+        width: 150px;
+
       }
 
-      &.text1 {
-        text-indent: 0px;
-        margin-bottom: 5px;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .content4 {
+    position: absolute;
+    text-align: justify;
+    top: 95px;
+    left: 180px;
+    width: 150px;
 
-        &::first-letter {
-          color: #a9203e;
-          font-size: 3rem;
-          float: left;
-          line-height: 40px;
-        }
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 6px;
+        line-height: 9px;
+        width: 150px;
+
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .content5 {
+    position: absolute;
+    text-align: justify;
+    top: 220px;
+    left: 180px;
+    width: 150px;
+
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 6px;
+        line-height: 10px;
+        width: 150px;
+
+      }
+
+      span {
+        font-weight: 700;
       }
     }
   }
@@ -111,18 +134,28 @@
 
 <template>
   <div>
-    <!-- <div style="display: none">
+    <div style="display: none">
       <div id="p5t">{{ $t("p5.title") }}</div>
       <div id="p5p1">{{ $t("p5.paragraph1") }}</div>
       <div id="p5p2">{{ $t("p5.paragraph2") }}</div>
+      <div id="p5p3">{{ $t("p5.paragraph3") }}</div>
+      <div id="p5p4">{{ $t("p5.paragraph4") }}</div>
     </div>
     <div class="content1">
       <div id="p5t_" class="title"></div>
     </div>
     <div class="content2">
-      <div id="p5p1_" class="text text1"></div>
+      <div id="p5p1_" class="text"></div>
+    </div>
+    <div class="content3">
       <div id="p5p2_" class="text"></div>
-    </div> -->
+    </div>
+    <div class="content4">
+      <div id="p5p3_" class="text"></div>
+    </div>
+    <div class="content5">
+      <div id="p5p4_" class="text"></div>
+    </div>
   </div>
 </template>
 
@@ -134,9 +167,11 @@ export default {
     ref.processText("p5t");
     ref.processText("p5p1");
     ref.processText("p5p2");
+    ref.processText("p5p3");
+    ref.processText("p5p4");
     window
       .jQuery("body")
-      .on("DOMSubtreeModified", "#p5t, #p5p1, #p5p2", function () {
+      .on("DOMSubtreeModified", "#p5t, #p5p1, #p5p2,#p5p3,#p5p4", function () {
         ref.processText(window.jQuery(this).attr("id"));
       });
   },
