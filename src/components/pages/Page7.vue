@@ -1,6 +1,6 @@
 <style lang="scss">
 .p8 {
-  background-image: url("/img/pages/g-07.jpg");
+  background-image: url("/img/pages/07.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -295,12 +295,12 @@ export default {
   methods: {
     processText(id) {
       let text = document.getElementById(id).textContent;
-      let r = text.split(".");
+      let r = text.split("`");
       document.getElementById(id + "_").innerHTML = "";
       window.jQuery.each(r, function (i, w) {
         var node = document.createElement("span");
         var textnode = document.createTextNode(
-          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : ".")
+          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : "")
         );
         node.appendChild(textnode);
         document.getElementById(id + "_").appendChild(node);

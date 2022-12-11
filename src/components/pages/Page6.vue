@@ -1,6 +1,6 @@
 <style lang="scss">
 .p7 {
-  background-image: url("/img/pages/g-06.jpg");
+  background-image: url("/img/pages/06.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,7 +8,7 @@
 
   .content {
     position: absolute;
-    color:orangered;
+    color:#ffffff;
     top: 53px;
     font-size: 0.7rem;
     font-weight: 900;
@@ -38,7 +38,7 @@
   }
   .content2 {
     ::first-letter{
-      color: #ffffff;
+      color: orangered;
       font-size: 2rem;
       font-weight: 600;
       float:left;
@@ -51,7 +51,7 @@
     font-size: 0.7rem;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 300px;
@@ -62,7 +62,7 @@
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 310px;
@@ -73,7 +73,7 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 310px;
@@ -90,7 +90,7 @@
     font-size: 0.7rem;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 300px;
@@ -101,7 +101,7 @@
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 310px;
@@ -111,7 +111,7 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 310px;
@@ -128,7 +128,7 @@
     font-size: 0.7rem;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 300px;
@@ -139,7 +139,7 @@
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 310px;
@@ -149,7 +149,7 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 310px;
@@ -203,12 +203,12 @@ export default {
   methods: {
     processText(id) {
       let text = document.getElementById(id).textContent;
-      let r = text.split(".");
+      let r = text.split("`");
       document.getElementById(id + "_").innerHTML = "";
       window.jQuery.each(r, function (i, w) {
         var node = document.createElement("span");
         var textnode = document.createTextNode(
-          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : ".")
+          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : "")
         );
         node.appendChild(textnode);
         document.getElementById(id + "_").appendChild(node);
