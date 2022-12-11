@@ -13,8 +13,6 @@
     // top: 110px;
     // left: 20px;
     
-
-    // mengatur posisi teks dari atas
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 50px;
     }

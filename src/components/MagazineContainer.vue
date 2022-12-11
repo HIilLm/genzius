@@ -1378,6 +1378,8 @@ export default {
       this.localStorage()
     },
     speech: function(){
+      // alert("bisa")
+      this.isSpeak = !this.isSpeak;
       var txt = [];
       if (window.getSelection) {
         txt = window.getSelection();
@@ -1386,10 +1388,10 @@ export default {
       utterance.lang = 'id-ID'
       utterance.rate = 1
       if ("" + txt != "") {
-        this.isSpeak = !this.isSpeak;
-        if(this.speak == true){
+        if(this.isSpeak == true){
           this.synth.speak(utterance);
-        } else {
+        } 
+        else {
           this.synth.cancel();
         }
       } else {
