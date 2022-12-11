@@ -1,6 +1,6 @@
 <style lang="scss">
 .p7 {
-  background-image: url("/img/pages/g-06.jpg");
+  background-image: url("/img/pages/06.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,7 +8,7 @@
 
   .content {
     position: absolute;
-    color:orangered;
+    color:#ffffff;
     top: 53px;
     font-size: 0.7rem;
     font-weight: 900;
@@ -38,7 +38,7 @@
   }
   .content2 {
     ::first-letter{
-      color: #ffffff;
+      color: orangered;
       font-size: 2rem;
       font-weight: 600;
       float:left;
@@ -51,7 +51,7 @@
     font-size: 0.7rem;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 300px;
@@ -62,7 +62,7 @@
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 310px;
@@ -73,14 +73,14 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      color: white;
-      font-size: 8.5px;
-      text-align: justify;
+      color: orangered;
+      font-size: 9px;
       font-weight: 300;
       width: 310px;
       top: 30px;
       left: -17px;
       line-height: 10px;
+      text-align: justify;
       width: 287px;
     }
 
@@ -92,7 +92,7 @@
     font-size: 0.7rem;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 300px;
@@ -103,7 +103,7 @@
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 310px;
@@ -113,8 +113,8 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      color: white;
-      font-size: 8.5px;
+      color: orangered;
+      font-size: 9px;
       font-weight: 300;
       width: 285px;
       top:90px;
@@ -131,7 +131,7 @@
     font-size: 0.7rem;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 300px;
@@ -142,7 +142,7 @@
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      color: white;
+      color: orangered;
       font-size: 9px;
       font-weight: 300;
       width: 310px;
@@ -152,8 +152,8 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      color: white;
-      font-size: 8.5px;
+      color: orangered;
+      font-size: 9px;
       font-weight: 300;
       width: 285px;
       top: 184px;

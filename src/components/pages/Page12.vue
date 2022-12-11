@@ -6,158 +6,139 @@
   background-size: cover;
   position: relative;
 
-  .content1 {
+  .content {
+    color: #793c84;
     position: absolute;
-    top: 26px;
-    left: 60px;
-    width: 412px;
-
-    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 18px;
-      left: 50px;
-      width: 300px;
-    }
-
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      top: 30px;
-      left: 50px;
-      width: 300px;
-    }
-
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 15px;
-      left: 50px;
-      width: 283px;
-    }
-
+    top: 15px;
+    left: 80px;
+    width: 140px;
+    padding-left: 15px;
     .title {
-      color: #ffffff;
       font-size: 2rem;
+      line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 1.5rem;
+        font-size: 20px;
+        line-height: 25px;
+        width: 400px;
       }
 
       span {
-        font-weight: 700;
+        font-weight: 500;
       }
     }
   }
+  .content1 {
+    color: #766daf;
+    position: absolute;
+    top: 40px;
+    left: 65px;
+    padding-left: 15px;
+    width: 140px;
+    .title {
+      font-size: 2rem;
+      line-height: 30px;
 
-  .content {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 391px;
-    line-height: 14px;
-    left: 51px;
-
-    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      left: 36px;
-      width: 281px;
-    }
-
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      left: 42px;
-      width: 338px;
-    }
-
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      left: 36px;
-      width: 281px;
-    }
-
-    &.content2 {
-      position: absolute;
-      top: 170px;
-
-      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-        top: 112px;
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 23px;
+        line-height: 25px;
+        width: 400px;
       }
 
-      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        top: 136px;
-      }
-
-      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        top: 105px;
+      span {
+        font-weight: 800;
       }
     }
-
-    &.content3 {
-      position: absolute;
-      top: 307px;
-
-      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-        top: 220px;
-      }
-
-      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        top: 276px;
-      }
-
-      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        top: 210px;
-      }
-    }
-
-    &.content4 {
-      position: absolute;
-      top: 500px;
-
-      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-        top: 360px;
-      }
-
-      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        top: 443px;
-      }
-
-      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        top: 338px;
-      }
-    }
+  }
+  .content2 {
+    position: absolute;
+    text-align: justify;
+    top: 80px;
+    left: 10px;
+    width: 150px;
 
     .text {
-      font-size: 0.65rem;
-      line-height: 12px;
+      font-size: 2rem;
+      line-height: 30px;
 
-      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 0.45rem;
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
         line-height: 10px;
+        width: 330px;
+
       }
 
-      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        font-size: 0.55rem;
-        line-height: 10px;
-      }
-
-      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 0.5rem;
-        line-height: 8px;
-      }
-
-      .title {
-        margin-bottom: 5px;
-
-        span {
-          font-weight: 600;
-        }
+      span {
+        font-weight: 500;
       }
     }
+  }
+  .content3 {
+    position: absolute;
+    text-align: justify;
+    top: 135px;
+    left: 10px;
+    width: 150px;
 
-    .image {
-      display: flex;
-      cursor: pointer;
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
 
-      img {
-        width: 100px;
-        max-height: 100px;
-        margin: auto;
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        width: 330px;
 
-        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-          width: 80px;
-          max-height: 80px;
-        }
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+  .content4 {
+    position: absolute;
+    text-align: justify;
+    top: 200px;
+    left: 10px;
+    width: 150px;
+
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 9px;
+        width: 330px;
+
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+  .content5 {
+    position: absolute;
+    text-align: justify;
+    top: 260px;
+    left: 10px;
+    width: 150px;
+
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        width: 330px;
+
+      }
+
+      span {
+        font-weight: 500;
       }
     }
   }
@@ -166,7 +147,7 @@
 
 <template>
   <div>
-    <!-- <div style="display: none">
+    <div style="display: none">
       <div id="p12pt">{{ $t("p12.title") }}</div>
       <div id="p12p1t">{{ $t("p12.paragraph1t") }}</div>
       <div id="p12p1">{{ $t("p12.paragraph1") }}</div>
@@ -176,36 +157,25 @@
       <div id="p12p3">{{ $t("p12.paragraph3") }}</div>
     </div>
 
-    <div class="content1">
+    <div class="content">
       <div id="p12pt_" class="title"></div>
     </div>
-    <div class="content content2">
-      <div class="image" v-on:click="showImage('/img/pages/12_1.jpg')">
-        <img src="/img/pages/12_1.jpg" alt="" />
-      </div>
-      <div class="text">
-        <div id="p12p1t_" class="title"></div>
-        <div id="p12p1_" class="desc"></div>
-      </div>
+    <div class="content1">
+      <div id="p12p1t_" class="title"></div>
     </div>
-    <div class="content content3">
-      <div class="text">
-        <div id="p12p2t_" class="title"></div>
-        <div id="p12p2_" class="desc"></div>
-      </div>
-      <div class="image" v-on:click="showImage('/img/pages/12_2.jpg')">
-        <img src="/img/pages/12_2.jpg" alt="" />
-      </div>
+    <div class="content2">
+      <div id="p12p1_" class="text"></div>
     </div>
-    <div class="content content4">
-      <div class="image" v-on:click="showImage('/img/pages/12_3.jpg')">
-        <img src="/img/pages/12_3.jpg" alt="" />
-      </div>
-      <div class="text">
-        <div id="p12p3t_" class="title"></div>
-        <div id="p12p3_" class="desc"></div>
-      </div>
-    </div> -->
+    <div class="content3">
+      <div id="p12p2t_" class="text"></div>
+    </div>
+    <div class="content4">
+      <div id="p12p2_" class="text"></div>
+    </div>
+    <div class="content5">
+      <div id="p12p3t_" class="text"></div>
+      <div id="p12p3_" class="text"></div>
+    </div>
   </div>
 </template>
 
