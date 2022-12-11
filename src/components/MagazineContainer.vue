@@ -11,7 +11,7 @@
       // width: 40px;
 }
 .cover-landing {
-  background-image: url("/img/pages/g-01.jpg");
+  background-image: url("/img/pages/g-0.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1551,8 +1551,6 @@ export default {
       
     },
     searchSpeak: function (){
-      // console.log("ksodask");
-    // initialisation of voicereco
     window.SpeechRecognition =
     window.SpeechRecognition || 
     window.webkitSpeechRecognition;
@@ -1570,9 +1568,9 @@ export default {
       //   .map(result => result.transcript)
       //   .join("");
       // this.runtimeTranscription_ = text;
-      var page = event.results[0][0].transcript;
-      console.log(page)
-      this.turnPage(page);
+      var pages = event.results[0][0].transcript;
+      var page = parseInt(pages)
+      this.turnPage(page+1);
     });
     // end of transcription
     recognition.addEventListener("end", () => {

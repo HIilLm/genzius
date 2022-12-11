@@ -1,6 +1,6 @@
 <style lang="scss">
 .p4 {
-  background-image: url("/img/pages/g-04.jpg");
+  background-image: url("/img/pages/g-03.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +12,7 @@
     left: 20px;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 40px;
+      top: 50px;
       left: 10px;
     }
 
@@ -57,7 +57,73 @@
         font-size: 2rem;
 
         @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-          font-size: 2rem;
+          font-size: 25px;
+        }
+
+        @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+          font-size: 1.2rem;
+        }
+
+        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .content {
+    position: absolute;
+    top: 110px;
+    color: #ffffff;
+    left: 20px;
+    font-size: 20px;
+
+    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 85px;
+      left: 120px;
+    }
+
+    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 95px;
+      left: 10px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+      top: 70px;
+      left: 10px;
+    }
+
+    .title {
+      span {
+        font-weight: 700;
+        font-size: 1.7rem;
+        letter-spacing: 3px;
+        line-height: 1px;
+
+        @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+          font-size: 1.1rem;
+        }
+
+        @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+          font-size: 1.2rem;
+        }
+
+        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .subtitle {
+      span {
+        color: #ffffff;
+        font-weight: 1000;
+        text-align: center;
+        margin-left: 20px;
+        letter-spacing: 2px;
+        font-size: 2rem;
+
+        @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+          font-size: 25px;
         }
 
         @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
@@ -81,7 +147,7 @@
     text-align: justify;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 80px;
+      top: 130px;
       width: 300px;
       left: 30px;
       font-size: 8.8px;
@@ -120,24 +186,20 @@
       }
     }
 
-    .text2,
-    .text3 {
-      text-indent: 10px;
+    .text2::first-letter {
+      color: #ffffff;
+      font-size: 2rem;
+      float:left;
+      line-height: 20px;
+      margin-left: 0px;
     }
-
-    // .text1::first-letter {
-    //   color: #a9203e;
-    //   font-size: 3rem;
-    //   float: left;
-    //   line-height: 40px;
-    // }
   }
 }
 </style>
 
 <template>
   <div>
-    <!-- <div style="display: none">
+    <div style="display: none">
       <div id="p3t">{{ $t("p3.title") }}</div>
       <div id="p3s">{{ $t("p3.subtitle") }}</div>
       <div id="p3p1">{{ $t("p3.paragraph1") }}</div>
@@ -148,12 +210,13 @@
       <div id="p3t_" class="title"></div>
       <div id="p3s_" class="subtitle"></div>
     </div>
-
-    <div class="content2">
+    <div class="content">
       <div id="p3p1_" class="text1"></div>
+    </div>
+    <div class="content2">
       <div id="p3p2_" class="text2"></div>
       <div id="p3p3_" class="text3"></div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -177,12 +240,12 @@ export default {
   methods: {
     processText(id) {
       let text = document.getElementById(id).textContent;
-      let r = text.split(".");
+      let r = text.split("`");
       document.getElementById(id + "_").innerHTML = "";
       window.jQuery.each(r, function (i, w) {
         var node = document.createElement("span");
         var textnode = document.createTextNode(
-          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : ".")
+          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : "")
         );
         node.appendChild(textnode);
         document.getElementById(id + "_").appendChild(node);
