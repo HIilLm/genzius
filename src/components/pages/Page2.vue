@@ -28,7 +28,7 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 40px;
+      top: 38px;
       left: 20px;
       width: 290px;
     }
@@ -99,7 +99,7 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 85px;
+      top: 80px;
       left: 20px;
       width: 290px;
     }
@@ -169,7 +169,7 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 134px;
+      top: 130px;
       left: 20px;
       width: 290px;
     }
@@ -237,7 +237,7 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 207px;
+      top: 202px;
       left: 20px;
       width: 290px;
     }
