@@ -7,7 +7,8 @@
   position: relative;
 
   .content{
-    color: orangered;
+    color:orangered;
+    
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 50px;
     }
@@ -15,7 +16,6 @@
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
       top: 215px;
     }
-
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
       top: 165px;
     }
@@ -33,9 +33,7 @@
 
       span {
         font-weight: 700;
-        font-size: 25px;
-        margin-left: 105px;
-        background-color: #ffffff;
+        font-size: 1px;
 
         @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
           font-size: 20px;
@@ -116,7 +114,8 @@
         }
         
         @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-          font-size: 8.7px;
+          font-size: 7px;
+          padding-left: 80px;
           line-height: 10px;
           padding-top: 5px;
       }
@@ -164,7 +163,8 @@
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 8.7px;
+        font-size: 7px;
+        padding-left: 80px;
         line-height: 10px;
       }
     }
@@ -192,7 +192,7 @@
       margin-top: 10px;
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        margin-bottom: 50px;
+        margin-bottom: 5px;
       }
 
       span {

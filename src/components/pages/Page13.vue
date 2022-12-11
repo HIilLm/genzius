@@ -9,8 +9,8 @@
   .content1 {
     color: #ffffff;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 340px;
+    left: 92px;
     width: 150px;
 
     .title {
@@ -18,8 +18,9 @@
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 1.5rem;
+        font-size: 33px;
         line-height: 25px;
+        width: 500px;
       }
 
       span {
@@ -34,55 +35,6 @@
         font-size: 0.8rem;
         line-height: 15px;
       }
-    }
-  }
-
-  .row {
-    position: absolute;
-    top: 335px;
-    display: grid;
-    grid-template-columns: 34% 66%;
-    font-size: 0.7rem;
-    text-align: justify;
-    text-indent: 10px;
-
-    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 240px;
-      font-size: 0.6rem;
-      line-height: 10px;
-    }
-
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      top: 290px;
-      font-size: 0.65rem;
-      line-height: 13px;
-    }
-
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 220px;
-      font-size: 0.5rem;
-      line-height: 10px;
-    }
-
-    .content2 {
-      color: #ffffff;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    .content3 {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    .content3 {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    .content4 {
-      padding-left: 15px;
-      padding-right: 15px;
     }
   }
 }
@@ -102,14 +54,10 @@
       <div id="p13t_" class="title"></div>
       <div id="p13s_" class="subtitle"></div>
     </div>
-
-    <div class="row">
-      <div id="p13p1_" class="content2"></div>
-      <div>
+      <div id="p13p1_" class="content2">
         <div id="p13p2_" class="content3"></div>
         <div id="p13p3_" class="content4"></div>
       </div>
-    </div>
   </div>
 </template>
 

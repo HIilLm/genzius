@@ -12,12 +12,13 @@
     left: 72px;
     width: 252px;
     text-align: justify;
-    text-indent: 10px;
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 74px;
-      left: 50px;
-      width: 181px;
+      top: 30px;
+      color: #1f7dc5;
+      left: 110px;
+      width: 200px;
+      font-weight: 900;
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
@@ -27,8 +28,8 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 73px;
-      left: 52px;
+      top: 18px;
+      left: 110px;
       width: 164px;
     }
 
@@ -36,7 +37,7 @@
       font-size: 0.7rem;
 
       @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 0.5rem;
+        font-size: 30px;
         line-height: 10px;
       }
 
@@ -46,20 +47,248 @@
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 0.5rem;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 10px;
+      }
+    }
+  }
+  .content1 {
+    position: absolute;
+    top: 104px;
+    left: 72px;
+    width: 252px;
+    text-align: justify;
+    text-indent: 10px;
+
+    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 50px;
+      left: 40px;
+      width: 900px;
+      color:#1f7dc5;
+    }
+
+    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 89px;
+      left: 57px;
+      width: 223px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+      top: 40px;
+      left: 67px;
+      width: 300px;
+    }
+
+    .text {
+      font-size: 0.7rem;
+
+      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 20px;
         line-height: 10px;
       }
 
-      &.text1 {
-        text-indent: 0px;
-        margin-bottom: 5px;
+      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 0.65rem;
+        line-height: 11px;
+      }
 
-        &::first-letter {
-          color: #a9203e;
-          font-size: 3rem;
-          float: left;
-          line-height: 40px;
-        }
+      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+        font-size: 15.5px;
+        line-height: 10px;
+      }
+    }
+  }
+  .content2 {
+    ::first-letter{
+      color: #7885b7;
+      font-size: 2rem;
+      font-weight: 600;
+      float:left;
+      line-height: 20px;
+      margin-left: 0px;
+    }
+    color: #7885b7;
+    position: absolute;
+    top: 104px;
+    left: 72px;
+    width: 252px;
+    text-align: justify;
+
+    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 74px;
+      left: 15px;
+      width: 320px;
+    }
+
+    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 89px;
+      left: 57px;
+      width: 223px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+      top: 59px;
+      left: 10px;
+      text-align: justify;
+      width: 300px;
+    }
+
+    .text {
+      font-size: 0.7rem;
+
+      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+      }
+
+      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 0.65rem;
+        line-height: 11px;
+      }
+
+      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+        font-size: 7px;
+        line-height: 10px;
+      }
+    }
+  }
+  .content3 {
+    color: #7885b7;
+    position: absolute;
+    top: 104px;
+    left: 72px;
+    width: 252px;
+    text-align: justify;
+
+    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 105px;
+      left: 15px;
+      text-indent: 5px;
+      width: 320px;
+    }
+
+    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 89px;
+      left: 57px;
+      width: 223px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+      top: 90px;
+      left: 10px;
+      text-align: justify;
+      width: 300px;
+    }
+
+    .text {
+      font-size: 0.7rem;
+
+      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+      }
+
+      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 0.65rem;
+        line-height: 11px;
+      }
+
+      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+        font-size: 7px;
+        line-height: 10px;
+      }
+    }
+  }
+  .content4 {
+    color: #7885b7;
+    position: absolute;
+    top: 104px;
+    left: 72px;
+    width: 252px;
+    text-align: justify;
+
+    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 155px;
+      left: 15px;
+      text-indent: 5px;
+      width: 320px;
+    }
+
+    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 89px;
+      left: 57px;
+      width: 223px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+      top: 143px;
+      left: 10px;
+      width: 300px;
+    }
+
+    .text {
+      font-size: 0.7rem;
+
+      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+      }
+
+      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 0.65rem;
+        line-height: 11px;
+      }
+
+      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+        font-size: 7px;
+        line-height: 10px;
+      }
+    }
+  }
+  .content5 {
+    color: #7885b7;
+    position: absolute;
+    top: 104px;
+    left: 72px;
+    width: 252px;
+    text-align: justify;
+
+    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 285px;
+      left: 15px;
+      text-indent: 5px;
+      width: 320px;
+    }
+
+    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 89px;
+      left: 57px;
+      width: 223px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+      top: 270px;
+      left: 10px;
+      width: 300px;
+    }
+
+    .text {
+      font-size: 0.7rem;
+
+      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+      }
+
+      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 0.65rem;
+        line-height: 11px;
+      }
+
+      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+        font-size: 7px;
+        line-height: 10px;
       }
     }
   }
@@ -68,16 +297,35 @@
 
 <template>
   <div>
-    <!-- <div style="display: none">
+    <div style="display: none">
       <div id="p8p1">{{ $t("p8.paragraph1") }}</div>
       <div id="p8p2">{{ $t("p8.paragraph2") }}</div>
       <div id="p8p3">{{ $t("p8.paragraph3") }}</div>
+      <div id="p8p4">{{ $t("p8.paragraph4") }}</div>
+      <div id="p8p5">{{ $t("p8.paragraph5") }}</div>
+      <div id="p8p6">{{ $t("p8.paragraph6") }}</div>
+      <div id="p8p7">{{ $t("p8.paragraph7") }}</div>
+      <div id="p8p8">{{ $t("p8.paragraph8") }}</div>
+      <div id="p8p9">{{ $t("p8.paragraph9") }}</div>
     </div>
     <div class="content">
       <div id="p8p1_" class="text"></div>
+    </div>
+    <div class="content1">     
       <div id="p8p2_" class="text"></div>
+    </div>
+    <div class="content2">     
       <div id="p8p3_" class="text"></div>
-    </div> -->
+    </div>
+    <div class="content3">
+      <div id="p8p4_" class="text"></div>
+    </div>
+    <div class="content4">
+      <div id="p8p5_" class="text"></div>
+    </div>
+    <div class="content5">
+      <div id="p8p6_" class="text"></div>
+    </div>
   </div>
 </template>
 
@@ -89,21 +337,27 @@ export default {
     ref.processText("p8p1");
     ref.processText("p8p2");
     ref.processText("p8p3");
+    ref.processText("p8p4");
+    ref.processText("p8p5");
+    ref.processText("p8p6");
+    ref.processText("p8p7");
+    ref.processText("p8p8");
+    ref.processText("p8p9");
     window
       .jQuery("body")
-      .on("DOMSubtreeModified", "#p8p1, #p8p2, #p8p3", function () {
+      .on("DOMSubtreeModified", "#p8p1, #p8p2, #p8p3, #p8p4, #p8p5, #p8p6, #p8p7, #p8p8, #p8p9", function () {
         ref.processText(window.jQuery(this).attr("id"));
       });
   },
   methods: {
     processText(id) {
       let text = document.getElementById(id).textContent;
-      let r = text.split(".");
+      let r = text.split("`");
       document.getElementById(id + "_").innerHTML = "";
       window.jQuery.each(r, function (i, w) {
         var node = document.createElement("span");
         var textnode = document.createTextNode(
-          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : ".")
+          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : "")
         );
         node.appendChild(textnode);
         document.getElementById(id + "_").appendChild(node);
