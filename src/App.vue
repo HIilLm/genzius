@@ -24,7 +24,7 @@ body {
 
 .background {
   background-attachment: fixed;
-  background-image: url("/img/background.jpg");
+  background-image: url("/img/bg rev.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

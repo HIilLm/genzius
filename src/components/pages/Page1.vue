@@ -7,7 +7,7 @@
   position: relative;
 
   .content{
-    color: #000000;
+    color:orangered;
 
     // position: absolute;
     // top: 110px;
@@ -38,7 +38,7 @@
       }
 
       span {
-        font-weight: 500;
+        font-weight: 700;
         font-size: 1px;
 
         @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
