@@ -12,18 +12,19 @@
     top: 20px;
     left: 120px;
     width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     left: 105px; 
+    }
     .title {
       font-size: 2rem;
       line-height: 30px;
-
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 20px;
         line-height: 25px;
         width: 500px;
       }
-
       span {
-        font-weight: 500;
+        font-weight: 700;
       }
     }
   }
@@ -33,6 +34,9 @@
     top: 40px;
     left: 105px;
     width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     left: 95px; 
+    }
     .title {
       font-size: 2rem;
       line-height: 30px;
@@ -64,6 +68,11 @@
     left: 20px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     left: 20px;
+     top: 70px;
+    }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
@@ -71,8 +80,7 @@
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7px;
         line-height: 9px;
-        width: 320px;
-
+        width: 300px;
       }
 
       span {
@@ -88,6 +96,10 @@
     left: 20px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     top: 127px; 
+    }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
@@ -95,8 +107,7 @@
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7px;
         line-height: 10px;
-        width: 320px;
-
+        width: 300px;
       }
 
       span {
@@ -111,7 +122,9 @@
     top: 215px;
     left: 20px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     top: 200px; 
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
@@ -119,8 +132,7 @@
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7px;
         line-height: 10px;
-        width: 320px;
-
+        width: 300px;
       }
 
       span {
