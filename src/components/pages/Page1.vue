@@ -50,12 +50,15 @@
         }
 
         @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-          font-size: 1.6rem;
+          font-size: 20px;
+          margin-left: 70px;
+          background-color: #ffffff;
         }
 
         @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-          margin-bottom: 0px;
-          font-size: 1.6rem;
+          font-size: 20px;
+          margin-left: 70px;
+          background-color: #ffffff;
         }
       }
     }
@@ -73,13 +76,13 @@
       }
 
       @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        font-size: 0.7rem;
-        line-height: 12px;
+        font-size: 15px;
+        line-height: 10px;
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 0.5rem;
-        line-height: 9px;
+        font-size: 15px;
+        line-height: 10px;
       }
     }
   }
@@ -118,13 +121,13 @@
       }
 
       @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        font-size: 0.7rem;
-        line-height: 12px;
+        font-size: 8.7px;
+        line-height: 10px;
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 0.5rem;
-        line-height: 9px;
+        font-size: 8.7px;
+        line-height: 10px;
       }
     }
     .text::first-letter {
@@ -169,13 +172,13 @@
       }
 
       @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        font-size: 0.7rem;
-        line-height: 12px;
+        font-size: 8.7px;
+        line-height: 10px;
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 0.5rem;
-        line-height: 9px;
+        font-size: 8.7px;
+        line-height: 10px;
       }
     }
   }
@@ -222,12 +225,15 @@
         }
 
         @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-          font-size: 1.6rem;
+          font-size: 18px;
+          margin-left: 70px;
+          background-color: #ffffff;
         }
 
         @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-          margin-bottom: 0px;
-          font-size: 1.6rem;
+          font-size: 18px;
+          margin-left: 70px;
+          background-color: #ffffff;
         }
       }
     }

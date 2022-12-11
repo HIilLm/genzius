@@ -21,14 +21,16 @@
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      font-size: 0.65rem;
-      top: 45px;
-      line-height: 11px;
+      font-size: 23px;
+      top: 140px;
+      left: 30px;
+      line-height: 10px;
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      font-size: 0.5rem;
-      top: 35px;
+      font-size: 23px;
+      top: 140px;
+      left: 30px;
       line-height: 10px;
     }
 
@@ -58,14 +60,22 @@
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      font-size: 0.65rem;
-      top: 45px;
-      line-height: 11px;
+      color: white;
+      font-size: 9px;
+      font-weight: 300;
+      width: 310px;
+      top: 30px;
+      left: -5px;
+      line-height: 10px;
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      font-size: 0.5rem;
-      top: 35px;
+      color: white;
+      font-size: 9px;
+      font-weight: 300;
+      width: 310px;
+      top: 30px;
+      left: -5px;
       line-height: 10px;
     }
 
