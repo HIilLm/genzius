@@ -1,74 +1,106 @@
 <style lang="scss" scoped>
 .p16 {
-  background-image: url("/img/pages/g-15.jpg");
+  background-image: url("/img/pages/g-16.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
   .content1 {
+    color: #fff;
     position: absolute;
-    top: 352px;
+    text-align: center;
+    top: 350px;
+    left: 50px;
+    width: 150px;
 
-    font-size: 1.5rem;
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
 
-    padding-left: 46px;
-    padding-right: 46px;
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        width: 250px;
 
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 229px;
+      }
 
-      font-size: 1rem;
-
-      padding-left: 30px;
-      padding-right: 30px;
+      span {
+        font-weight: 700;
+      }
     }
   }
 
   .content2 {
+    color: #fff;
     position: absolute;
-    top: 439px;
+    text-align: center;
+    top: 280px;
+    left: 50px;
+    width: 150px;
 
-    display: grid;
-    grid-template-columns: 50% 50%;
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
 
-    padding-left: 46px;
-    padding-right: 46px;
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        width: 250px;
 
-    font-size: 0.7rem;
-    line-height: 12px;
-    text-align: justify;
+      }
 
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 282px;
-
-      font-size: 0.5rem;
-      line-height: 9px;
-
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    div:first-child {
-      padding-right: 5px;
-
-      &::first-letter {
-        color: #000000;
-        font-size: 3rem;
-        float: left;
-        line-height: 40px;
-
-        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-          font-size: 2rem;
-          line-height: 27px;
-        }
+      span {
+        font-weight: 700;
       }
     }
+  }
+  .content3 {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 210px;
+    left: 50px;
+    width: 150px;
 
-    div:last-child {
-      padding-left: 10px;
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
 
-      text-indent: 10px;
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        width: 250px;
+
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .content4 {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 160px;
+    left: 50px;
+    width: 150px;
+
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        width: 250px;
+
+      }
+
+      span {
+        font-weight: 700;
+      }
     }
   }
 }
@@ -76,17 +108,28 @@
 
 <template>
   <div>
-    <!-- <div style="display: none">
+    <div style="display: none">
       <div id="p15t">{{ $t("p15.title") }}</div>
       <div id="p15p1">{{ $t("p15.paragraph1") }}</div>
       <div id="p15p2">{{ $t("p15.paragraph2") }}</div>
+      <div id="p15p3">{{ $t("p15.paragraph3") }}</div>
+      <div id="p15p4">{{ $t("p15.paragraph4") }}</div>
     </div>
 
-    <div id="p15t_" class="content1"></div>
+    <div class="content4">
+
+      <div id="p15t_" class="text"></div>
+      <div id="p15p1_" class="text"></div>
+    </div>
+    <div class="content3">
+      <div id="p15p2_" class="text"></div>
+    </div>
     <div class="content2">
-      <div id="p15p1_"></div>
-      <div id="p15p2_"></div>
-    </div> -->
+      <div id="p15p3_" class="text"></div>
+    </div>
+    <div class="content1">
+      <div id="p15p4_" class="text"></div>
+    </div>
   </div>
 </template>
 
@@ -98,9 +141,11 @@ export default {
     ref.processText("p15t");
     ref.processText("p15p1");
     ref.processText("p15p2");
+    ref.processText("p15p3");
+    ref.processText("p15p4");
     window
       .jQuery("body")
-      .on("DOMSubtreeModified", "#p15t,#p15p1,#p15p2", function () {
+      .on("DOMSubtreeModified", "#p15t,#p15p1,#p15p2,#p15p3,#p15p4", function () {
         ref.processText(window.jQuery(this).attr("id"));
       });
   },

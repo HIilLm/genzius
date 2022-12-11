@@ -1,88 +1,126 @@
 <style lang="scss">
 .p11 {
-  background-image: url("/img/pages/g-10.jpg");
+  background-image: url("/img/pages/g-17.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
   .content1 {
-    color: #000000;
-    background-color: white;
+    color: #fff;
     position: absolute;
-    top: 55px;
-    left: 31px;
-    width: 203px;
-    text-align: justify;
-    text-indent: 10px;
-    line-height: 12px;
+    top: 40px;
+    left: 75px;
+    width: 150px;
+    .title {
+      font-size: 2rem;
+      line-height: 30px;
 
-    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 37px;
-      left: 23px;
-      width: 144px;
-    }
-
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      top: 45px;
-      left: 26px;
-      width: 174px;
-    }
-
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 25px;
-      left: 22px;
-      width: 136px;
-    }
-
-    .text {
-      font-size: 0.75rem;
-
-      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 0.55rem;
-        line-height: 9px;
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 20px;
+        line-height: 25px;
+        width: 500px;
       }
 
-      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        font-size: 0.69rem;
-        line-height: 10px;
-      }
-
-      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 0.5rem;
-        line-height: 9px;
+      span {
+        font-weight: 800;
       }
     }
   }
-
   .content2 {
+    color: #fff;
     position: absolute;
-    top: 382px;
-    left: 31px;
-    width: 203px;
+    text-align: justify;
+    top: 85px;
+    left: 30px;
+    width: 150px;
 
-    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 37px;
-      left: 23px;
-      width: 144px;
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 9px;
+        width: 290px;
+
+      }
+
+      span {
+        font-weight: 600;
+      }
     }
+  }
+  .content3 {
+    color: #fff;
+    position: absolute;
+    text-align: justify;
+    top: 150px;
+    left: 30px;
+    width: 150px;
 
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      top: 325px;
-      left: 26px;
-      width: 174px;
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        width: 290px;
+
+      }
+
+      span {
+        font-weight: 600;
+      }
     }
+  }
+  .content4 {
+    color: #fff;
+    position: absolute;
+    text-align: justify;
+    top: 240px;
+    left: 30px;
+    width: 150px;
 
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 258px;
-      left: 22px;
-      width: 136px;
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        width: 290px;
+
+      }
+
+      span {
+        font-weight: 600;
+      }
     }
+  }
+  .content5 {
+    color: #fff;
+    position: absolute;
+    text-align: justify;
+    top: 310px;
+    left: 30px;
+    width: 150px;
 
-    img {
-      width: 100%;
-      height: auto;
-      cursor: pointer;
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        width: 290px;
+
+      }
+
+      span {
+        font-weight: 600;
+      }
     }
   }
 }
@@ -90,26 +128,29 @@
 
 <template>
   <div>
-    <!-- <div style="display: none">
+     <div style="display: none">
       <div id="p10p1">{{ $t("p10.paragraph1") }}</div>
       <div id="p10p2">{{ $t("p10.paragraph2") }}</div>
+      <div id="p10p3">{{ $t("p10.paragraph3") }}</div>
+      <div id="p10p4">{{ $t("p10.paragraph4") }}</div>
+      <div id="p10p5">{{ $t("p10.paragraph5") }}</div>
     </div>
 
     <div class="content1">
-      <div id="p10p1_" class="text"></div>
+      <div id="p10p1_" class="title"></div>
+    </div>
+    <div class="content2">
       <div id="p10p2_" class="text"></div>
     </div>
-
-    <div class="content2">
-      <img
-        src="/img/pages/10_1.jpg"
-        v-on:click="showImage('/img/pages/10_1.jpg')"
-      />
-      <img
-        src="/img/pages/10_2.jpg"
-        v-on:click="showImage('/img/pages/10_2.jpg')"
-      />
-    </div> -->
+    <div class="content3">
+      <div id="p10p3_" class="text"></div>
+    </div>
+    <div class="content4">
+      <div id="p10p4_" class="text"></div>
+    </div>
+    <div class="content5">
+      <div id="p10p5_" class="text"></div>
+    </div>
   </div>
 </template>
 
@@ -120,21 +161,24 @@ export default {
     let ref = this;
     ref.processText("p10p1");
     ref.processText("p10p2");
+    ref.processText("p10p3");
+    ref.processText("p10p4");
+    ref.processText("p10p5");
     window
       .jQuery("body")
-      .on("DOMSubtreeModified", "#p10p1, #p10p2", function () {
+      .on("DOMSubtreeModified", "#p10p1,  #p10p2,#p10p3,#p10p4,#p10p5,", function () {
         ref.processText(window.jQuery(this).attr("id"));
       });
   },
   methods: {
     processText(id) {
       let text = document.getElementById(id).textContent;
-      let r = text.split(".");
+      let r = text.split("`");
       document.getElementById(id + "_").innerHTML = "";
       window.jQuery.each(r, function (i, w) {
         var node = document.createElement("span");
         var textnode = document.createTextNode(
-          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : ".")
+          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : "")
         );
         node.appendChild(textnode);
         document.getElementById(id + "_").appendChild(node);
