@@ -113,14 +113,16 @@
   },
   "p13": {
     "title": "Our Team",
-    "subtitle": "",
+    "subtitle": "Profil Penyusun",
     "paragraph1": "Salam kenal, Sobat Gen-Z! Adanya majalah digital GENZIUS ini merupakan hasil dari usaha 5 supperior yang menjadi perwakilan siswa-siswi SMK Negeri 1 Surabaya. Dibuat nya majalah digital ini bertujuan untuk memberikan informasi kepada seluruh pembaca terkait Teknologi Informasi dan Komunikasi, serta beberapa informasi lainnya dari bidang yang berbeda.",
     "paragraph2": "Nah Sobat Gen-Z, kalian kan sudah melihat serta membaca hasil karya dari kita ber-5. Nggak afdol dong kalau belum kenal sama siapa pemilik karya ini? Kenalan dulu, yuk!",
     "paragraph3": ""
   },
   "p14": {
-    "title": "Para peneliti MIT merancang teknologi AI yang memiliki tiga lapis jaringan neural (neural network).",
-    "paragraph1": "Ketiga jaringan tersebut adalah algoritma dasar untuk mengukur kekuatan pita suara, teknologi untuk menentukan tingkat emosional, dan teknologi untuk mendeteksi anomali di sistem pernapasan.",
+    "title": "Who Create",
+    "title2": "GENZIUS",
+    "title3": "Abyaz Prince Muhammad",
+    "paragraph1": "Pertama kali yang terlintas waktu dengar nama ‘Abyaz’ tuhh.. orangnya ngeselin! Perllu Sobat Gen-Z ketahui ya! Abyaz jahil nya luarbiasa! Tapi selain jahil.. dia ternyata seorang programmer lohh, Sobat Gen-Z! Abyaz dari kelas 12 RPL 2 atau bisa dijabarkan dengan sebutan Rekayasa Perangkat Lunak, yang ternyata satu kelas sama.",
     "paragraph2": "Dilakukan riset sejak april, para peneliti kemudian mengumpulkan sampel suara batuk sebanyak mungkin, termasuk dari penderita covid-19. Peneliti membuat sebuah website khusus di mana para peserta yang berpartisipasi bisa mengirimkan rekaman suara batuk mereka sambil mengisi survei kesehatan.",
     "paragraph3": "Saat ini para peneliti sudah mengumpulkan lebih dari 70.000 sampel suara batuk, 2.500 di antaranya adalah rekaman batuk dari pasien covid-19, termasuk penderita yang tanpa gejala (OTG). Peneliti menggunakan 2.500 suara batuk pasien covid-19 dan 2.500 suara batuk individu yang sehat. Kemudian, dari 5.000 sampel tersebut, peneliti menggunakan sebanyak 4.000 sampel untuk melatih algoritma AI. Sementara 1.000 sampel lainnya digunakan untuk melihat apakah AI tersebut bisa mendeteksi secara akurat atau tidak.",
     "paragraph4": "Peneliti mengatakan teknologi ini mampu mendeteksi covid-19 dari orang yang bergejala dengan tingkat akurasi 98,5 persen. Sedangkan, pendeteksian covid-19 dari OTG, disebut memiliki tingkat akurasi hingga 100 persen hanya dari suara batuk. Para peneliti ini lanjut mengklaim bahwa batuk orang yang terpapar covid-19, baik itu yang memiliki gejala maupun OTG, dengan batuk orang biasa sejatinya memiliki suara yang berbeda. Perbedaan ini disebut tidak bisa didengar oleh telinga manusia, namun bisa ditangkap oleh teknologi AI yang telah dibuat.",

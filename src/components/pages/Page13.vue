@@ -37,6 +37,102 @@
       }
     }
   }
+  .content {
+    color: black;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 150px;
+
+    .title {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 35px;
+        line-height: 40px;
+        width: 20px;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .subtitle {
+      font-size: 1rem;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 0.8rem;
+        line-height: 15px;
+      }
+    }
+  }
+  .content2 {
+    position: absolute;
+    text-align: justify;
+    top: 385px;
+    left: 20px;
+    width: 150px;
+
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 7.8px;
+        line-height: 10px;
+        width: 315px;
+        text-indent: 5px;
+
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .subtitle {
+      font-size: 1rem;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 0.8rem;
+        line-height: 15px;
+      }
+    }
+  }
+  .content3 {
+    position: absolute;
+    text-align: justify;
+    top: 435px;
+    left: 20px;
+    width: 150px;
+
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 7.8px;
+        line-height: 10px;
+        text-indent: 5px;
+        width: 315px;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .subtitle {
+      font-size: 1rem;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 0.8rem;
+        line-height: 15px;
+      }
+    }
+  }
 }
 </style>
 
@@ -49,15 +145,19 @@
       <div id="p13p2">{{ $t("p13.paragraph2") }}</div>
       <div id="p13p3">{{ $t("p13.paragraph3") }}</div>
     </div>
-
     <div class="content1">
       <div id="p13t_" class="title"></div>
-      <div id="p13s_" class="subtitle"></div>
     </div>
-      <div id="p13p1_" class="content2">
-        <div id="p13p2_" class="content3"></div>
-        <div id="p13p3_" class="content4"></div>
-      </div>
+    <div class="content">
+      <div id="p13s_" class="title"></div>
+    </div>
+    <div class="content2">
+      <div id="p13p1_" class="text"></div>
+    </div>
+    <div class="content3">
+      <div id="p13p2_" class="text"></div>
+      <div id="p13p3_" class="text"></div>
+    </div>
   </div>
 </template>
 
