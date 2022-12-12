@@ -12,6 +12,9 @@
     top: 40px;
     left: 75px;
     width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     left: 64px; 
+    }
     .title {
       font-size: 2rem;
       line-height: 30px;
@@ -35,19 +38,23 @@
     left: 30px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     left: 35px; 
+     top: 75px;
+    }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
+        font-size: 7.2px;
         line-height: 9px;
-        width: 290px;
-
+        width: 265px; 
       }
 
       span {
-        font-weight: 600;
+        font-weight: 400;
       }
     }
   }
@@ -58,20 +65,20 @@
     top: 150px;
     left: 30px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     left: 35px;
+     top: 133px; 
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
-
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
+        font-size: 7.2px;
         line-height: 10px;
-        width: 290px;
-
+        width: 265px;
       }
-
       span {
-        font-weight: 600;
+        font-weight: 400;
       }
     }
   }
@@ -82,20 +89,21 @@
     top: 240px;
     left: 30px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     left: 35px;
+     top: 217px; 
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
-
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
+        font-size: 7.2px;
         line-height: 10px;
-        width: 290px;
-
+        width: 265px;
       }
 
       span {
-        font-weight: 600;
+        font-weight: 400;
       }
     }
   }
@@ -106,20 +114,22 @@
     top: 310px;
     left: 30px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     left: 35px;
+     top: 280px; 
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
+        font-size: 7.2px;
         line-height: 10px;
-        width: 290px;
-
+        width: 265px;
       }
 
       span {
-        font-weight: 600;
+        font-weight: 400;
       }
     }
   }

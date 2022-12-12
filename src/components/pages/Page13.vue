@@ -13,6 +13,11 @@
     left: 92px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 315px;
+      left: 80px;
+    }
+
     .title {
       font-size: 2rem;
       line-height: 30px;
@@ -75,16 +80,21 @@
     left: 20px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 361px;
+      width: 90px;
+      left: 7px;
+    }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 7.8px;
+        font-size: 7px;
         line-height: 10px;
         width: 315px;
-        text-indent: 5px;
-
+        // text-indent: 5px;
       }
 
       span {
@@ -108,14 +118,18 @@
     left: 20px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 411px;
+      left: 7px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 7.8px;
+        font-size: 7px;
         line-height: 10px;
-        text-indent: 5px;
+        // text-indent: 5px;
         width: 315px;
       }
 
@@ -184,12 +198,12 @@ export default {
   methods: {
     processText(id) {
       let text = document.getElementById(id).textContent;
-      let r = text.split(".");
+      let r = text.split("`");
       document.getElementById(id + "_").innerHTML = "";
       window.jQuery.each(r, function (i, w) {
         var node = document.createElement("span");
         var textnode = document.createTextNode(
-          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : ".")
+          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : "")
         );
         node.appendChild(textnode);
         document.getElementById(id + "_").appendChild(node);

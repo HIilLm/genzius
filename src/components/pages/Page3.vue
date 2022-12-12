@@ -11,6 +11,11 @@
     top: 110px;
     left: 20px;
 
+    @media (min-width: 1440px) {
+      top: 70px;
+      left: 50px;
+    }
+
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 50px;
       left: 10px;
@@ -22,29 +27,9 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 70px;
-      left: 10px;
-    }
-
-    .title {
-      span {
-        font-weight: 700;
-        font-size: 1.7rem;
-        letter-spacing: 3px;
-        line-height: 1px;
-
-        @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-          font-size: 1.1rem;
-        }
-
-        @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-          font-size: 1.2rem;
-        }
-
-        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-          font-size: 1rem;
-        }
-      }
+      top: 45px;
+      left: 13px;
+      width: 500px;
     }
 
     .subtitle {
@@ -65,7 +50,7 @@
         }
 
         @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-          font-size: 1rem;
+          font-size: 23px;
         }
       }
     }
@@ -74,8 +59,13 @@
     position: absolute;
     top: 110px;
     color: #ffffff;
-    left: 20px;
+    // left: 20px;
     font-size: 20px;
+
+    @media (min-width: 1440px) {
+      top: 110px;
+      left: 170px;
+    }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 85px;
@@ -88,8 +78,8 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 70px;
-      left: 10px;
+      top: 75px;
+      left: 105px;
     }
 
     .title {
@@ -121,7 +111,7 @@
         margin-left: 20px;
         letter-spacing: 2px;
         font-size: 2rem;
-
+        
         @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
           font-size: 25px;
         }
@@ -146,6 +136,14 @@
     font-size: 0.7rem;
     text-align: justify;
 
+    @media (min-width:1440px) {
+      top: 155px;
+      left: 70px;
+      width: 350px;
+      font-size: 12px;
+      font-weight: 100px;
+    }
+
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 130px;
       width: 300px;
@@ -161,9 +159,9 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 134px;
-      width: 177px;
-      left: 141px;
+      top: 105px;
+      width: 270px;
+      left: 30px;
       font-size: 0.5rem;
     }
 
@@ -189,6 +187,7 @@
     .text2::first-letter {
       color: #ffffff;
       font-size: 2rem;
+      font-weight: 400px;
       float:left;
       line-height: 20px;
       margin-left: 0px;

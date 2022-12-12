@@ -12,6 +12,10 @@
     top: 20px;
     left: 130px;
     width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 15px;
+      left: 110px;
+    }
     .title {
       font-size: 2rem;
       line-height: 30px;
@@ -33,12 +37,17 @@
     top: 40px;
     left: 125px;
     width: 150px;
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 40px;
+      left: 99px;
+    }
     .title {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 30px;
+        font-size: 34px;
         line-height: 25px;
         width: 500px;
       }
@@ -48,18 +57,23 @@
       }
     }
   }
-  .content2 {
+  .content2 { // ABYAZ TITLE
     color: orangered;
     position: absolute;
     top: 80px;
     left: 90px;
     width: 150px;
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+      top: 67px;
+    }
+
     .title {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 13px;
+        font-size: 12.5px;
         line-height: 25px;
         width: 500px;
       }
@@ -69,18 +83,21 @@
       }
     }
   }
-  .content4 {
+  .content4 { // HILZAM TITLE
     color: orangered;
     position: absolute;
     top: 140px;
     left: 90px;
     width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+      top: 128px;
+    }
     .title {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 13px;
+        font-size: 12.5px;
         line-height: 25px;
         width: 500px;
       }
@@ -90,12 +107,16 @@
       }
     }
   }
-  .content6 {
+  .content6 { // SATRIA TITLE
     color: orangered;
     position: absolute;
     top: 225px;
     left: 90px;
     width: 150px;
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     top: 204px; 
+    }
     .title {
       font-size: 2rem;
       line-height: 30px;
@@ -111,12 +132,16 @@
       }
     }
   }
-  .content8 {
+  .content8 { // SYEHAN TITLE
     color: orangered;
     position: absolute;
     top: 310px;
     left: 90px;
     width: 150px;
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     top: 285px; 
+    }
     .title {
       font-size: 2rem;
       line-height: 30px;
@@ -126,18 +151,22 @@
         line-height: 25px;
         width: 500px;
       }
-
       span {
         font-weight: 800;
       }
     }
   }
-  .content10 {
+  .content10 { //PINKY TITLE
     color: orangered;
     position: absolute;
     top: 375px;
     left: 90px;
     width: 150px;
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+      top: 350px;
+    }
+
     .title {
       font-size: 2rem;
       line-height: 30px;
@@ -153,118 +182,131 @@
       }
     }
   }
-  .content3 {
+  .content3 {  // ABYAZ PRAGRAF
     position: absolute;
     text-align: justify;
     top: 100px;
     left: 90px;
     width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+     top: 87px; 
+     left: 92px;
+    }
 
     .text {
       font-size: 2rem;
-      line-height: 30px;
-
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 7px;
+        font-size: 6.7px;
         line-height: 9px;
-        width: 250px;
-
+        width: 235px;
       }
-
+      
       span {
-        font-weight: 700;
+        font-weight: 400;
       }
     }
   }
-  .content5 {
+  .content5 { //HIL P
     position: absolute;
     text-align: justify;
     top: 160px;
     left: 90px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+      top: 147px;
+      left: 92px;
+    }
+
     .text {
-      font-size: 2rem;
-      line-height: 30px;
-
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 7px;
-        line-height: 10px;
-        width: 250px;
-
+        font-size: 6.7px;
+        line-height: 9px;
+        width: 235px;
       }
 
       span {
-        font-weight: 700;
+        font-weight: 400;
       }
     }
   }
-  .content7 {
+  .content7 { // Satria P
     position: absolute;
     text-align: justify;
     top: 245px;
     left: 90px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+      top: 223px;
+      left: 92px;
+    }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 7px;
+        font-size: 6.7px;
         line-height: 10px;
-        width: 250px;
-
+        width: 235px;
       }
 
       span {
-        font-weight: 700;
+        font-weight: 400;
       }
     }
   }
-  .content9 {
+  .content9 { //Syehan Paragraf
     position: absolute;
     text-align: justify;
     top: 330px;
     left: 90px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     top: 305px; 
+     left: 92px;
+    }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 7px;
+        font-size: 6.7px;
         line-height: 10px;
-        width: 250px;
-
+        width: 235px;
       }
 
       span {
-        font-weight: 700;
+        font-weight: 400;
       }
     }
   }
-  .content11 {
+  .content11 { // PINKY P
     position: absolute;
     text-align: justify;
     top: 395px;
     left: 90px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     top: 370px; 
+     left: 92px;
+    }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 7px;
+        font-size: 6.7px;
         line-height: 10px;
-        width: 250px;
-
+        width: 235px;
       }
-
       span {
-        font-weight: 700;
+        font-weight: 400;
       }
     }
   }
@@ -289,40 +331,40 @@
     </div>
 
     <div class="content">
-      <div id="p14t_" class="title"></div>
+       <div id="p14t_" class="title"></div> <!-- Who create -->
     </div>
     <div class="content1">
-      <div id="p14t2_" class="title"></div>
+      <div id="p14t2_" class="title"></div>  <!-- Genzius -->
     </div>
     <div class="content2">
-      <div id="p14t3_" class="title"></div>
+      <div id="p14t3_" class="title"></div>  <!-- ABYAZ-->
     </div>
     <div class="content4">
-      <div id="p14t4_" class="title"></div>
+      <div id="p14t4_" class="title"></div>  <!-- HILZAM -->
     </div>
     <div class="content6">
-      <div id="p14t5_" class="title"></div>
+      <div id="p14t5_" class="title"></div>  <!-- SATRIA-->
     </div>
     <div class="content8">
-      <div id="p14t6_" class="title"></div>
+      <div id="p14t6_" class="title"></div>  <!-- SYEHAN -->
     </div>
     <div class="content10">
-      <div id="p14t7_" class="title"></div>
+      <div id="p14t7_" class="title"></div>  <!-- PINKY -->
     </div>
     <div class="content3">
-      <div id="p14p1_" class="text"></div>
+      <div id="p14p1_" class="text"></div>   <!-- ABYAZ P -->
     </div>
     <div class="content5">
-      <div id="p14p2_" class="text"></div>
+      <div id="p14p2_" class="text"></div>  <!-- HIL P -->
     </div>
     <div class="content7">
-      <div id="p14p3_" class="text"></div>
+      <div id="p14p3_" class="text"></div>  <!-- SATRIA P -->
     </div>
     <div class="content9">
-      <div id="p14p4_" class="text"></div>
+      <div id="p14p4_" class="text"></div>  <!-- SYEHAN P -->
     </div>
     <div class="content11">
-      <div id="p14p5_" class="text"></div>
+      <div id="p14p5_" class="text"></div>  <!-- PINKY P-->
     </div>
   </div>
 </template>

@@ -1,25 +1,25 @@
 <style lang="scss">
-.ok{
-  background-color: #ffffff;
-      color: $primary-color-v;
-      border-radius: 50px;
-      height: 40px;
-      position:absolute;
-      margin-left: 270px;
-      margin-top: -40px;
-      // left: 15px;
-      // width: 40px;
-}
-.cover-landing {
-  background-image: url("/img/pages/g-0.jpg");
+
+.cover{
+  background-image: url("/img/g-0.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+.magazine-container#blur.active{
+  filter: blur(15px);
+  // pointer-events: none;
+  user-select: none;
+}
+.magazine-container.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transform: 0.5s;
+}
 
 .magazine-container {
-  height: 200%;
   display: flex;
   flex: 1;
   flex-flow: column;
@@ -74,7 +74,7 @@
         .language-list {
           display: flex;
           flex-flow: column;
-          max-height: 0px;
+          max-height: 10px;
           transition: 250ms;
 
           &.active {
@@ -355,11 +355,14 @@
   .footer {
     display: flex;
     justify-content: center;
-    padding: 0px;
+    padding: 15px;
     position: relative;
+    bottom: 40px;
     transition: 500ms;
-    bottom: 45px;
-    margin: 25px;
+
+    @media (min-width:1440px) {
+      bottom: 70px;
+    }
 
     &.searchFocus {
       background-color: $primary-color;
@@ -454,7 +457,7 @@
           .title {
             align-self: center;
             color: #ffffff;
-            font-weight: 700;
+            font-weight: 900;
           }
 
           button {
@@ -624,6 +627,7 @@
   opacity: 0;
   transition: 500ms;
 
+   //showImage zoom image
   &.active {
     z-index: 9999;
     visibility: visible;
@@ -645,6 +649,8 @@
     }
   }
 }
+
+
 
 #table_of_contents {
   background-color: $primary-color;
@@ -698,7 +704,7 @@
   ul {
     list-style-type: none;
     flex: 1;
-    overflow: visible;
+    overflow: auto;
 
     &::-webkit-scrollbar {
       width: 5px;
@@ -852,7 +858,7 @@
             id="magazine"
             class="magazine"
           >
-            <div class="cover-landing">
+            <div class="cover">
             </div>
             <Page1 />
             <Page2 />
@@ -1031,7 +1037,6 @@
                   id="tambah"
                   rows="5"
                 ></textarea>
-                <!-- <input type="text" id="tambah" /> -->
               </div>
               <button v-on:click="tambah">{{ $t("comment_post") }}</button>
             </div>
@@ -1040,35 +1045,7 @@
                 <div class="comment">{{ note }}</div>
                 <button v-on:click="hps(index)"><i class="fas fa-trash"></i></button>
               </li>
-
-              <!-- <li v-for="c in comments" v-bind:key="c.id">
-                <div class="comment">
-                  <div class="title">
-                    <div class="user">
-                      <i class="fas fa-user"></i>
-                    </div>
-                    <div class="details">
-                      <div>{{ c.name }}</div>
-                      <div>{{ $d(new Date(c.created_at), "long") }}</div>
-                    </div>
-                  </div>
-                  <div class="text">{{ c.text }}</div>
-                </div>
-              </li>
-              <li v-if="comments.length == 0">
-                <div>
-                  <div style="color: #ffffff; text-align: center">
-                    {{ $t("comment_empty") }}
-                  </div>
-                </div>
-              </li> -->
             </ul>
-
-            <!-- <ul v-else class="comments-list" :class="{ actie: !inputComment }">
-              <li>
-                <div class="comment">Silahkan Tambah Note</div>
-              </li>
-            </ul> -->
           </div>
         </div>
       </div>
@@ -1197,7 +1174,7 @@
             "
           >
           {{ star == 1 ? "Genzius Berbagi Informasi" : ""}} {{ star == 2 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 3 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 4 ? "Maspion Pelopori Kebangkitan Ekonomi Di Masa Pandemi" : ""}} {{ star == 5 ? "puki" : ""}} {{ star == 6 ? "Salam" : ""}} {{ star == 7 ? "Salam" : ""}} {{ star == 8 ? "Salam" : ""}} {{ star == 9 ? "Salam" : ""}} {{ star == 10 ? "Salam" : ""}} {{ star == 11 ? "Salam" : ""}} {{ star == 12 ? "Salam" : ""}} {{ star == 13 ? "Salam" : ""}} {{ star == 14 ? "Salam" : ""}} {{ star == 15 ? "Salam" : ""}} {{ star == 16 ? "Salam" : ""}}
-            </div> <button v-on:click="hpsf(index)" class="ok"><i class="fas fa-trash"></i></button> 
+            </div> <button v-on:click="hpsf(index)" class="book"><i class="fas fa-trash"></i></button> 
         </li>
       </ul>
     </div>
@@ -1222,23 +1199,6 @@ import Page12 from "@/components/pages/Page12.vue";
 import Page13 from "@/components/pages/Page13.vue";
 import Page14 from "@/components/pages/Page14.vue";
 import Page15 from "@/components/pages/Page15.vue";
-// import Page16 from "@/components/pages/Page16.vue";
-// import Page17 from "@/components/pages/Page17.vue";
-// import Page18 from "@/components/pages/Page18.vue";
-// import Page19 from "@/components/pages/Page19.vue";
-// import Page20 from "@/components/pages/Page20.vue";
-// import Page21 from "@/components/pages/Page21.vue";
-// import Page22 from "@/components/pages/Page22.vue";
-// import Page23 from "@/components/pages/Page23.vue";
-// import Page24 from "@/components/pages/Page24.vue";
-// import Page25 from "@/components/pages/Page25.vue";
-// import Page26 from "@/components/pages/Page26.vue";
-// import Page27 from "@/components/pages/Page27.vue";
-// import Page28 from "@/components/pages/Page28.vue";
-// import Page29 from "@/components/pages/Page29.vue";
-// import Page30 from "@/components/pages/Page30.vue";
-// import Page31 from "@/components/pages/Page31.vue";
-// import Page32 from "@/components/pages/Page32.vue";
 import jQuery from "jquery";
 
 window.jQuery = jQuery;
@@ -1264,28 +1224,10 @@ export default {
     Page13,
     Page14,
     Page15,
-    // Page16,
-    // Page17,
-    // Page18,
-    // Page19,
-    // Page20,
-    // Page21,
-    // Page22,
-    // Page23,
-    // Page24,
-    // Page25,
-    // Page26,
-    // Page27,
-    // Page28,
-    // Page29,
-    // Page30,
-    // Page31,
-    // Page32,
   },
   data() {
     return {
       selects: [],
-      // zoom: 1,
       isSearchFocus: false,
       searchField: "",
       searchResult: [],
@@ -1378,7 +1320,6 @@ export default {
       this.localStorage()
     },
     speech: function(){
-      // alert("bisa")
       this.isSpeak = !this.isSpeak;
       var txt = [];
       if (window.getSelection) {
@@ -1431,14 +1372,7 @@ export default {
     recognition.interimResults = true;
     recognition.maxAlternatives = 1;
     // recognition.interimResults = true;
-
-    // event current voice reco word
     recognition.addEventListener("result", event => {      
-      // var text = Array.from(event.results)
-      //   .map(result => result[0])
-      //   .map(result => result.transcript)
-      //   .join("");
-      // this.runtimeTranscription_ = text;
       var pages = event.results[0][0].transcript;
       var page = parseInt(pages)
       this.turnPage(page+1);

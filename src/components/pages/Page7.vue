@@ -12,6 +12,11 @@
     left: 60px;
     width: 270px;
 
+    @media (min-width:1440px) {
+      top: 55px;
+      left: 270px;
+    }
+
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 40px;
       left: 190px;
@@ -25,8 +30,8 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 130px;
-      left: 39px;
+      top: 20px;
+      left: 180px;
       width: 197px;
     }
 
@@ -37,6 +42,10 @@
         font-size: 1.1rem;
         line-height: 1px;
 
+        @media (min-width: 1440px) {
+          font-size: 30px;
+        }
+
         @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
           font-size:20px;
         }
@@ -46,7 +55,7 @@
         }
 
         @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-          font-size: 0.8rem;
+          font-size: 20px;
         }
       }
     }
@@ -74,9 +83,9 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 172px;
-      left: 24px;
-      width: 166px;
+      top: 40px;
+      left: 155px;
+      width: 250px;
     }
 
     .text {
@@ -93,8 +102,7 @@
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 0.5rem;
-        line-height: 9px;
+        font-size: 17px;
       }
     }
   }
@@ -127,8 +135,8 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 172px;
-      left: 24px;
+      top: 65px;
+      left: 155px;
       width: 166px;
     }
 
@@ -146,7 +154,7 @@
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 0.5rem;
+        font-size: 7.3px;
         line-height: 9px;
       }
     }
@@ -174,8 +182,8 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 172px;
-      left: 24px;
+      top: 200px;
+      left: 155px;
       width: 166px;
     }
 
@@ -193,7 +201,7 @@
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 0.5rem;
+        font-size: 7.3px;
         line-height: 9px;
       }
     }
@@ -221,8 +229,8 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      top: 172px;
-      left: 24px;
+      top: 285px;
+      left: 155px;
       width: 166px;
     }
 
@@ -240,7 +248,7 @@
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-        font-size: 0.5rem;
+        font-size: 7.3px;
         line-height: 9px;
       }
     }

@@ -29,9 +29,9 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      font-size: 23px;
-      top: 140px;
-      left: 30px;
+      font-size: 18px;
+      top: 130px;
+      left: 40px;
       line-height: 10px;
     }
 
@@ -74,12 +74,14 @@
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
       color: orangered;
-      font-size: 9px;
+      font-size: 8px;
       font-weight: 300;
       width: 310px;
       top: 30px;
-      left: -5px;
+      left: -17px;
       line-height: 10px;
+      text-align: justify;
+      width: 287px;
     }
 
   }
@@ -112,11 +114,12 @@
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
       color: orangered;
-      font-size: 9px;
+      font-size: 8px;
       font-weight: 300;
-      width: 310px;
-      top: 30px;
-      left: -5px;
+      width: 285px;
+      top:85px;
+      text-align: justify;
+      left: -17px;
       line-height: 10px;
     }
 
@@ -150,11 +153,12 @@
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
       color: orangered;
-      font-size: 9px;
+      font-size: 8px;
       font-weight: 300;
-      width: 310px;
-      top: 30px;
-      left: -5px;
+      width: 285px;
+      top: 184px;
+      text-align: justify;
+      left: -16px;
       line-height: 10px;
     }
 

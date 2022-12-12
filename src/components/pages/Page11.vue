@@ -25,7 +25,7 @@
       }
 
       span {
-        font-weight: 500;
+        font-weight: 600;
       }
     }
   }
@@ -56,7 +56,7 @@
     ::first-letter{
       color: #903e95;
       font-size: 2rem;
-      font-weight: 500;
+      font-weight: 600;
       float:left;
       line-height: 20px;
       margin-left: 0px;
@@ -67,20 +67,24 @@
     top: 80px;
     left: 10px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+          top: 75px;
+        }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
-        line-height: 10px;
-        width: 330px;
-
+        line-height: 8px;
+        width: 312px;
       }
-
+      
       span {
         font-weight: 700;
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+          font-weight: 600;
+        }
       }
     }
   }
@@ -91,21 +95,24 @@
     top: 150px;
     left: 10px;
     width: 150px;
-    text-indent: 10px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+          top: 135px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
-        line-height: 10px;
-        width: 330px;
-
+        line-height: 8px;
+        width: 312px;
       }
 
       span {
         font-weight: 700;
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+          font-weight: 600;
+        }
       }
     }
   }
@@ -115,9 +122,10 @@
     text-align: justify;
     top: 180px;
     left: 10px;
-    text-indent: 10px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+          top: 165px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
@@ -125,12 +133,14 @@
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
         line-height: 9px;
-        width: 330px;
-
+        width: 312px;
       }
 
       span {
         font-weight: 700;
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+          font-weight: 600;
+        }
       }
     }
   }
@@ -140,22 +150,25 @@
     text-align: justify;
     top: 340px;
     left: 10px;
-    text-indent: 10px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+          top: 325px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
-        line-height: 10px;
-        width: 330px;
-
+        line-height: 8px;
+        width: 312px;
       }
 
       span {
         font-weight: 700;
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+          font-weight: 600;
+        }
       }
     }
   }
@@ -165,22 +178,24 @@
     text-align: justify;
     top: 410px;
     left: 10px;
-    text-indent: 10px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+          top: 387px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
-        line-height: 10px;
-        width: 330px;
-
+        line-height: 8px;
+        width: 312px;
       }
-
       span {
         font-weight: 700;
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+          font-weight: 600;
+        }
       }
     }
 }
@@ -248,12 +263,12 @@ export default {
   methods: {
     processText(id) {
       let text = document.getElementById(id).textContent;
-      let r = text.split(".");
+      let r = text.split("-");
       document.getElementById(id + "_").innerHTML = "";
       window.jQuery.each(r, function (i, w) {
         var node = document.createElement("span");
         var textnode = document.createTextNode(
-          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : ".")
+          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : "")
         );
         node.appendChild(textnode);
         document.getElementById(id + "_").appendChild(node);

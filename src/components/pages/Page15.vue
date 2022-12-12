@@ -14,15 +14,18 @@
     left: 50px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     top: 320px;
+     left: 25px;
+    }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
-
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
+        font-size: 10.5px;
         line-height: 10px;
-        width: 250px;
-
+        width: 290px;
       }
 
       span {
@@ -39,14 +42,19 @@
     left: 50px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     top: 256px;
+     left: 25px;
+    }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
+        font-size: 10.5px;
         line-height: 10px;
-        width: 250px;
+        width: 290px;
 
       }
 
@@ -63,15 +71,18 @@
     left: 50px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     top: 185px; 
+     left: 25px;
+    }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
-
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
+        font-size: 10.5px;
         line-height: 10px;
-        width: 250px;
-
+        width: 290px;
       }
 
       span {
@@ -87,15 +98,18 @@
     left: 50px;
     width: 150px;
 
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+     top: 140px; 
+     left: 25px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
-        line-height: 10px;
-        width: 250px;
-
+        font-size: 10.5px;
+        line-height: 11px;
+        width: 290px;
       }
 
       span {
@@ -117,7 +131,6 @@
     </div>
 
     <div class="content4">
-
       <div id="p15t_" class="text"></div>
       <div id="p15p1_" class="text"></div>
     </div>
@@ -152,12 +165,12 @@ export default {
   methods: {
     processText(id) {
       let text = document.getElementById(id).textContent;
-      let r = text.split(".");
+      let r = text.split("`");
       document.getElementById(id + "_").innerHTML = "";
       window.jQuery.each(r, function (i, w) {
         var node = document.createElement("span");
         var textnode = document.createTextNode(
-          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : ".")
+          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : "")
         );
         node.appendChild(textnode);
         document.getElementById(id + "_").appendChild(node);
