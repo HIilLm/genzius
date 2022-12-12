@@ -195,7 +195,7 @@
     top: 430px;
     left: 85px;
     width: 150px;
-
+    // top: ;
     .text {
       font-size: 2rem;
       line-height: 30px;
