@@ -91,8 +91,8 @@
       font-size: 8px;
       font-weight: 300;
       width: 310px;
-      top: 30px;
-      left: -17px;
+      top: 160px;
+      left: 20px;
       line-height: 10px;
       text-align: justify;
       width: 287px;
@@ -139,9 +139,9 @@
       font-size: 8px;
       font-weight: 300;
       width: 285px;
-      top:85px;
+      top: 220px;
+      left: 20px;
       text-align: justify;
-      left: -17px;
       line-height: 10px;
     }
 
@@ -186,9 +186,9 @@
       font-size: 8px;
       font-weight: 300;
       width: 285px;
-      top: 184px;
+      top: 320px;
+      left: 20px;
       text-align: justify;
-      left: -16px;
       line-height: 10px;
     }
 

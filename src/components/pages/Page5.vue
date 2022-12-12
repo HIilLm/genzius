@@ -16,7 +16,7 @@
     @media (min-width:1440px) {
       top: 40px;
       left: 100px;
-      width: 270px;
+      width: 300px;
       text-align: center;
     }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {

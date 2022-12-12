@@ -9,7 +9,7 @@
   .content1 {
     color: #ffffff;
     position: absolute;
-    top: 340px;
+    top: 350px;
     left: 92px;
     width: 150px;
     @media (min-width:1440px) {
@@ -29,6 +29,7 @@
       }  
       font-size: 2rem;
       line-height: 30px;
+      
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 33px;
