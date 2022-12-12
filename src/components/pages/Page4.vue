@@ -16,9 +16,19 @@
       top: 100px;
       left: 28px;
     }
+    @media (min-width:1440px) {
+      width: 140px;
+      left: 33px; 
+      top: 105px;
+      
+      }
     .title {
       font-size: 2rem;
       line-height: 30px;
+
+      @media (min-width:1440px) {
+        font-size: 20px;
+      }
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 25px;
