@@ -108,7 +108,7 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 10.5px;
-        line-height: 10px;
+        line-height: 11px;
         width: 290px;
       }
 

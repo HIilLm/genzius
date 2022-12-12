@@ -76,10 +76,10 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
-        line-height: 10px;
+        line-height: 8px;
         width: 312px;
       }
-
+      
       span {
         font-weight: 700;
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
@@ -96,7 +96,7 @@
     left: 10px;
     width: 150px;
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-          top: 145px;
+          top: 135px;
     }
     .text {
       font-size: 2rem;
@@ -104,7 +104,7 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
-        line-height: 10px;
+        line-height: 8px;
         width: 312px;
       }
 
@@ -124,7 +124,7 @@
     left: 10px;
     width: 150px;
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-          top: 175px;
+          top: 165px;
     }
     .text {
       font-size: 2rem;
@@ -152,7 +152,7 @@
     left: 10px;
     width: 150px;
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-          top: 322px;
+          top: 325px;
     }
     .text {
       font-size: 2rem;
@@ -160,7 +160,7 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
-        line-height: 10px;
+        line-height: 8px;
         width: 312px;
       }
 
@@ -180,7 +180,7 @@
     left: 10px;
     width: 150px;
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-          top: 394px;
+          top: 387px;
     }
     .text {
       font-size: 2rem;
@@ -188,8 +188,8 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
-        line-height: 10px;
-        width: 280px;
+        line-height: 8px;
+        width: 312px;
       }
       span {
         font-weight: 700;

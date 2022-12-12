@@ -56,16 +56,17 @@
     top: 80px;
     left: 10px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+        top: 70px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
-        line-height: 10px;
-        width: 330px;
-
+        font-size: 7.8px;
+        line-height: 8px;
+        width: 313px;
       }
 
       span {
@@ -79,15 +80,17 @@
     top: 135px;
     left: 10px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+        top: 126px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
-        line-height: 10px;
-        width: 330px;
+        font-size: 7.8px;
+        line-height: 9px;
+        width: 313px;
 
       }
 
@@ -102,16 +105,17 @@
     top: 200px;
     left: 10px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+      top: 187px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
+        font-size: 7.8px;
         line-height: 9px;
-        width: 330px;
-
+        width: 313px;
       }
 
       span {
@@ -125,15 +129,17 @@
     top: 260px;
     left: 10px;
     width: 150px;
-
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
+      top: 248px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 8px;
-        line-height: 10px;
-        width: 330px;
+        font-size: 7.8px;
+        line-height: 9px;
+        width: 313px;
 
       }
 
@@ -204,12 +210,12 @@ export default {
   methods: {
     processText(id) {
       let text = document.getElementById(id).textContent;
-      let r = text.split(".");
+      let r = text.split("`");
       document.getElementById(id + "_").innerHTML = "";
       window.jQuery.each(r, function (i, w) {
         var node = document.createElement("span");
         var textnode = document.createTextNode(
-          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : ".")
+          w + (id.slice(-1) == "t" || id.slice(-1) == "s" ? "" : "")
         );
         node.appendChild(textnode);
         document.getElementById(id + "_").appendChild(node);

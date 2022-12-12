@@ -74,7 +74,7 @@
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
       color: orangered;
-      font-size: 9px;
+      font-size: 8px;
       font-weight: 300;
       width: 310px;
       top: 30px;
@@ -114,10 +114,10 @@
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
       color: orangered;
-      font-size: 9px;
+      font-size: 8px;
       font-weight: 300;
       width: 285px;
-      top:90px;
+      top:85px;
       text-align: justify;
       left: -17px;
       line-height: 10px;
@@ -153,7 +153,7 @@
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
       color: orangered;
-      font-size: 9px;
+      font-size: 8px;
       font-weight: 300;
       width: 285px;
       top: 184px;
