@@ -6,87 +6,291 @@
   background-size: cover;
   position: relative;
 
-  .content {
+  .content1 {
     position: absolute;
-    top: 60px;
-    // display: grid;
-    grid-template-columns: 50% 50%;
-    font-size: 11px;
-    line-height: 14px;
-    color: #ffffff;
-
-    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      font-size: 0.6rem;
-      top: 50px;
-      line-height: 10px;
+    top: 105px;
+    left: 33px;
+    padding-left: 15px;
+    width: 140px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 100px;
+      left: 28px;
     }
+    .title {
+      font-size: 2rem;
+      line-height: 30px;
 
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      font-size: 0.65rem;
-      top: 315px;
-      line-height: 11px;
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 25px;
+        line-height: 25px;
+        width: 400px;
+      }
+
+      span {
+        font-weight: 500;
+      }
     }
-
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
-      font-size: 0.5rem;
-      top: 227px;
-      line-height: 10px;
+  }
+  .content2 {
+    position: absolute;
+    text-align: justify;
+    top: 150px;
+    left: 15px;
+    width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        top: 140px;
     }
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
 
-    .col {
-      padding-left: 15px;
-      padding-right: 30px;
-      text-align: justify;
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 7px;
+        line-height: 7.8px;
+        width: 302px;
+      }
 
-     
-    } 
-    .top {
-      margin-top: 5px;
+      span {
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-weight: 500;
+      }
+        font-weight: 800;
+      }
     }
-
-    .top1{
-      margin-top: 5px;
+  }
+  .content3 {
+    position: absolute;
+    text-align: justify;
+    top: 200px;
+    left: 15px;
+    width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+       top: 187px;
     }
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
 
-    .top2 {
-      text-align: center;
-      color: white;
-      text-indent: 10px;
-      margin-top: 50px;
-      
-      font-size: 20px;
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 7px;
+        line-height: 7px;
+        width: 302px;
+
+      }
+
+      span {
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+          font-weight: 500;
+        }
+        font-weight: 800;
+      }
     }
+  }
+  .content4 {
+    position: absolute;
+    text-align: justify;
+    top: 250px;
+    left: 15px;
+    width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+       top: 230px;
+    }
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
 
-    // .text1 {
-      //   text-indent: 10px;
-      // }
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 7px;
+        line-height: 7px;
+        width: 302px;
 
-      // .text {
-      //   margin-top: 5px;
-      //   text-indent: 10px;
-      // }
+      }
+
+      span {
+        font-weight: 800;
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .content5 {
+    position: absolute;
+    text-align: justify;
+    top: 280px;
+    left: 165px;
+    width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+       top: 260px;
+    }
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 7px;
+        line-height: 9px;
+        width: 320px;
+
+      }
+
+      span {
+        font-weight: 800;
+      }
+    }
+  }
+  .content6 {
+    position: absolute;
+    text-align: center;
+    top: 295px;
+    left: 15px;
+    width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+       top: 273px;
+    }
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 7px;
+        line-height: 9px;
+        width: 302px;
+
+      }
+
+      span {
+        font-weight: 800;
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-weight: 500;
+        }
+      }
+    }
+  }
+  .content7 {
+    position: absolute;
+    text-align: justify;
+    top: 330px;
+    left: 165px;
+    width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+       top: 305px;
+    }
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 7px;
+        line-height: 9px;
+        width: 320px;
+
+      }
+
+      span {
+        font-weight: 800;
+      }
+    }
+  }
+  .content8 {
+    position: absolute;
+    text-align: center;
+    top: 345px;
+    left: 15px;
+    width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+       top: 315px;
+    }
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 7px;
+        line-height: 9px;
+        width: 310px;
+
+      }
+
+      span {
+        font-weight: 800;
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+       font-weight: 500;
+    }
+      }
+    }
+  }
+  .content9 {
+    position: absolute;
+    text-align: justify;
+    top: 410px;
+    left: 15px;
+    width: 150px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+       top: 380px;
+    }
+    .text {
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 7px;
+        line-height: 7px;
+        width: 302px;
+
+      }
+
+      span {
+        font-weight: 800;
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-weight: 500;
+        }
+      }
+    }
   }
 }
 </style>
 
 <template>
   <div>
-    <!-- <div style="display: none">
+    <div style="display: none">
       <div id="p4p1">{{ $t("p4.paragraph1") }}</div>
       <div id="p4p2">{{ $t("p4.paragraph2") }}</div>
       <div id="p4p3">{{ $t("p4.paragraph3") }}</div>
       <div id="p4p4">{{ $t("p4.paragraph4") }}</div>
+      <div id="p4p5">{{ $t("p4.paragraph5") }}</div>
+      <div id="p4p6">{{ $t("p4.paragraph6") }}</div>
+      <div id="p4p7">{{ $t("p4.paragraph7") }}</div>
+      <div id="p4p8">{{ $t("p4.paragraph8") }}</div>
+      <div id="p4p9">{{ $t("p4.paragraph9") }}</div>
     </div>
-    <div class="content">
-      <div class="col">
-        <div id="p4p1_"></div>
-        <div id="p4p2_" class="top"></div>
-      </div>
-      <div class="col">
-        <div id="p4p3_" class="top1"></div>
-        <div id="p4p4_" class="top2" style="font-weight: 900;"></div>
-      </div>
-    </div> -->
+    <div class="content1">
+      <div id="p4p1_" class="title"></div>
+    </div>
+    <div class="content2">
+      <div id="p4p2_" class="text"></div>
+    </div>
+    <div class="content3">
+      <div id="p4p3_" class="text"></div>
+    </div>
+    <div class="content4">
+      <div id="p4p4_" class="text"></div>
+    </div>
+    <div class="content5">
+      <div id="p4p5_" class="text"></div>
+    </div>
+    <div class="content6">
+      <div id="p4p6_" class="text"></div>
+    </div>
+    <div class="content7">
+      <div id="p4p7_" class="text"></div>
+    </div>
+    <div class="content8">
+      <div id="p4p8_" class="text"></div>
+    </div>
+    <div class="content9">
+      <div id="p4p9_" class="text"></div>
+    </div>
   </div>
 </template>
 
@@ -99,9 +303,14 @@ export default {
     ref.processText("p4p2");
     ref.processText("p4p3");
     ref.processText("p4p4");
+    ref.processText("p4p5");
+    ref.processText("p4p6");
+    ref.processText("p4p7");
+    ref.processText("p4p8");
+    ref.processText("p4p9");
     window
       .jQuery("body")
-      .on("DOMSubtreeModified", "#p4p1, #p4p2, #p4p3, #p4p4", function () {
+      .on("DOMSubtreeModified", "#p4p1, #p4p2, #p4p3, #p4p4,#p4p5,#p4p6,#p4p7,#p4p8,#p4p9", function () {
         ref.processText(window.jQuery(this).attr("id"));
       });
   },

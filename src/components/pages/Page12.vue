@@ -57,7 +57,7 @@
     left: 10px;
     width: 150px;
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-        top: 70px;
+        top: 80px;
     }
     .text {
       font-size: 2rem;

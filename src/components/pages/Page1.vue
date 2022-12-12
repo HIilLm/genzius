@@ -1,13 +1,17 @@
 <style lang="scss">
 .p2 {
-  background-image: url("/img/pages/g-01.jpg");
+  background-image: url("/img/pages/01.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
   .content{
-    color:orangered;
+    color:#ffffff;
+
+    // position: absolute;
+    // top: 110px;
+    // left: 20px;
     
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 50px;
@@ -23,9 +27,10 @@
     .title {
       text-align: center;
       margin-bottom: 5px;
-      text-align: left;
-      margin-left: 10px;
-      margin-top: 50px;
+      width: 200px;
+      background-color: orangered;
+      margin-left: 90px;
+      margin-top: 30px;
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
         margin-bottom: 0px;
@@ -36,9 +41,8 @@
         font-size: 1px;
 
         @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-          font-size: 20px;
-          margin-left: 70px;
-          background-color: #ffffff;
+          font-size: 18px;
+          // margin-left: 70px;
         }
 
         @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
@@ -170,7 +174,11 @@
     }
   }
   .content1{
-    color: orangered;
+    color:#ffffff;
+    // position: absolute;
+    // top: 110px;
+    // left: 20px;
+    
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 60px;
@@ -187,8 +195,9 @@
     .title {
       text-align: center;
       margin-bottom: 5px;
-      text-align: left;
-      margin-left: 10px;
+      width: 240px;
+      background-color: orangered;
+      margin-left: 90px;
       margin-top: 10px;
 
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
@@ -203,8 +212,7 @@
 
         @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
           font-size: 18px;
-          margin-left: 70px;
-          background-color: #ffffff;
+          // margin-left: 70px;
         }
 
         @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {

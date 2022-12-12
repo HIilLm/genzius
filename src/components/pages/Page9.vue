@@ -70,7 +70,7 @@
 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
      left: 20px;
-     top: 70px;
+     top: 65px;
     }
 
     .text {
@@ -97,7 +97,7 @@
     width: 150px;
 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-     top: 127px; 
+     top: 128px; 
     }
 
     .text {
@@ -123,7 +123,7 @@
     left: 20px;
     width: 150px;
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-     top: 200px; 
+     top: 199px; 
     }
     .text {
       font-size: 2rem;
