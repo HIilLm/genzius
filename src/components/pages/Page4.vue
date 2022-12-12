@@ -9,7 +9,7 @@
   .content1 {
     position: absolute;
     top: 105px;
-    left: 33px;
+    left: 33px; 
     padding-left: 15px;
     width: 140px;
     .title {
