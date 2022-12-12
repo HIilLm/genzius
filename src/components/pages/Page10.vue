@@ -176,7 +176,7 @@ export default {
     ref.processText("p10p5");
     window
       .jQuery("body")
-      .on("DOMSubtreeModified", "#p10p1,  #p10p2,#p10p3,#p10p4,#p10p5,", function () {
+      .on("DOMSubtreeModified", "#p10p1,#p10p2,#p10p3,#p10p4,#p10p5,", function () {
         ref.processText(window.jQuery(this).attr("id"));
       });
   },

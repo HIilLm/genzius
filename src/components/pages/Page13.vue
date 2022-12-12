@@ -9,11 +9,15 @@
   .content1 {
     color: #ffffff;
     position: absolute;
-    top: 340px;
+    top: 350px;
     left: 92px;
     width: 150px;
 
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 10px;
+}
+
+    @media (min-width: $breakpoint-sm) {
       top: 315px;
       left: 80px;
     }
@@ -21,6 +25,7 @@
     .title {
       font-size: 2rem;
       line-height: 30px;
+      
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 33px;

@@ -304,9 +304,6 @@
       <div id="p8p4">{{ $t("p8.paragraph4") }}</div>
       <div id="p8p5">{{ $t("p8.paragraph5") }}</div>
       <div id="p8p6">{{ $t("p8.paragraph6") }}</div>
-      <div id="p8p7">{{ $t("p8.paragraph7") }}</div>
-      <div id="p8p8">{{ $t("p8.paragraph8") }}</div>
-      <div id="p8p9">{{ $t("p8.paragraph9") }}</div>
     </div>
     <div class="content">
       <div id="p8p1_" class="text"></div>
@@ -340,12 +337,9 @@ export default {
     ref.processText("p8p4");
     ref.processText("p8p5");
     ref.processText("p8p6");
-    ref.processText("p8p7");
-    ref.processText("p8p8");
-    ref.processText("p8p9");
     window
       .jQuery("body")
-      .on("DOMSubtreeModified", "#p8p1, #p8p2, #p8p3, #p8p4, #p8p5, #p8p6, #p8p7, #p8p8, #p8p9", function () {
+      .on("DOMSubtreeModified", "#p8p1, #p8p2, #p8p3, #p8p4, #p8p5, #p8p6", function () {
         ref.processText(window.jQuery(this).attr("id"));
       });
   },

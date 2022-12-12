@@ -13,7 +13,10 @@
     top: 350px;
     left: 50px;
     width: 150px;
-
+    @media (min-width: 1440px) {
+     top: 480px;
+     left:100px;
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
      top: 320px;
      left: 25px;
@@ -25,6 +28,12 @@
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 10.5px;
         line-height: 10px;
+        width: 290px;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 12px;
+        line-height: 11px;
         width: 290px;
       }
 
@@ -41,7 +50,10 @@
     top: 280px;
     left: 50px;
     width: 150px;
-
+    @media (min-width: 1440px) {
+     top: 380px;
+     left:100px;
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
      top: 256px;
      left: 25px;
@@ -57,6 +69,11 @@
         width: 290px;
 
       }
+      @media (min-width: 1440px) {
+        font-size: 12px;
+        line-height: 11px;
+        width: 290px;
+      }
 
       span {
         font-weight: 700;
@@ -70,7 +87,10 @@
     top: 210px;
     left: 50px;
     width: 150px;
-
+    @media (min-width: 1440px) {
+     top: 280px;
+     left:100px;
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
      top: 185px; 
      left: 25px;
@@ -82,6 +102,12 @@
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 10.5px;
         line-height: 10px;
+        width: 290px;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 12px;
+        line-height: 11px;
         width: 290px;
       }
 
@@ -97,7 +123,10 @@
     top: 160px;
     left: 50px;
     width: 150px;
-
+    @media (min-width: 1440px) {
+      top: 215px;
+      left: 100px;
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
      top: 140px; 
      left: 25px;
@@ -112,6 +141,11 @@
         width: 290px;
       }
 
+      @media (min-width: 1440px) {
+        font-size: 12px;
+        line-height: 11px;
+        width: 290px;
+      }
       span {
         font-weight: 700;
       }
