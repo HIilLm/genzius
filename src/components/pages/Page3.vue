@@ -200,7 +200,6 @@
 <template>
   <div>
     <div style="display: none">
-      <div id="p3t">{{ $t("p3.title") }}</div>
       <div id="p3s">{{ $t("p3.subtitle") }}</div>
       <div id="p3p1">{{ $t("p3.paragraph1") }}</div>
       <div id="p3p2">{{ $t("p3.paragraph2") }}</div>
@@ -225,15 +224,13 @@ export default {
   name: "Page3",
   mounted() {
     let ref = this;
-    ref.processText("p3t");
     ref.processText("p3s");
     ref.processText("p3p1");
     ref.processText("p3p2");
     ref.processText("p3p3");
-    ref.processText("p3p4");
     window
       .jQuery("body")
-      .on("DOMSubtreeModified", "#p3t, #p3s, #p3p1, #p3p2, #p3p3, #p3p4", function () {
+      .on("DOMSubtreeModified", "#p3s, #p3p1, #p3p2, #p3p3", function () {
         ref.processText(window.jQuery(this).attr("id"));
       });
   },

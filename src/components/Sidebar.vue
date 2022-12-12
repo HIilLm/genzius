@@ -288,7 +288,7 @@
       <!-- <Button class="menu-content-toggle-btn" v-on:click.native="mark">
         <i class="fas fa-list-ol fa-lg"></i>
       </Button> -->
-      <Button class="menu-btn" v-on:click.native="getSelText">
+      <!-- <Button class="menu-btn" v-on:click.native="getSelText">
         <i class="fas fa-sticky-note"></i>
       </Button>
       <Button class="menu-btn" v-on:click.native="speech">
@@ -302,7 +302,7 @@
       </Button>     
       <Button class="menu-btn" v-on:click.native="searchSpeak">
         <i class="fas fa-microphone"></i>
-      </Button>     
+      </Button>      -->
     </div>
     <div v-if="(isSelected == 1)" class="contents-container">
       <div class="title">{{ $t("table_of_contents") }}</div>
