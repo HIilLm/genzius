@@ -12,13 +12,21 @@
     top: 340px;
     left: 92px;
     width: 150px;
-
+    @media (min-width:1440px) {
+      left: 160px;
+      top: 470px; 
+      width: 200px;
+    } 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
       top: 315px;
       left: 80px;
     }
 
     .title {
+      @media (min-width:1440px) {
+        font-size: 35px;
+        width: 800px;
+      }  
       font-size: 2rem;
       line-height: 30px;
 
@@ -48,8 +56,18 @@
     top: 15px;
     left: 20px;
     width: 150px;
-
+    @media (min-width:1440px) {
+      left: 40px;
+      top: 50px; 
+      width: 100px;
+    } 
     .title {
+      @media (min-width:1440px) {
+        font-size: 40px;
+        width: 100px;
+        font-weight: 700;
+
+      }  
       font-size: 2rem;
       line-height: 30px;
 
@@ -79,7 +97,11 @@
     top: 385px;
     left: 20px;
     width: 150px;
-
+    @media (min-width:1440px) {
+      left: 30px;
+      top: 540px; 
+      width: 180px;
+    } 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
       top: 361px;
       width: 90px;
@@ -87,6 +109,11 @@
     }
 
     .text {
+      @media (min-width:1440px) {
+        font-size: 10px;
+        width: 440px;
+        line-height: 13px;
+      }  
       font-size: 2rem;
       line-height: 30px;
 
@@ -117,12 +144,21 @@
     top: 435px;
     left: 20px;
     width: 150px;
-
+    @media (min-width:1440px) {
+      left: 30px;
+      top: 610px; 
+      width: 180px;
+    } 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
       top: 411px;
       left: 7px;
     }
     .text {
+      @media (min-width:1440px) {
+        font-size: 10px;
+        width: 440px;
+        line-height: 13px;
+      }  
       font-size: 2rem;
       line-height: 30px;
 

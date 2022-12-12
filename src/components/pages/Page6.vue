@@ -12,7 +12,14 @@
     top: 53px;
     font-size: 0.7rem;
     font-weight: 900;
-    
+    @media (min-width:1440px) {
+      color: #ffffff;
+      top: 190px;
+      left: 90px;
+      width: 350px;
+      text-align: justify;
+      font-size: 22px;
+    }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       font-size: 21px;
@@ -40,10 +47,17 @@
     ::first-letter{
       color: orangered;
       font-size: 2rem;
-      font-weight: 600;
+      font-weight: 500;
       float:left;
-      line-height: 20px;
-      margin-left: 0px;
+      line-height: 25px;
+    }
+    @media (min-width:1440px) {
+      color: orangered;
+      top: 250px;
+      left: 30px;
+      width: 430px;
+      font-size: 11px;
+      text-align: justify;
     }
     position: absolute;
     top: 53px;
@@ -90,6 +104,14 @@
     top: 53px;
     grid-template-columns: 50% 50%;
     font-size: 0.7rem;
+    @media (min-width:1440px) {
+      top: 330px;
+      color: orangered;
+      left: 30px;
+      font-size: 11px;
+      width: 430px;
+      text-align: justify;
+    }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       color: orangered;
@@ -129,6 +151,14 @@
     top: 53px;
     grid-template-columns: 50% 50%;
     font-size: 0.7rem;
+    @media (min-width:1440px) {
+      top: 470px;
+      color: orangered;
+      left: 30px;
+      font-size: 11px;
+      width: 430px;
+      text-align: justify;
+    }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       color: orangered;
@@ -175,7 +205,6 @@
       <div id="p6p4">{{ $t("p6.paragraph4") }}</div>
     </div>
     <div class="content">
-      <div class="">
         <div id="p6p1_" class="text1"></div>
       </div>
       <div class="content2">
@@ -187,7 +216,6 @@
       <div class="content4">
         <div id="p6p4_" class="text"></div>
       </div>
-    </div>
   </div>
 </template>
 
