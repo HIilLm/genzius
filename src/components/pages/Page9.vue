@@ -36,6 +36,10 @@
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
      left: 105px; 
     }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 25px;
+      left: 140px;
+    }
     .title {
       @media (min-width: $breakpoint-xl) { // LAPTOP XL
         font-size: 25px;
@@ -69,6 +73,10 @@
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
      left: 95px; 
     }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 50px;
+      left: 140px;
+    }
     .title {
       @media (min-width: $breakpoint-xl) { // LAPTOP XL
         font-size: 30px;
@@ -96,7 +104,7 @@
       font-size: 2rem;
       font-weight: 700;
       float:left;
-      line-height: 10px;
+      line-height: 15px;
       margin-left: 0px;
     }
     @media (min-width: $breakpoint-xl) { // LAPTOP XL
@@ -115,6 +123,10 @@
      left: 20px;
      top: 65px;
     }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 100px;
+      left: 25px;
+    }
 
     .text {
       @media (min-width: $breakpoint-xl) { // LAPTOP XL
@@ -130,6 +142,11 @@
         line-height: 9px;
         width: 300px;
       }
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      width: 370px;
+      font-size: 8px;
+      line-height: 10px;
+    }
 
       span {
         font-weight: 600;
@@ -152,6 +169,10 @@
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
      top: 128px; 
     }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 170px;
+      left: 25px;
+    }
 
     .text {
       @media (min-width: $breakpoint-xl) { // LAPTOP XL
@@ -167,6 +188,11 @@
         line-height: 10px;
         width: 300px;
       }
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      width: 370px;
+      font-size: 8px;
+      line-height: 10px;
+    }
 
       span {
         font-weight: 600;
@@ -188,6 +214,10 @@
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
      top: 199px; 
     }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 250px;
+      left: 25px;
+    }
     .text {
       @media (min-width: $breakpoint-xl) { // LAPTOP XL
         font-size: 10px;
@@ -202,6 +232,11 @@
         line-height: 10px;
         width: 300px;
       }
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      width: 370px;
+      font-size: 8px;
+      line-height: 10px;
+    }
 
       span {
         font-weight: 600;

@@ -47,6 +47,10 @@
       top: 315px;
       left: 80px;
     }
+    @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+      top: 315px;
+      left: 80px;
+    }
 
     .title {
       @media (min-width: $breakpoint-xl) {
@@ -61,6 +65,11 @@
         line-height: 25px;
         width: 500px;
       }
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        font-size: 33px;
+        line-height: 25px;
+        width: 500px;
+    }
 
       @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
         font-size: 45px;
@@ -112,6 +121,11 @@
         line-height: 40px;
         width: 20px;
       }
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        font-size: 35px;
+        line-height: 40px;
+        width: 20px;
+    }
 
       span {
         font-weight: 700;
@@ -136,6 +150,11 @@
 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
       top: 361px;
+      width: 90px;
+      left: 7px;
+    }
+    @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+      top: 385px;
       width: 90px;
       left: 7px;
     }
@@ -165,6 +184,11 @@
         line-height: 10px;
         width: 315px;
       }
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        font-size: 7px;
+        line-height: 10px;
+        width: 315px;
+    }
 
       span {
         font-weight: 700;
@@ -195,6 +219,10 @@
       top: 411px;
       left: 7px;
     }
+    @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+      top: 411px;
+      left: 7px;
+    }
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
       left: 20px;
@@ -216,6 +244,12 @@
         // text-indent: 5px;
         width: 315px;
       }
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        font-size: 7px;
+        line-height: 10px;
+        // text-indent: 5px;
+        width: 315px;
+    }
 
       @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
         font-size: 7.5px;
@@ -235,6 +269,10 @@
         font-size: 0.8rem;
         line-height: 15px;
       }
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        font-size: 0.8rem;
+        line-height: 15px;
+    }
     }
   }
 }
