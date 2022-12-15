@@ -18,7 +18,7 @@
         
       // }
       
-      // @media (min-width: $breakpoint-sm) and (max-width: 600px) { HP
+      // @media (min-width: $breakpoint-sm) and (max-width: 480px) { HP
         
       // }
   //TEMPLATE
@@ -28,7 +28,7 @@
     left: 60px;
     width: 270px;
 
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       top: 55px;
       left: 270px;
     }
@@ -86,7 +86,7 @@
     line-height: 13px;
     font-size: 0.7rem;
     font-weight: 800;
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       top: 90px;
       left: 260px;
       width: fit-content;
@@ -144,7 +144,7 @@
     width: 240px;
     text-align: justify;
     font-size: 0.7rem;
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       color: orangered;
       top: 130px;
       left: 240px;
@@ -172,7 +172,7 @@
     }
 
     .text {
-      @media (min-width:1440px) {
+      @media (min-width: $breakpoint-xl) { // LAPTOP XL
       color: orangered;
       top: 100px;
       left: 30px;
@@ -209,7 +209,7 @@
     text-align: justify;
     line-height: 13px;
     font-size: 0.7rem;
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       color: orangered;
       top: 340px;
       left: 240px;
@@ -238,7 +238,7 @@
 
     .text {
       font-size: 0.7rem;
-      @media (min-width:1440px) {
+      @media (min-width: $breakpoint-xl) { // LAPTOP XL
       color: orangered;
       top: 100px;
       left: 30px;
@@ -274,7 +274,7 @@
     text-align: justify;
     line-height: 13px;
     font-size: 0.7rem;
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       color: orangered;
       top: 470px;
       left: 240px;
@@ -301,7 +301,7 @@
     }
 
     .text {
-      @media (min-width:1440px) {
+      @media (min-width: $breakpoint-xl) { // LAPTOP XL
       color: orangered;
       top: 100px;
       left: 30px;

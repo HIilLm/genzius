@@ -5,14 +5,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
-  .contentb {
-    color: #ffffff;
-    .title {
-      text-align: center;
-      background-color: orangered;
-      width: fit-content;
-
       // TEMPLATE 
       // @media (min-width: $breakpoint-xl) { // LAPTOP XL
        
@@ -26,10 +18,16 @@
         
       // }
       
-      // @media (min-width: $breakpoint-sm) and (max-width: 600px) { HP
+      // @media (min-width: $breakpoint-sm) and (max-width: 480px) { HP
         
       // }
       //TEMPLATE
+  .contentb {
+    color: #ffffff;
+    .title {
+      text-align: center;
+      background-color: orangered;
+      width: fit-content;
 
       @media (min-width: $breakpoint-xl) {
         margin-top: 40px;
@@ -45,7 +43,7 @@
         
       }
       
-      @media (min-width: $breakpoint-sm) and (max-width: 600px) {
+      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
         margin-top: 40px;
         margin-left: 80px;
       }
@@ -60,7 +58,7 @@
         font-size: 15px;
       }
 
-        @media (min-width: $breakpoint-sm) and (max-width: 600px) {
+        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
           font-size: 12px;
         }
       }
@@ -70,7 +68,7 @@
   .content1 {
     color: #ffffff;
 
-    @media (min-width: $breakpoint-sm) and (max-width: 600px) {
+    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
       top: 162px;
     }
 
@@ -91,7 +89,7 @@
         margin-left: 80px;
       }
 
-      @media (min-width: $breakpoint-sm) and (max-width: 600px) { //HP
+      @media (min-width: $breakpoint-sm) and (max-width: 480px) { //HP
         margin-top: 4px;
         margin-left: 80px;
       }

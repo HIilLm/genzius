@@ -18,7 +18,7 @@
         
       // }
       
-      // @media (min-width: $breakpoint-sm) and (max-width: 600px) { HP
+      // @media (min-width: $breakpoint-sm) and (max-width: 480px) { HP
         
       // }
   //TEMPLATE
@@ -30,7 +30,7 @@
     width: 140px;
     padding-left: 15px;
     background-color: #876bfe;
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       left: 115px;
       top: 30px; 
       width: 170px;
@@ -38,7 +38,7 @@
     .title {
       font-size: 2rem;
       line-height: 30px;
-      @media (min-width:1440px) {
+      @media (min-width: $breakpoint-xl) { // LAPTOP XL
         font-size: 25px;
         width: 500px;
       }  
@@ -61,13 +61,13 @@
     padding-left: 15px;
     background-color: #876bfe;
     width: 140px;
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       left: 140px;
       top: 70px; 
       width: 170px;
     } 
     .title {
-      @media (min-width:1440px) {
+      @media (min-width: $breakpoint-xl) { // LAPTOP XL
         font-size: 25px;
         width: 500px;
       }  
@@ -94,7 +94,7 @@
       line-height: 20px;
       margin-left: 0px;
     }
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       left: 30px;
       top: 110px; 
       width: 180px;
@@ -109,7 +109,7 @@
           top: 75px;
         }
     .text {
-      @media (min-width:1440px) {
+      @media (min-width: $breakpoint-xl) { // LAPTOP XL
         font-size: 9px;
         width: 440px;
         line-height: 10px;
@@ -141,7 +141,7 @@
     top: 150px;
     left: 10px;
     width: 150px;
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       left: 30px;
       top: 200px; 
       width: 180px;
@@ -153,7 +153,7 @@
           top: 135px;
     }
     .text {
-      @media (min-width:1440px) {
+      @media (min-width: $breakpoint-xl) { // LAPTOP XL
         font-size: 9px;
         width: 440px;
         line-height: 10px;
@@ -185,7 +185,7 @@
     top: 180px;
     left: 10px;
     width: 150px;
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       left: 30px;
       top: 250px; 
       width: 180px;
@@ -197,7 +197,7 @@
       top: 180px;
     }
     .text {
-      @media (min-width:1440px) {
+      @media (min-width: $breakpoint-xl) { // LAPTOP XL
         font-size: 9px;
         width: 440px;
         line-height: 10px;
@@ -233,7 +233,7 @@
       margin-top: 20px;
       
     }
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       left: 30px;
       top: 480px; 
       width: 180px;
@@ -242,7 +242,7 @@
           top: 325px;
     }
     .text {
-      @media (min-width:1440px) {
+      @media (min-width: $breakpoint-xl) { // LAPTOP XL
         font-size: 9px;
         width: 440px;
         line-height: 10px;
@@ -275,7 +275,7 @@
       margin-top: 20px;
       
     }
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       left: 30px;
       top: 570px; 
       width: 180px;
@@ -284,7 +284,7 @@
           top: 387px;
     }
     .text {
-      @media (min-width:1440px) {
+      @media (min-width: $breakpoint-xl) { // LAPTOP XL
         font-size: 9px;
         width: 440px;
         line-height: 10px;
