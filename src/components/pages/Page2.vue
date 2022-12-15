@@ -5,9 +5,27 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  
+  // TEMPLATE 
+      // @media (min-width: $breakpoint-xl) { // LAPTOP XL
+       
+      // }
+
+      // @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) { LAPTOP LARGE
+        
+      // }
+
+      // @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) { TABLET
+        
+      // }
+      
+      // @media (min-width: $breakpoint-sm) and (max-width: 600px) { HP
+        
+      // }
+  //TEMPLATE
+  
   .content {
     color: orange;
-    // top: 520px;
     position: absolute;
     left: 35px;
 
