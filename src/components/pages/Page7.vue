@@ -70,6 +70,13 @@
     line-height: 13px;
     font-size: 0.7rem;
     font-weight: 800;
+    @media (min-width:1440px) {
+      top: 90px;
+      left: 260px;
+      width: 430px;
+      font-size: 20px;
+      text-align: justify;
+    }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 60px;
@@ -89,7 +96,7 @@
     }
 
     .text {
-      font-size: 0.7rem;
+      // font-size: 0.7rem;
 
       @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 16px;
@@ -112,7 +119,7 @@
       font-size: 2rem;
       font-weight: 600;
       float:left;
-      line-height: 10px;
+      line-height: 15px;
     }
     color: orangered;
     position: absolute;
@@ -121,6 +128,14 @@
     width: 240px;
     text-align: justify;
     font-size: 0.7rem;
+    @media (min-width:1440px) {
+      color: orangered;
+      top: 130px;
+      left: 240px;
+      width: 430px;
+      font-size: 11px;
+      text-align: justify;
+    }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 90px;
@@ -141,6 +156,16 @@
     }
 
     .text {
+      @media (min-width:1440px) {
+      color: orangered;
+      top: 100px;
+      left: 30px;
+      width: 230px;
+      font-size: 11px;
+      text-align: justify;
+      line-height: 13px;
+ 
+    }
       font-size: 0.7rem;
 
       @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
@@ -168,6 +193,14 @@
     text-align: justify;
     line-height: 13px;
     font-size: 0.7rem;
+    @media (min-width:1440px) {
+      color: orangered;
+      top: 340px;
+      left: 240px;
+      width: 430px;
+      font-size: 11px;
+      text-align: justify;
+    }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 230px;
@@ -189,6 +222,16 @@
 
     .text {
       font-size: 0.7rem;
+      @media (min-width:1440px) {
+      color: orangered;
+      top: 100px;
+      left: 30px;
+      width: 230px;
+      font-size: 11px;
+      text-align: justify;
+      line-height: 13px;
+
+    }
 
       @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 8px;
@@ -215,7 +258,14 @@
     text-align: justify;
     line-height: 13px;
     font-size: 0.7rem;
-
+    @media (min-width:1440px) {
+      color: orangered;
+      top: 470px;
+      left: 240px;
+      width: 430px;
+      font-size: 11px;
+      text-align: justify;
+    }
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 315px;
       left: 170px;
@@ -235,6 +285,15 @@
     }
 
     .text {
+      @media (min-width:1440px) {
+      color: orangered;
+      top: 100px;
+      left: 30px;
+      width: 230px;
+      font-size: 10px;
+      text-align: justify;
+      line-height: 11px;
+    }
       font-size: 0.7rem;
 
       @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {

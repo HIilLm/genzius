@@ -1,4 +1,5 @@
 <style lang="scss">
+  // @import url('https://fonts.cdnfonts.com/css/austrian');
 .p5 {
   background-image: url("/img/pages/04.jpg");
   background-position: center;
@@ -17,27 +18,31 @@
       left: 28px;
     }
     @media (min-width:1440px) {
-      width: 140px;
-      left: 33px; 
-      top: 105px;
-      
-      }
+      width: 350px;
+      left: 65px; 
+      top: 145px;
+    }
     .title {
       font-size: 2rem;
       line-height: 30px;
-
+      
       @media (min-width:1440px) {
-        font-size: 20px;
+        font-size: 30px;
       }
-
+      
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 25px;
         line-height: 25px;
         width: 400px;
       }
-
+      
       span {
         font-weight: 500;
+        @media (min-width:1440px) {
+          // font-family: 'Austrian', sans-serif;
+          font-weight: 700;
+      }
+        
       }
     }
   }
@@ -50,9 +55,19 @@
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         top: 140px;
     }
+    @media (min-width:1440px) {
+      top: 205px;
+      left: 20px;
+      width: 450px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
+      
+      @media (min-width:1440px) {
+        font-size: 10px;
+        line-height: 12px;
+      }
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7px;
@@ -64,6 +79,9 @@
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-weight: 500;
       }
+      @media (min-width:1440px) {
+        font-weight: 500;
+    }
         font-weight: 800;
       }
     }
@@ -74,13 +92,21 @@
     top: 200px;
     left: 15px;
     width: 150px;
+    @media (min-width:1440px) {
+      top: 270px;
+      left: 20px;
+      width: 450px;
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 187px;
     }
     .text {
       font-size: 2rem;
       line-height: 30px;
-
+      @media (min-width:1440px) {
+        font-size: 10px;
+        line-height: 10px;
+    }
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7px;
         line-height: 7px;
@@ -90,6 +116,9 @@
 
       span {
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+          font-weight: 500;
+        }
+        @media (min-width:1440px) {
           font-weight: 500;
         }
         font-weight: 800;
@@ -102,13 +131,21 @@
     top: 250px;
     left: 15px;
     width: 150px;
+    @media (min-width:1440px) {
+      top: 325px;
+      left: 20px;
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 230px;
     }
     .text {
       font-size: 2rem;
       line-height: 30px;
-
+      @media (min-width:1440px) {
+        font-size: 10px;
+        line-height: 10px;
+        width: 450px;
+    }
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7px;
         line-height: 7px;
@@ -121,6 +158,9 @@
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
           font-weight: 500;
         }
+        @media (min-width:1440px) {
+          font-weight: 500;
+    }
       }
     }
   }
@@ -133,10 +173,16 @@
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 260px;
     }
+    @media (min-width:1440px) {
+      top: 360px;
+      left: 230px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
-
+      @media (min-width:1440px) {
+        font-size: 10px;
+        }
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7px;
         line-height: 9px;
@@ -146,6 +192,9 @@
 
       span {
         font-weight: 800;
+        @media (min-width:1440px) {
+          font-weight: 700;
+        }
       }
     }
   }
@@ -155,13 +204,21 @@
     top: 295px;
     left: 15px;
     width: 150px;
+    @media (min-width:1440px) {
+      top: 382px;
+      left: 50px;
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 273px;
     }
     .text {
       font-size: 2rem;
       line-height: 30px;
-
+      @media (min-width:1440px) {
+        font-size: 10px;
+        line-height: 10px;
+        width: 400px;
+      }
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7px;
         line-height: 9px;
@@ -170,9 +227,12 @@
       }
 
       span {
-        font-weight: 800;
+          font-weight: 800;
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-weight: 500;
+          font-weight: 500;
+        }
+        @media (min-width:1440px) {
+          font-weight: 500;
         }
       }
     }
@@ -183,12 +243,20 @@
     top: 330px;
     left: 165px;
     width: 150px;
+    @media (min-width:1440px) {
+      top: 415px;
+      left: 230px;
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 305px;
     }
     .text {
       font-size: 2rem;
       line-height: 30px;
+
+      @media (min-width:1440px) {
+        font-size: 10px;
+      }
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7px;
@@ -199,6 +267,9 @@
 
       span {
         font-weight: 800;
+        @media (min-width:1440px) {
+          font-weight: 700;
+        }
       }
     }
   }
@@ -210,7 +281,13 @@
     width: 150px;
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 315px;
-    }
+       
+      }
+      @media (min-width:1440px) {
+        top: 437px;
+        left: 55px;
+        width: 380px;
+        }
     .text {
       font-size: 2rem;
       line-height: 30px;
@@ -221,12 +298,19 @@
         width: 310px;
 
       }
+      @media (min-width:1440px) {
+        font-size: 10px;
+        line-height: 10px;
+        }
 
       span {
         font-weight: 800;
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-       font-weight: 500;
-    }
+          font-weight: 500;
+        }
+        @media (min-width:1440px) {
+          font-weight: 500;
+        }
       }
     }
   }
@@ -236,6 +320,11 @@
     top: 410px;
     left: 15px;
     width: 150px;
+    @media (min-width:1440px) {
+      top: 530px;
+      left: 20px;
+      width: 450px;
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 380px;
     }
@@ -243,17 +332,24 @@
       font-size: 2rem;
       line-height: 30px;
 
+      @media (min-width:1440px) {
+        font-size: 10px;
+        line-height: 10px;
+      }
+
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7px;
         line-height: 7px;
         width: 302px;
-
       }
 
       span {
         font-weight: 800;
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-weight: 500;
+        }
+        @media (min-width:1440px) {
+          font-weight: 500;
         }
       }
     }
