@@ -18,7 +18,7 @@
         
       // }
       
-      // @media (min-width: $breakpoint-sm) and (max-width: 600px) { HP
+      // @media (min-width: $breakpoint-sm) and (max-width: 480px) { HP
         
       // }
   //TEMPLATE
@@ -28,7 +28,7 @@
     top: 53px;
     font-size: 0.7rem;
     font-weight: 900;
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       color: #ffffff;
       top: 190px;
       left: 90px;
@@ -67,7 +67,7 @@
       float:left;
       line-height: 25px;
     }
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       color: orangered;
       top: 250px;
       left: 30px;
@@ -120,7 +120,7 @@
     top: 53px;
     grid-template-columns: 50% 50%;
     font-size: 0.7rem;
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       top: 330px;
       color: orangered;
       left: 30px;
@@ -167,7 +167,7 @@
     top: 53px;
     grid-template-columns: 50% 50%;
     font-size: 0.7rem;
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       top: 470px;
       color: orangered;
       left: 30px;

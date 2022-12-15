@@ -6,21 +6,21 @@
   background-size: cover;
   position: relative;
   // TEMPLATE 
-      // @media (min-width: $breakpoint-xl) { // LAPTOP XL
-       
-      // }
+  // @media (min-width: $breakpoint-xl) { // LAPTOP XL
 
-      // @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) { LAPTOP LARGE
-        
-      // }
+  // }
 
-      // @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) { TABLET
-        
-      // }
-      
-      // @media (min-width: $breakpoint-sm) and (max-width: 600px) { HP
-        
-      // }
+  // @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) { LAPTOP LARGE
+
+  // }
+
+  // @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) { TABLET
+
+  // }
+
+  // @media (min-width: $breakpoint-sm) and (max-width: 480px) { HP
+
+  // }
   //TEMPLATE
   .content1 {
     color: #fff;
@@ -29,25 +29,39 @@
     top: 350px;
     left: 50px;
     width: 150px;
-    @media (min-width: 1440px) {
-     top: 480px;
-     left:100px;
+
+    @media (min-width: $breakpoint-xl) {
+      // LAPTOP XL
+      top: 480px;
+      left: 100px;
     }
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-     top: 320px;
-     left: 25px;
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 450px;
+      left: 65px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+      top: 320px;
+      left: 25px;
     }
 
     .text {
-      font-size: 2rem;
-      line-height: 30px;
-      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
         font-size: 10.5px;
         line-height: 10px;
         width: 290px;
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 12px;
+        line-height: 13px;
+        width: 295px;
+      }
+
+      @media (min-width: $breakpoint-xl) {
+        // LAPTOP XL
         font-size: 12px;
         line-height: 11px;
         width: 290px;
@@ -66,26 +80,40 @@
     top: 280px;
     left: 50px;
     width: 150px;
-    @media (min-width: 1440px) {
-     top: 380px;
-     left:100px;
+
+    @media (min-width: $breakpoint-xl) {
+      // LAPTOP XL
+      top: 380px;
+      left: 100px;
     }
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-     top: 256px;
-     left: 25px;
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 350px;
+      left: 65px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+      top: 256px;
+      left: 25px;
     }
 
     .text {
-      font-size: 2rem;
-      line-height: 30px;
 
-      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 12px;
+        line-height: 13px;
+        width: 295px;
+      }
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
         font-size: 10.5px;
         line-height: 10px;
         width: 290px;
 
       }
-      @media (min-width: 1440px) {
+
+      @media (min-width: $breakpoint-xl) {
+        // LAPTOP XL
         font-size: 12px;
         line-height: 11px;
         width: 290px;
@@ -96,6 +124,7 @@
       }
     }
   }
+
   .content3 {
     color: #fff;
     position: absolute;
@@ -103,25 +132,39 @@
     top: 210px;
     left: 50px;
     width: 150px;
-    @media (min-width: 1440px) {
-     top: 280px;
-     left:100px;
+
+    @media (min-width: $breakpoint-xl) {
+      // LAPTOP XL
+      top: 280px;
+      left: 100px;
     }
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-     top: 185px; 
-     left: 25px;
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 240px;
+      left: 65px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+      top: 185px;
+      left: 25px;
     }
 
     .text {
-      font-size: 2rem;
-      line-height: 30px;
-      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 12px;
+        line-height: 13px;
+        width: 295px;
+      }
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
         font-size: 10.5px;
         line-height: 10px;
         width: 290px;
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width: $breakpoint-xl) {
+        // LAPTOP XL
         font-size: 12px;
         line-height: 11px;
         width: 290px;
@@ -132,6 +175,7 @@
       }
     }
   }
+
   .content4 {
     color: #fff;
     position: absolute;
@@ -139,29 +183,43 @@
     top: 160px;
     left: 50px;
     width: 150px;
-    @media (min-width: 1440px) {
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 170px;
+      left: 65px;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      // LAPTOP XL
       top: 215px;
       left: 100px;
     }
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-     top: 140px; 
-     left: 25px;
-    }
-    .text {
-      font-size: 2rem;
-      line-height: 30px;
 
-      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+      top: 140px;
+      left: 25px;
+    }
+
+    .text {
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 12px;
+        line-height: 13px;
+        width: 290px;
+      }
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
         font-size: 10.5px;
         line-height: 11px;
         width: 290px;
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width: $breakpoint-xl) {
+        // LAPTOP XL
         font-size: 12px;
         line-height: 11px;
         width: 290px;
       }
+
       span {
         font-weight: 700;
       }

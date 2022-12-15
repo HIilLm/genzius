@@ -17,8 +17,8 @@
       // @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) { TABLET
         
       // }
-      
-      // @media (min-width: $breakpoint-sm) and (max-width: 600px) { HP
+        
+      // @media (min-width: $breakpoint-sm) and (max-width: 480px) { HP
         
       // }
   //TEMPLATE
@@ -27,7 +27,7 @@
     top: 110px;
     left: 20px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       top: 70px;
       left: 50px;
     }
@@ -78,7 +78,7 @@
     // left: 20px;
     font-size: 20px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       top: 110px;
       left: 170px;
     }
@@ -152,7 +152,7 @@
     font-size: 0.7rem;
     text-align: justify;
 
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       top: 155px;
       left: 70px;
       width: 350px;
