@@ -93,7 +93,7 @@
     } 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 50px;
-      left: 40px;
+      left: 65px;
       width: 900px;
       color:#1f7dc5;
     }

@@ -62,10 +62,10 @@
   .content2 {
     ::first-letter{
       color: orangered;
-      font-size: 2rem;
-      font-weight: 500;
+      font-size: 30px;
+      font-weight: 600;
       float:left;
-      line-height: 25px;
+      line-height: 15px;
     }
     @media (min-width:1440px) {
       color: orangered;
@@ -82,13 +82,12 @@
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       color: orangered;
-      font-size: 9px;
-      font-weight: 300;
+      top: 180px;
       width: 300px;
-      top: 40px;
+      left: 25px;
       text-align: justify;
-      left: 0px;
       line-height: 10px;
+      font-size: 8px;
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
@@ -131,13 +130,12 @@
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       color: orangered;
-      font-size: 9px;
-      font-weight: 300;
+      top: 240px;
       width: 300px;
-      top: 95px;
+      left: 25px;
       text-align: justify;
-      left: 0px;
       line-height: 10px;
+      font-size: 8px;
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
@@ -178,13 +176,12 @@
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       color: orangered;
-      font-size: 9px;
-      font-weight: 300;
+      top: 330px;
       width: 300px;
-      top: 190px;
+      left: 25px;
       text-align: justify;
-      left: 0px;
       line-height: 10px;
+      font-size: 8px;
     }
 
     @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {

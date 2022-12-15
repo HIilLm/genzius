@@ -163,7 +163,7 @@
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 130px;
       width: 300px;
-      left: 30px;
+      left: 25px;
       font-size: 8.8px;
     }
 

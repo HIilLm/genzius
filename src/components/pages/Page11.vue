@@ -122,6 +122,9 @@
         line-height: 8px;
         width: 312px;
       }
+      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      width: 325px;
+    }
       
       span {
         font-weight: 700;
@@ -143,6 +146,9 @@
       top: 200px; 
       width: 180px;
     } 
+    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 270px;
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
           top: 135px;
     }
@@ -152,6 +158,9 @@
         width: 440px;
         line-height: 10px;
       }  
+      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      width: 320px;
+    }
       font-size: 2rem;
       line-height: 30px;
 
@@ -184,6 +193,9 @@
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
           top: 165px;
     }
+    @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      top: 180px;
+    }
     .text {
       @media (min-width:1440px) {
         font-size: 9px;
@@ -198,6 +210,9 @@
         line-height: 9px;
         width: 312px;
       }
+      @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+      width: 325px;
+    }
 
       span {
         font-weight: 700;

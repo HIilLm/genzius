@@ -85,12 +85,18 @@
         line-height: 7.5px;
         width: 145px;
       }
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        line-height: 9px;
+      }
 
       span {
         font-weight: 700;
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
           font-weight: 400;
         }
+        @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        font-weight: 500;
+      }
       }
     }
   }
@@ -109,6 +115,9 @@
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
       top: 190px;
     }
+    @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        top: 210px;
+      }
     .text {
       font-size: 8px;
       line-height: 15px;
@@ -117,6 +126,10 @@
         font-size: 6px;
         line-height: 10px;
         width: 145px;
+      }
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        line-height: 9px;
+        font-size: 7px;
       }
 
       span {
@@ -172,6 +185,9 @@
       width: 210px;
       text-align: justify;
     }
+    @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        top: 230px;
+      }
 
     .text {
       font-size: 8px;
@@ -182,6 +198,9 @@
         line-height: 8px;
         width: 135px;
 
+      }
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        font-size: 7px;;
       }
 
       span {
