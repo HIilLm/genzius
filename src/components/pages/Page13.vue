@@ -12,7 +12,10 @@
     top: 350px;
     left: 92px;
     width: 150px;
-
+    @media (min-width:1052px) {
+      margin-top: 20px;
+      margin-left: 10px;
+    }
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 10px;
 }
@@ -84,7 +87,10 @@
     top: 385px;
     left: 20px;
     width: 150px;
-
+    @media (min-width:1052px) {
+      margin-top: 25px;
+      
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
       top: 361px;
       width: 90px;
@@ -122,7 +128,10 @@
     top: 435px;
     left: 20px;
     width: 150px;
-
+    @media (min-width:1052px) {
+      margin-top: 25px;
+      
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
       top: 411px;
       left: 7px;

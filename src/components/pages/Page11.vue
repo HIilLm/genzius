@@ -151,6 +151,10 @@
     top: 340px;
     left: 10px;
     width: 150px;
+    @media (min-width:1052px) {
+      margin-top: 20px;
+      
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
           top: 325px;
     }
@@ -179,6 +183,10 @@
     top: 410px;
     left: 10px;
     width: 150px;
+    @media (min-width:1052px) {
+      margin-top: 20px;
+      
+    }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
           top: 387px;
     }
