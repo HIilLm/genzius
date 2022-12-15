@@ -1,6 +1,6 @@
 <style lang="scss" scoped>
 .p16 {
-  background-image: url("/img/pages/g-16.jpg");
+  background-image: url("/img/pages/g-15.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

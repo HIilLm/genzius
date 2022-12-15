@@ -1,7 +1,7 @@
 <style lang="scss">
   // @import url('https://fonts.cdnfonts.com/css/austrian');
 .p5 {
-  background-image: url("/img/pages/04.jpg");
+  background-image: url("/img/pages/g-04.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

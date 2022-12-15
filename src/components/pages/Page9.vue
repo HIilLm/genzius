@@ -1,12 +1,12 @@
 <style lang="scss">
 .p10 {
-  background-image: url("/img/pages/g-09.jpg");
+  background-image: url("/img/pages/g-09.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
-  .content {
+  .contentb {
     color: #399876;
     position: absolute;
     top: 20px;
@@ -47,7 +47,8 @@
     @media (min-width:1440px) {
       top: 75px;
       left: 150px;
-      width: 450px;
+      width: 250px;
+      text-align: center;
     } 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
      left: 95px; 
@@ -64,7 +65,8 @@
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 20px;
         line-height: 25px;
-        width: 500px;
+        width: 170px;
+        text-align: center;
       }
 
       span {
@@ -203,7 +205,7 @@
       <div id="p9p4">{{ $t("p9.paragraph4") }}</div>
     </div>
 
-    <div class="content">
+    <div class="contentb">
       <div id="p9t_" class="title"></div>
     </div>
     <div class="content1">

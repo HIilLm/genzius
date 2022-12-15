@@ -1,6 +1,6 @@
 <style lang="scss">
 .p8 {
-  background-image: url("/img/pages/07.jpg");
+  background-image: url("/img/pages/g-07.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,7 +73,7 @@
     @media (min-width:1440px) {
       top: 90px;
       left: 260px;
-      width: 430px;
+      width: fit-content;
       font-size: 20px;
       text-align: justify;
     }

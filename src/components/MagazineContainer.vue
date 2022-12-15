@@ -1,7 +1,7 @@
 <style lang="scss">
 
 .cover{
-  background-image: url("/img/g-0.jpg");
+  background-image:url("/img/g0.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -994,10 +994,10 @@
         <Button class="btn" v-on:click.native="doublePreviousPage">
           <i class="fas fa-angle-double-left fa-lg"></i>
         </Button>
-        <Button class="btn" v-on:click.native="previousPage">
+        <Button class="btn" id="btnPrevious" v-on:click.native="previousPage">
           <i class="fas fa-angle-left fa-lg"></i>
         </Button>
-        <Button class="btn" v-on:click.native="nextPage">
+        <Button class="btn" id="btnNext" v-on:click.native="nextPage">
           <i class="fas fa-angle-right fa-lg"></i>
         </Button>
         <Button class="btn" v-on:click.native="doubleNextPage">

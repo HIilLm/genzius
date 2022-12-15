@@ -1,6 +1,6 @@
 <style lang="scss">
 .p12 {
-  background-image: url("/img/pages/11.jpg");
+  background-image: url("/img/pages/g-11.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,7 +204,7 @@
     }
     @media (min-width:1440px) {
       left: 30px;
-      top: 490px; 
+      top: 480px; 
       width: 180px;
     } 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
@@ -246,7 +246,7 @@
     }
     @media (min-width:1440px) {
       left: 30px;
-      top: 580px; 
+      top: 570px; 
       width: 180px;
     } 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){

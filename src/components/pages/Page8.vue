@@ -1,6 +1,6 @@
 <style lang="scss">
 .p9 {
-  background-image: url("/img/pages/g-08.jpg");
+  background-image: url("/img/pages/g-08.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,6 +1,6 @@
 <style lang="scss">
 .p11 {
-  background-image: url("/img/pages/g-17.jpg");
+  background-image: url("/img/pages/g-10.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,13 +12,16 @@
     top: 40px;
     left: 75px;
     width: 150px;
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-     left: 64px; 
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      left: 64px;
     }
+
     @media (min-width:1440px) {
       left: 115px;
-      top: 50px; 
-    } 
+      top: 50px;
+    }
+
     .title {
       font-size: 2rem;
       line-height: 30px;
@@ -32,13 +35,14 @@
       @media (min-width:1440px) {
         font-size: 25px;
         width: 500px;
-      }  
+      }
 
       span {
         font-weight: 800;
       }
     }
   }
+
   .content2 {
     color: #fff;
     position: absolute;
@@ -46,12 +50,14 @@
     top: 85px;
     left: 30px;
     width: 150px;
+
     @media (min-width:1440px) {
       top: 100px;
       left: 45px;
-    }  
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-      left: 35px; 
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      left: 35px;
       top: 75px;
     }
 
@@ -62,20 +68,21 @@
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7.2px;
         line-height: 9px;
-        width: 265px; 
+        width: 265px;
       }
-      
+
       @media (min-width:1440px) {
         font-size: 10px;
         line-height: 15px;
         width: 405px;
-      }  
+      }
 
       span {
         font-weight: 300;
       }
     }
   }
+
   .content3 {
     color: #fff;
     position: absolute;
@@ -83,55 +90,27 @@
     top: 150px;
     left: 30px;
     width: 150px;
+
     @media (min-width:1440px) {
       top: 190px;
       left: 45px;
     }
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-     left: 35px;
-     top: 133px; 
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      left: 35px;
+      top: 133px;
     }
+
     .text {
       @media (min-width:1440px) {
         font-size: 10px;
         line-height: 15px;
         width: 405px;
-      }  
+      }
+
       font-size: 2rem;
       line-height: 30px;
-      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 7.2px;
-        line-height: 10px;
-        width: 265px;
-      }
-      span {
-        font-weight: 400;
-      }
-    }
-  }
-  .content4 {
-    color: #fff;
-    position: absolute;
-    text-align: justify;
-    top: 240px;
-    left: 30px;
-    width: 150px;
-    @media (min-width:1440px) {
-      top: 320px;
-      left: 45px;
-    }
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-     left: 35px;
-     top: 217px; 
-    }
-    .text {
-      @media (min-width:1440px) {
-        font-size: 10px;
-        line-height: 15px;
-        width: 405px;
-      }  
-      font-size: 2rem;
-      line-height: 30px;
+
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7.2px;
         line-height: 10px;
@@ -143,6 +122,47 @@
       }
     }
   }
+
+  .content4 {
+    color: #fff;
+    position: absolute;
+    text-align: justify;
+    top: 240px;
+    left: 30px;
+    width: 150px;
+
+    @media (min-width:1440px) {
+      top: 320px;
+      left: 45px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      left: 35px;
+      top: 217px;
+    }
+
+    .text {
+      @media (min-width:1440px) {
+        font-size: 10px;
+        line-height: 15px;
+        width: 405px;
+      }
+
+      font-size: 2rem;
+      line-height: 30px;
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+        font-size: 7.2px;
+        line-height: 10px;
+        width: 265px;
+      }
+
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+
   .content5 {
     color: #fff;
     position: absolute;
@@ -150,22 +170,27 @@
     top: 310px;
     left: 30px;
     width: 150px;
+
     @media (min-width:1440px) {
       top: 410px;
       left: 45px;
     }
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)){
-     left: 35px;
-     top: 280px; 
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      left: 35px;
+      top: 280px;
     }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
+
       @media (min-width:1440px) {
         font-size: 10px;
         line-height: 15px;
         width: 405px;
-      }  
+      }
+
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7.2px;
         line-height: 10px;
@@ -182,7 +207,7 @@
 
 <template>
   <div>
-     <div style="display: none">
+    <div style="display: none">
       <div id="p10p1">{{ $t("p10.paragraph1") }}</div>
       <div id="p10p2">{{ $t("p10.paragraph2") }}</div>
       <div id="p10p3">{{ $t("p10.paragraph3") }}</div>
@@ -220,9 +245,11 @@ export default {
     ref.processText("p10p5");
     window
       .jQuery("body")
-      .on("DOMSubtreeModified", "#p10p1,#p10p2,#p10p3,#p10p4,#p10p5,", function () {
-        ref.processText(window.jQuery(this).attr("id"));
-      });
+      .on("DOMSubtreeModified",
+          "#p10p1,#p10p2,#p10p3,#p10p4,#p10p5,", 
+          function () {
+          ref.processText(window.jQuery(this).attr("id"));
+          });
   },
   methods: {
     processText(id) {
@@ -238,9 +265,6 @@ export default {
         document.getElementById(id + "_").appendChild(node);
       });
     },
-    showImage(url) {
-      this.$parent.showImage(url);
-    }
   },
 };
 </script>

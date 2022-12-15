@@ -1,6 +1,6 @@
 <style lang="scss">
 .p14 {
-  background-image: url("/img/pages/g-13.jpg");
+  background-image: url("/img/pages/g-13.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,20 +12,22 @@
     top: 350px;
     left: 92px;
     width: 150px;
+
     @media (min-width:1052px) {
       margin-top: 20px;
       margin-left: 10px;
     }
+
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 10px;
-}
+    }
 
-    @media (min-width: $breakpoint-sm) {
     @media (min-width:1440px) {
-      left: 160px;
-      top: 470px; 
+      left: 110px;
+      top: 455px;
       width: 200px;
-    } 
+    }
+
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
       top: 315px;
       left: 80px;
@@ -33,12 +35,13 @@
 
     .title {
       @media (min-width:1440px) {
-        font-size: 35px;
+        font-size: 50px;
         width: 800px;
-      }  
+      }
+
       font-size: 2rem;
       line-height: 30px;
-      
+
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 33px;
@@ -60,24 +63,27 @@
       }
     }
   }
-  .content {
+
+  .content4 {
     color: black;
     position: absolute;
     top: 15px;
     left: 20px;
     width: 150px;
+
     @media (min-width:1440px) {
       left: 40px;
-      top: 50px; 
+      top: 50px;
       width: 100px;
-    } 
+    }
+
     .title {
       @media (min-width:1440px) {
         font-size: 40px;
         width: 100px;
         font-weight: 700;
+      }
 
-      }  
       font-size: 2rem;
       line-height: 30px;
 
@@ -91,31 +97,26 @@
         font-weight: 700;
       }
     }
-
-    .subtitle {
-      font-size: 1rem;
-
-      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 0.8rem;
-        line-height: 15px;
-      }
-    }
   }
+
   .content2 {
     position: absolute;
     text-align: justify;
     top: 385px;
     left: 20px;
     width: 150px;
+
     @media (min-width:1052px) {
       margin-top: 25px;
-      
+
     }
+
     @media (min-width:1440px) {
       left: 30px;
-      top: 540px; 
+      top: 514px;
       width: 180px;
-    } 
+    }
+
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
       top: 361px;
       width: 90px;
@@ -127,7 +128,8 @@
         font-size: 10px;
         width: 440px;
         line-height: 13px;
-      }  
+      }
+
       font-size: 2rem;
       line-height: 30px;
 
@@ -152,31 +154,37 @@
       }
     }
   }
+
   .content3 {
     position: absolute;
     text-align: justify;
     top: 435px;
     left: 20px;
     width: 150px;
+
     @media (min-width:1052px) {
       margin-top: 25px;
-      
+
     }
+
     @media (min-width:1440px) {
       left: 30px;
-      top: 610px; 
+      top: 585px;
       width: 180px;
-    } 
+    }
+
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
       top: 411px;
       left: 7px;
     }
+
     .text {
       @media (min-width:1440px) {
         font-size: 10px;
         width: 440px;
         line-height: 13px;
-      }  
+      }
+
       font-size: 2rem;
       line-height: 30px;
 
@@ -202,7 +210,7 @@
     }
   }
 }
-}
+
 </style>
 
 <template>
@@ -217,7 +225,7 @@
     <div class="content1">
       <div id="p13t_" class="title"></div>
     </div>
-    <div class="content">
+    <div class="content4">
       <div id="p13s_" class="title"></div>
     </div>
     <div class="content2">

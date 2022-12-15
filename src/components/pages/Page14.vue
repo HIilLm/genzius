@@ -1,6 +1,6 @@
 <style lang="scss">
 .p15 {
-  background-image: url("/img/pages/g-14.jpg");
+  background-image: url("/img/pages/g-14.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -409,7 +409,7 @@
     width: 150px;
     @media (min-width:1440px) {
       left: 130px;
-      top: 550px; 
+      top: 555px; 
       width: 100px;
       line-height: 15px;
     } 
