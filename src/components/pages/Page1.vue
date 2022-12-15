@@ -5,25 +5,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-      // TEMPLATE 
-      // @media (min-width: $breakpoint-xl) { // LAPTOP XL
-       
-      // }
+  // TEMPLATE 
+  // @media (min-width: $breakpoint-xl) { // LAPTOP XL
 
-      // @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) { LAPTOP LARGE
-        
-      // }
+  // }
 
-      // @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) { TABLET
-        
-      // }
-      
-      // @media (min-width: $breakpoint-sm) and (max-width: 480px) { HP
-        
-      // }
-      //TEMPLATE
+  // @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) { LAPTOP LARGE
+
+  // }
+
+  // @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) { //TABLET
+
+  // }
+
+  // @media (min-width: $breakpoint-sm) and (max-width: 480px) { HP
+
+  // }
+  //TEMPLATE
   .contentb {
     color: #ffffff;
+
     .title {
       text-align: center;
       background-color: orangered;
@@ -34,28 +35,34 @@
         margin-left: 120px;
       }
 
-      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
-      
-      }
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px)) {}
 
       @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
-        
+        //TABLET
+        margin-top: 40px;
+        margin-left: 100px;
       }
-      
+
       @media (min-width: $breakpoint-sm) and (max-width: 480px) {
         margin-top: 40px;
         margin-left: 80px;
       }
-      
+
       span {
         margin: 0px 5px;
         font-weight: 700;
+
         @media (min-width: $breakpoint-xl) {
           font-size: 21px;
         }
 
         @media (min-width: $breakpoint-sm) and (max-width: 480px) {
           font-size: 12px;
+        }
+
+        @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+          //TABLET
+          font-size: 19px;
         }
       }
     }
@@ -73,34 +80,49 @@
       // margin-bottom: 5px;
       width: fit-content;
       background-color: orangered;
-      
-      @media (min-width:  $breakpoint-xl) { //LAPTOP LG
+
+      @media (min-width: $breakpoint-xl) {
+        //LAPTOP LG
         margin-top: 15px;
         margin-left: 120px;
       }
-      
-      @media (min-width:$breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) { //LAPTOP MD
+
+      @media (min-width:$breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
+        //LAPTOP MD
         width: 225px;
       }
 
-      @media (min-width: $breakpoint-sm) and (max-width: 480px) { //HP
+      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+        //HP
         margin-top: 4px;
         margin-left: 80px;
       }
 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        //TABLET
+        margin-top: 15px;
+        margin-left: 100px;
+      }
+
       span {
         font-weight: 700;
-        font-size: 25px;
+        margin: 0px 5px;
+
         @media (min-width: $breakpoint-xl) {
           font-size: 21px;
-          margin: 0px 5px;
         }
-        @media (min-width:$breakpoint-lg) and (max-width: 1300px)  {
+
+        @media (min-width:$breakpoint-lg) and (max-width: 1300px) {
           margin-left: 0;
         }
+
         @media (min-width: $breakpoint-sm) and (max-width: 480px) {
           font-size: 12px;
-          margin: 0px 5px;
+        }
+
+        @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+          //TABLET
+          font-size: 19px;
         }
       }
     }
@@ -132,6 +154,12 @@
       top: 105px;
     }
 
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      //TABLET
+      top: 125px;
+      left: 100px;
+    }
+
     .text {
       font-size: 10px;
       line-height: 12px;
@@ -143,16 +171,15 @@
 
       }
 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        //TABLET
+        font-size: 9px;
+        line-height: 10px;
+        width: 180px;
+      }
+
       span {
-        font-weight: 700;
-
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
-          font-weight: 500;
-        }
-
-        @media (min-width: $breakpoint-xl) {
-          font-weight: 500;
-        }
+        font-weight: 500;
       }
     }
   }
@@ -163,7 +190,7 @@
     text-align: justify;
     width: 353px;
 
-    @media (min-width:$breakpoint-lg) and (max-width: 1300px)  {
+    @media (min-width:$breakpoint-lg) and (max-width: 1300px) {
       margin-top: 5px;
       margin-left: 10px;
     }
@@ -178,6 +205,12 @@
       top: 175px;
     }
 
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      //TABLET
+      top: 230px;
+      left: 100px;
+    }
+
     .text {
       font-size: 10px;
       line-height: 12px;
@@ -188,14 +221,15 @@
         width: 240px;
       }
 
-      span {
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
-          font-weight: 500;
-        }
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        //TABLET
+        font-size: 9px;
+        line-height: 10px;
+        width: 310px;
+      }
 
-        @media (min-width: $breakpoint-xl) {
-          font-weight: 500;
-        }
+      span {
+        font-weight: 500;
       }
     }
   }
@@ -218,6 +252,13 @@
       width: 212px;
     }
 
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      //TABLET
+      left: 225px;
+      top: 300px;
+      width: 200px;
+    }
+
     .text {
       font-size: 10px;
       line-height: 12px;
@@ -229,17 +270,17 @@
 
       }
 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        //TABLET
+        font-size: 9px;
+        line-height: 10px;
+        width: 183px;
+      }
+
       span {
-        font-weight: 700;
 
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
-          font-weight: 500;
+        font-weight: 500;
 
-        }
-
-        @media (min-width: $breakpoint-xl) {
-          font-weight: 500;
-        }
       }
     }
   }
@@ -253,8 +294,8 @@
     width: 75%;
 
     @media (min-width: $breakpoint-xl) {
-        width: 353px;
-        left: 115px;
+      width: 353px;
+      left: 115px;
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
@@ -262,23 +303,31 @@
       left: 80px;
     }
 
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      //TABLET
+      top: 386px;
+      left: 100px;
+    }
+
     .text {
       font-size: 10px;
       line-height: 14px;
+
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
         font-size: 6px;
         line-height: 10px;
         width: 235px;
       }
 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        //TABLET
+        font-size: 9px;
+        line-height: 10px;
+        width: 307px;
+      }
+
       span {
-        font-weight: 700;
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
-          font-weight: 500;
-        }
-        @media (min-width: $breakpoint-xl) {
-          font-weight: 500;
-        }
+        font-weight: 500;
       }
     }
   }
@@ -296,6 +345,12 @@
       left: 80px;
     }
 
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      //TABLET
+      top: 420px;
+      left: 100px;
+    }
+
     .text {
       font-size: 10px;
       line-height: 12px;
@@ -307,14 +362,15 @@
 
       }
 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        //TABLET
+        font-size: 9px;
+        line-height: 10px;
+        width: 180px;
+      }
+
       span {
-        font-weight: 700;
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
-          font-weight: 500;
-        }
-        @media (min-width: $breakpoint-xl) {
-          font-weight: 500;
-        }
+        font-weight: 500;
       }
     }
   }
@@ -332,6 +388,12 @@
       left: 80px;
     }
 
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      //TABLET
+      top: 525px;
+      left: 100px;
+    }
+
     .text {
       font-size: 10px;
       line-height: 12px;
@@ -343,15 +405,15 @@
 
       }
 
-      span {
-        font-weight: 700;
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        //TABLET
+        font-size: 9px;
+        line-height: 10px;
+        width: 310px;
+      }
 
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
-          font-weight: 500;
-        }
-        @media (min-width: $breakpoint-xl) {
-          font-weight: 500;
-        }
+      span {
+        font-weight: 500;
       }
     }
   }
@@ -388,7 +450,7 @@
     <div class="content4">
       <div id="p1p4_" class="text"></div>
     </div>
-    <div class="content5">
+     <div class="content5">
       <div id="p1p5_" class="text"></div>
     </div>
     <div class="content6">
