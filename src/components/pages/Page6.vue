@@ -91,6 +91,7 @@
       top: 40px;
       left: 0px;
       line-height: 10px;
+      font-size: 8px;
     }
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
@@ -138,6 +139,7 @@
       top: 95px;
       left: 0px;
       line-height: 10px;
+      font-size: 8px;
     }
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
@@ -185,6 +187,7 @@
       top: 190px;
       left: 0px;
       line-height: 10px;
+      font-size: 8px;
     }
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {

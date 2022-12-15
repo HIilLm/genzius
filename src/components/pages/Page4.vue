@@ -19,7 +19,7 @@
         
       // }
       
-      // @media (min-width: $breakpoint-sm) and (max-width: 480px) { HP
+      // @media (min-width: $breakpoint-sm) and (max-width: 600px) { HP
         
       // }
   //TEMPLATE
@@ -33,17 +33,27 @@
       top: 100px;
       left: 28px;
     }
-    @media (min-width: $breakpoint-xl) { // LAPTOP XL
+    @media (min-width:1440px) {
       width: 350px;
       left: 65px; 
       top: 145px;
     }
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      left: 65px; 
+      top: 125px;
+    }
+
     .title {
       font-size: 2rem;
       line-height: 30px;
       
-      @media (min-width: $breakpoint-xl) { // LAPTOP XL
+      @media (min-width:1440px) {
         font-size: 30px;
+      }
+
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+       font-size: 90px;
       }
       
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
@@ -54,7 +64,7 @@
       
       span {
         font-weight: 500;
-        @media (min-width: $breakpoint-xl) { // LAPTOP XL
+        @media (min-width:1440px) {
           // font-family: 'Austrian', sans-serif;
           font-weight: 700;
       }
@@ -68,19 +78,26 @@
     top: 150px;
     left: 15px;
     width: 150px;
+    
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         top: 140px;
     }
-    @media (min-width: $breakpoint-xl) { // LAPTOP XL
+    @media (min-width:1440px) {
       top: 205px;
       left: 20px;
       width: 450px;
     }
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      left: 15px; 
+      top: 175px;
+    }
+
     .text {
       font-size: 2rem;
       line-height: 30px;
       
-      @media (min-width: $breakpoint-xl) { // LAPTOP XL
+      @media (min-width:1440px) {
         font-size: 10px;
         line-height: 12px;
       }
@@ -91,11 +108,17 @@
         width: 302px;
       }
 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        width: 260%;
+        font-size: 9px;
+        line-height: 10px;
+      }
+
       span {
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-weight: 500;
       }
-      @media (min-width: $breakpoint-xl) { // LAPTOP XL
+      @media (min-width:1440px) {
         font-weight: 500;
     }
         font-weight: 800;
@@ -108,7 +131,7 @@
     top: 200px;
     left: 15px;
     width: 150px;
-    @media (min-width: $breakpoint-xl) { // LAPTOP XL
+    @media (min-width:1440px) {
       top: 270px;
       left: 20px;
       width: 450px;
@@ -116,10 +139,15 @@
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 187px;
     }
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      left: 15px; 
+      top: 230px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
-      @media (min-width: $breakpoint-xl) { // LAPTOP XL
+      @media (min-width:1440px) {
         font-size: 10px;
         line-height: 10px;
     }
@@ -130,11 +158,17 @@
 
       }
 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        width: 260%;
+        font-size: 9px;
+        line-height: 10px;
+      }
+
       span {
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
           font-weight: 500;
         }
-        @media (min-width: $breakpoint-xl) { // LAPTOP XL
+        @media (min-width:1440px) {
           font-weight: 500;
         }
         font-weight: 800;
@@ -147,17 +181,23 @@
     top: 250px;
     left: 15px;
     width: 150px;
-    @media (min-width: $breakpoint-xl) { // LAPTOP XL
+    @media (min-width:1440px) {
       top: 325px;
       left: 20px;
     }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 230px;
     }
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      left: 15px; 
+      top: 285px;
+    }
+    
     .text {
       font-size: 2rem;
       line-height: 30px;
-      @media (min-width: $breakpoint-xl) { // LAPTOP XL
+      @media (min-width:1440px) {
         font-size: 10px;
         line-height: 10px;
         width: 450px;
@@ -169,12 +209,18 @@
 
       }
 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        width: 260%;
+        font-size: 9px;
+        line-height: 10px;
+      }
+
       span {
         font-weight: 800;
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
           font-weight: 500;
         }
-        @media (min-width: $breakpoint-xl) { // LAPTOP XL
+        @media (min-width:1440px) {
           font-weight: 500;
     }
       }
@@ -189,26 +235,32 @@
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 260px;
     }
-    @media (min-width: $breakpoint-xl) { // LAPTOP XL
+    @media (min-width:1440px) {
       top: 360px;
       left: 230px;
+    }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      left: 200px; 
+      top: 335px;
     }
     .text {
       font-size: 2rem;
       line-height: 30px;
-      @media (min-width: $breakpoint-xl) { // LAPTOP XL
+      @media (min-width:1440px) {
         font-size: 10px;
         }
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 7px;
         line-height: 9px;
         width: 320px;
-
+      }
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        width: 350px;
       }
 
       span {
         font-weight: 800;
-        @media (min-width: $breakpoint-xl) { // LAPTOP XL
+        @media (min-width:1440px) {
           font-weight: 700;
         }
       }
@@ -220,17 +272,22 @@
     top: 295px;
     left: 15px;
     width: 150px;
-    @media (min-width: $breakpoint-xl) { // LAPTOP XL
+    @media (min-width:1440px) {
       top: 382px;
       left: 50px;
     }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 273px;
     }
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      left: 15px; 
+      top: 345px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
-      @media (min-width: $breakpoint-xl) { // LAPTOP XL
+      @media (min-width:1440px) {
         font-size: 10px;
         line-height: 10px;
         width: 400px;
@@ -242,12 +299,18 @@
 
       }
 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        width: 260%;
+        font-size: 9px;
+        line-height: 10px;
+      }
+
       span {
           font-weight: 800;
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
           font-weight: 500;
         }
-        @media (min-width: $breakpoint-xl) { // LAPTOP XL
+        @media (min-width:1440px) {
           font-weight: 500;
         }
       }
@@ -259,19 +322,30 @@
     top: 330px;
     left: 165px;
     width: 150px;
-    @media (min-width: $breakpoint-xl) { // LAPTOP XL
+    @media (min-width:1440px) {
       top: 415px;
       left: 230px;
     }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 305px;
     }
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      left: 205px; 
+      top: 385px;
+    }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
-      @media (min-width: $breakpoint-xl) { // LAPTOP XL
+      @media (min-width:1440px) {
         font-size: 10px;
+      }
+      
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        width: 260%;
+        font-size: 12px;
+        line-height: 10px;
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
@@ -283,7 +357,7 @@
 
       span {
         font-weight: 800;
-        @media (min-width: $breakpoint-xl) { // LAPTOP XL
+        @media (min-width:1440px) {
           font-weight: 700;
         }
       }
@@ -299,10 +373,15 @@
        top: 315px;
        
       }
-      @media (min-width: $breakpoint-xl) { // LAPTOP XL
+      @media (min-width:1440px) {
         top: 437px;
         left: 55px;
         width: 380px;
+        }
+
+        @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+          left: 15px; 
+          top: 405px;
         }
     .text {
       font-size: 2rem;
@@ -314,17 +393,23 @@
         width: 310px;
 
       }
-      @media (min-width: $breakpoint-xl) { // LAPTOP XL
+      @media (min-width:1440px) {
         font-size: 10px;
         line-height: 10px;
         }
+
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        width: 260%;
+        font-size: 9px;
+        line-height: 10px;
+      }
 
       span {
         font-weight: 800;
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
           font-weight: 500;
         }
-        @media (min-width: $breakpoint-xl) { // LAPTOP XL
+        @media (min-width:1440px) {
           font-weight: 500;
         }
       }
@@ -336,7 +421,7 @@
     top: 410px;
     left: 15px;
     width: 150px;
-    @media (min-width: $breakpoint-xl) { // LAPTOP XL
+    @media (min-width:1440px) {
       top: 530px;
       left: 20px;
       width: 450px;
@@ -344,11 +429,16 @@
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
        top: 380px;
     }
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      left: 15px; 
+      top: 475px;
+      }
     .text {
       font-size: 2rem;
       line-height: 30px;
 
-      @media (min-width: $breakpoint-xl) { // LAPTOP XL
+      @media (min-width:1440px) {
         font-size: 10px;
         line-height: 10px;
       }
@@ -358,13 +448,18 @@
         line-height: 7px;
         width: 302px;
       }
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        width: 260%;
+        font-size: 9px;
+        line-height: 10px;
+      }
 
       span {
         font-weight: 800;
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-weight: 500;
         }
-        @media (min-width: $breakpoint-xl) { // LAPTOP XL
+        @media (min-width:1440px) {
           font-weight: 500;
         }
       }

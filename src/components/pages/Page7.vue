@@ -106,12 +106,6 @@
       left: 170px;
     }
 
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      top: 229px;
-      left: 27px;
-      width: 207px;
-    }
-
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
       // HP
       top: 40px;
@@ -121,9 +115,8 @@
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
       // TABLET
-      top: 90px;
-      left: 260px;
-      width: fit-content;
+      top: 70px;
+      left: 215px;
       font-size: 20px;
     }
 
@@ -180,9 +173,9 @@
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
       // TABLET
-      top: 130px;
-      left: 240px;
-      width: 430px;
+      top: 110px;
+      left: 200px;
+      // width: 430px;
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
@@ -219,8 +212,9 @@
 
       @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
         // TABLET
-        font-size: 7.3px;
+        font-size: 9px;
         line-height: 9px;
+        width: 210px;
       }
     }
   }
@@ -257,21 +251,22 @@
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
       // TABLET
-      top: 340px;
-      left: 240px;
+      top: 250px;
+      left: 200px;
       width: 430px;
     }
 
     .text {
+      @media (min-width: $breakpoint-xl) {
+        // LAPTOP XL
+        font-size: 11px;
+        line-height: 13px;
+        width: 230px;
+      }
 
       @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 8px;
         line-height: 9px;
-      }
-
-      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        font-size: 0.65rem;
-        line-height: 11px;
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
@@ -282,8 +277,9 @@
 
       @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
         // TABLET
-        font-size: 8px;
+        font-size: 9px;
         line-height: 9px;
+        width: 210px;
       }
     }
   }
@@ -320,16 +316,17 @@
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
       // TABLET
-      top: 470px;
-      left: 240px;
-      width: 430px;
+      top: 340px;
+      left: 200px;
+      // width: 430px;
     }
 
     .text {
       @media (min-width: $breakpoint-xl) {
         // LAPTOP XL
-        font-size: 10px;
-        line-height: 11px;
+        font-size: 11px;
+        line-height: 10px;
+        width: 230px;
       }
 
 
@@ -340,8 +337,9 @@
 
       @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
         // TABLET
-        font-size: 10px;
-        line-height: 11px;
+        font-size: 9px;
+        line-height: 9px;
+        width: 210px;
       }
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
@@ -367,18 +365,18 @@
       <div id="p7t_" class="title"></div>
     </div>
 
-     <div class="content2">
+    <div class="content2">
       <div id="p7p1_" class="text"></div>
     </div>
-    <!--<div class="content3">
+    <div class="content3">
       <div id="p7p2_" class="text"></div>
     </div>
-    <div class="content4">    
+    <div class="content4">
       <div id="p7p3_" class="text"></div>
     </div>
     <div class="content5">
       <div id="p7p4_" class="text"></div>
-    </div> -->
+    </div>
   </div>
 </template>
 

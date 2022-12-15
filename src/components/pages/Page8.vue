@@ -23,6 +23,7 @@
       // }
   //TEMPLATE
   .content {
+    color: #1f7dc5;
     position: absolute;
     top: 104px;
     left: 72px;
@@ -52,6 +53,12 @@
       left: 110px;
       width: 164px;
     }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 50px;
+      width: 300px;
+      left: 160px;
+    }
+
 
     .text {
       font-size: 0.7rem;
@@ -76,10 +83,15 @@
         font-size: 45px;
         font-weight: bold;
       } 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 25px;
+        font-weight: 700;
+      }
 
     }
   }
   .content1 {
+    color: #1f7dc5;
     position: absolute;
     top: 104px;
     left: 72px;
@@ -93,7 +105,7 @@
     } 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
       top: 50px;
-      left: 40px;
+      left: 65px;
       width: 900px;
       color:#1f7dc5;
     }
@@ -108,6 +120,11 @@
       top: 40px;
       left: 67px;
       width: 300px;
+    }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      top: 80px;
+      width: 300px;
+      left: 90px;
     }
 
     .text {
@@ -132,6 +149,9 @@
         font-size: 24px;
         font-weight: bold;
       } 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 24px;
+      }
     }
   }
   .content2 {
@@ -173,6 +193,11 @@
       text-align: justify;
       width: 300px;
     }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        top: 125px;
+        width: 370px;
+        left: 25px;
+      }
 
     .text {
       font-size: 0.7rem;
@@ -197,6 +222,11 @@
         line-height: 10px;
         font-weight: 500;
       } 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        font-weight: 500;
+      }
     }
   }
   .content3 {
@@ -230,6 +260,11 @@
       text-align: justify;
       width: 300px;
     }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        top: 170px;
+        width: 370px;
+        left: 25px;
+      }
 
     .text {
       font-size: 0.7rem;
@@ -254,6 +289,11 @@
         line-height: 12px;
         font-weight: 500;
       } 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        font-weight: 500;
+      }
     }
   }
   .content4 {
@@ -286,6 +326,11 @@
       left: 10px;
       width: 300px;
     }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        top: 225px;
+        width: 370px;
+        left: 25px;
+      }
 
     .text {
       font-size: 0.7rem;
@@ -310,6 +355,11 @@
         line-height: 12px;
         font-weight: 500;
       } 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        font-weight: 500;
+      }
     }
   }
   .content5 {
@@ -336,6 +386,11 @@
       left: 57px;
       width: 223px;
     }
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        top: 360px;
+        width: 370px;
+        left: 25px;
+      }
 
     @media (min-width: $breakpoint-sm) and (max-width: 480px) {
       top: 270px;
@@ -366,6 +421,11 @@
         line-height: 12px;
         font-weight: 500;
       } 
+      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+        font-size: 8px;
+        line-height: 10px;
+        font-weight: 500;
+      }
     }
   }
 }
