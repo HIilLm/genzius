@@ -18,7 +18,7 @@
         
       // }
       
-      // @media (min-width: $breakpoint-sm) and (max-width: 600px) { HP
+      // @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {// HP
         
       // }
   /TEMPLATE*/
@@ -27,7 +27,7 @@
     top: 110px;
     left: 20px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       top: 70px;
       left: 50px;
     }
@@ -37,10 +37,7 @@
       left: 10px;
     }
 
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      top: 95px;
-      left: 10px;
-    }
+   
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
       top: 45px;
@@ -48,7 +45,7 @@
       width: 100%;
     }
 
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {// HP
       top: 45px;
       left: 13px;
       width: 500px;
@@ -67,15 +64,12 @@
           font-size: 25px;
         }
 
-        @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-          font-size: 1.2rem;
-        }
 
         @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
           font-size: 2rem;
         }
 
-        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {// HP
           font-size: 23px;
         }
       }
@@ -88,7 +82,7 @@
     // left: 20px;
     font-size: 20px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       top: 110px;
       left: 170px;
     }
@@ -98,17 +92,14 @@
       left: 120px;
     }
 
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      top: 95px;
-      left: 10px;
-    }
+   
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
       top: 80px;
       left: 150px;
     }
 
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {// HP
       top: 75px;
       left: 105px;
     }
@@ -124,11 +115,9 @@
           font-size: 1.1rem;
         }
 
-        @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-          font-size: 1.2rem;
-        }
+        
 
-        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {// HP
           font-size: 1rem;
         }
       }
@@ -155,7 +144,7 @@
           font-size: 2rem;
         }
 
-        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {// HP
           font-size: 1rem;
         }
       }
@@ -171,7 +160,7 @@
     font-size: 0.7rem;
     text-align: justify;
 
-    @media (min-width:1440px) {
+    @media (min-width: $breakpoint-xl) { // LAPTOP XL
       top: 155px;
       left: 70px;
       width: 350px;
@@ -186,12 +175,7 @@
       font-size: 8.8px;
     }
 
-    @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-      top: 202px;
-      width: 210px;
-      left: 185px;
-      font-size: 0.65rem;
-    }
+    
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
       top:120px;
@@ -199,7 +183,7 @@
       width: 80%;
     }
 
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {// HP
       top: 105px;
       width: 270px;
       left: 30px;
@@ -215,16 +199,8 @@
       @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
         line-height: 10px;
       }
-
-      @media (min-width: 481px) and (max-width: ($breakpoint-lg - 1px)) {
-        line-height: 11px;
-      }
-
-      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
-        line-height: 14px;
-      }
-
-      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+      
+       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {// HP
         line-height: 11px;
       }
     }

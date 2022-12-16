@@ -6,21 +6,21 @@
   background-size: cover;
   position: relative;
   // TEMPLATE 
-      // @media (min-width: $breakpoint-xl) { // LAPTOP XL
-       
-      // }
+  // @media (min-width: $breakpoint-xl) { // LAPTOP XL
 
-      // @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) { LAPTOP LARGE
-        
-      // }
+  // }
 
-      // @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) { TABLET
-        
-      // }
-      
-      // @media (min-width: $breakpoint-sm) and (max-width: 600px) { HP
-        
-      // }
+  // @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) { // LAPTOP LARGE
+
+  // }
+
+  // @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) { TABLET
+
+  // }
+
+  // @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) { // HP
+
+  // }
   //TEMPLATE
   .content1 {
     color: orange;
@@ -29,26 +29,49 @@
     left: 85px;
     padding-left: 15px;
     width: 140px;
-    @media (min-width:1440px) {
+
+    @media (min-width: $breakpoint-xl) {
+      // LAPTOP XL
       top: 40px;
       left: 100px;
       width: 300px;
       text-align: center;
     }
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        left: 74px;
-      }
-      @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
-        left: 30px; 
-        top: 25px;
-        }
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+      // HP
+      left: 74px;
+    }
+
+    @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px)) {
+      // LAPTOP LARGE
+      left: 74px;
+    }
+
+    @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
+      left: 30px;
+      top: 25px;
+    }
+
     .title {
       font-size: 2rem;
       line-height: 30px;
-      @media (min-width:1440px) {
+
+      @media (min-width: $breakpoint-xl) {
+        // LAPTOP XL
         line-height: 40px;
       }
-      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+        // HP
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        width: 160px;
+      }
+
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px)) {
+        // LAPTOP LARGE
         text-align: center;
         font-size: 20px;
         line-height: 30px;
@@ -66,21 +89,25 @@
       }
     }
   }
+
   .content2 {
-    ::first-letter{
+    ::first-letter {
       color: black;
       font-size: 2rem;
       font-weight: 500;
-      float:left;
+      float: left;
       line-height: 25px;
       margin-left: 0px;
     }
+
     position: absolute;
     text-align: justify;
     top: 95px;
     left: 20px;
     width: 150px;
-    @media (min-width:1440px) {
+
+    @media (min-width: $breakpoint-xl) {
+      // LAPTOP XL
       top: 140px;
       left: 30px;
       width: 210px;
@@ -88,14 +115,23 @@
     }
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
-      left: 25px; 
+      left: 25px;
       top: 115px;
-      }
+    }
+
     .text {
       font-size: 8px;
       line-height: 13px;
 
-      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+        // HP
+        font-size: 6px;
+        line-height: 7.5px;
+        width: 145px;
+      }
+
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px)) {
+        // LAPTOP LARGE
         font-size: 6px;
         line-height: 7.5px;
         width: 145px;
@@ -109,41 +145,64 @@
 
       span {
         font-weight: 700;
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+          // HP
           font-weight: 400;
         }
+
+
       }
     }
   }
+
   .content3 {
     position: absolute;
     text-align: justify;
     top: 210px;
     left: 20px;
     width: 150px;
-    @media (min-width:1440px) {
+
+    @media (min-width: $breakpoint-xl) {
+      // LAPTOP XL
       top: 290px;
       left: 30px;
       width: 210px;
       text-align: justify;
     }
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+      // HP
+      top: 190px;
+    }
+
+    @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px)) {
+      // LAPTOP LARGE
       top: 190px;
     }
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
-      left: 25px; 
+      left: 25px;
       top: 245px;
-      }
+    }
+
     .text {
       font-size: 8px;
       line-height: 15px;
 
-      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+        // HP
         font-size: 6px;
         line-height: 10px;
         width: 145px;
       }
+
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px)) {
+      // LAPTOP LARGE
+      font-size: 6px;
+        line-height: 10px;
+        width: 145px;
+    }
 
       @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
         width: 120%;
@@ -153,41 +212,62 @@
 
       span {
         font-weight: 700;
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-weight: 400;
-      }
+
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+          // HP
+          font-weight: 400;
+        }
       }
     }
   }
+
   .content4 {
     position: absolute;
     text-align: justify;
     top: 95px;
     left: 180px;
     width: 150px;
-    @media (min-width:1440px) {
-      top: 130px;
+
+    @media (min-width: $breakpoint-xl) {
+      // LAPTOP XL
+      top: 140px;
       left: 255px;
       width: 210px;
       text-align: justify;
     }
-    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+      // HP
+      top: 95px;
+    }
+
+    @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px)) {
+      // LAPTOP LARGE
       top: 95px;
     }
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
-      left: 220px; 
+      left: 220px;
       top: 115px;
-      }
+    }
+
     .text {
       font-size: 8px;
       line-height: 13px;
 
-      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+        // HP
         font-size: 6px;
         line-height: 8px;
         width: 135px;
       }
+
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px)) {
+      // LAPTOP LARGE
+      font-size: 6px;
+        line-height: 8px;
+        width: 135px;
+    }
 
       @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
         width: 120%;
@@ -197,19 +277,24 @@
 
       span {
         font-weight: 700;
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+          // HP
           font-weight: 400;
         }
       }
     }
   }
+
   .content5 {
     position: absolute;
     text-align: justify;
     top: 220px;
     left: 180px;
     width: 150px;
-    @media (min-width:1440px) {
+
+    @media (min-width: $breakpoint-xl) {
+      // LAPTOP XL
       top: 320px;
       left: 255px;
       width: 210px;
@@ -217,20 +302,35 @@
     }
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
-      left: 220px; 
+      left: 220px;
       top: 275px;
-      }
+    }
+
+    @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px)) {
+      // LAPTOP LARGE
+      top: 220px;
+    left: 180px;
+    width: 150px;
+    }
 
     .text {
       font-size: 8px;
       line-height: 15px;
 
-      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+        // HP
         font-size: 6px;
         line-height: 8px;
         width: 135px;
 
       }
+
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px)) {
+      // LAPTOP LARGE
+      font-size: 6px;
+        line-height: 8px;
+        width: 135px;
+    }
 
       @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
         width: 120%;
@@ -240,7 +340,9 @@
 
       span {
         font-weight: 700;
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
+
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+          // HP
           font-weight: 400;
         }
       }
