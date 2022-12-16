@@ -1,22 +1,23 @@
 <style lang="scss">
-
-.cover{
-  background-image:url("/img/g0.webp");
+.cover {
+  background-image: url("/img/g0.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.magazine-container#blur.active{
+
+.magazine-container#blur.active {
   filter: blur(15px);
   // pointer-events: none;
   user-select: none;
 }
-.magazine-container.active{
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transform: 0.5s;
+
+.magazine-container.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transform: 0.5s;
 }
 
 .magazine-container {
@@ -627,7 +628,7 @@
   opacity: 0;
   transition: 500ms;
 
-   //showImage zoom image
+  //showImage zoom image
   &.active {
     z-index: 9999;
     visibility: visible;
@@ -741,27 +742,15 @@
 <template>
   <div class="magazine-container">
     <div class="header" :class="{ searchFocus: isSearchFocus }">
-      <Button
-        class="menu-toggle"
-        v-on:click.native="
-          menu.toggled = !menu.toggled;
-          language.toggled = false;
-        "
-      >
+      <Button class="menu-toggle" v-on:click.native="
+  menu.toggled = !menu.toggled;
+language.toggled = false;
+      ">
         <i class="fas fa-bars"></i>
       </Button>
       <div class="search-group">
-        <input
-          :id="search"
-          class="search"
-          type="search"
-          :placeholder="$t('search') + '...'"
-          ref="search"
-          v-model="searchField"
-          @focus="searchFocus(true)"
-          @input="search"
-          @keypress.enter="searchTurnPage"
-        />
+        <input :id="search" class="search" type="search" :placeholder="$t('search') + '...'" ref="search"
+          v-model="searchField" @focus="searchFocus(true)" @input="search" @keypress.enter="searchTurnPage" />
         <Button class="search-close" v-on:click.native="searchFocus(false)">
           <i class="fas fa-times"></i>
         </Button>
@@ -770,51 +759,33 @@
         <Button class="menu-btn" v-on:click.native="highlight">
           <i class="fas fa-highlighter fa-lg"></i>
         </Button>
-        <Button
-          class="menu-btn"
-          v-on:click.native="language.toggled = !language.toggled"
-        >
+        <Button class="menu-btn" v-on:click.native="language.toggled = !language.toggled">
           <i class="fas fa-language fa-lg"></i>
         </Button>
         <div class="language-list" :class="{ active: language.toggled }">
-          <Button
-            class="menu-btn language"
-            :class="{ active: language.data == 'id' }"
-            v-on:click.native="changeLanguage('id')"
-          >
+          <Button class="menu-btn language" :class="{ active: language.data == 'id' }"
+            v-on:click.native="changeLanguage('id')">
             <svg-icon icon="indonesia" />
           </Button>
-          <Button
-            class="menu-btn language"
-            :class="{ active: language.data == 'en' }"
-            v-on:click.native="changeLanguage('en')"
-          >
+          <Button class="menu-btn language" :class="{ active: language.data == 'en' }"
+            v-on:click.native="changeLanguage('en')">
             <svg-icon icon="united-kingdom" />
           </Button>
-          <Button
-            class="menu-btn language"
-            :class="{ active: language.data == 'sby' }"
-            v-on:click.native="changeLanguage('sby')"
-          >
+          <Button class="menu-btn language" :class="{ active: language.data == 'sby' }"
+            v-on:click.native="changeLanguage('sby')">
             <svg-icon icon="surabaya" />
           </Button>
         </div>
-        <Button
-          class="menu-btn menu-content-toggle-btn"
-          v-on:click.native="
-            tableOfContent.active = !tableOfContent.active;
-            menu.toggled = false;
-          "
-        >
+        <Button class="menu-btn menu-content-toggle-btn" v-on:click.native="
+  tableOfContent.active = !tableOfContent.active;
+menu.toggled = false;
+        ">
           <i class="fas fa-list-ol fa-lg"></i>
         </Button>
-        <Button
-          class="menu-btn menu-content-toggle-btn"
-          v-on:click.native="
-            bookmark.active = !bookmark.active;
-            menu.toggled = false;
-          "
-        >
+        <Button class="menu-btn menu-content-toggle-btn" v-on:click.native="
+  bookmark.active = !bookmark.active;
+menu.toggled = false;
+        ">
           <i class="far fa-bookmark"></i>
         </Button>
         <Button class="menu-btn" v-on:click.native="getSelText">
@@ -822,13 +793,13 @@
         </Button>
         <Button class="menu-btn" v-on:click.native="speech">
           <i class="fas fa-volume-up"></i>
-        </Button>  
+        </Button>
         <Button class="menu-btn" v-on:click.native="star">
-        <i class="far fa-star"></i>
-      </Button>     
-      <Button class="menu-btn" v-on:click.native="searchSpeak">
-        <i class="fas fa-microphone"></i>
-      </Button>     
+          <i class="far fa-star"></i>
+        </Button>
+        <Button class="menu-btn" v-on:click.native="searchSpeak">
+          <i class="fas fa-microphone"></i>
+        </Button>
       </div>
     </div>
 
@@ -840,12 +811,8 @@
           </div>
 
           <ul class="list-group">
-            <li
-              class="list-group-item"
-              v-for="search in searchResult"
-              v-bind:key="search.id"
-              v-on:click="searchPage(search.page)"
-            >
+            <li class="list-group-item" v-for="search in searchResult" v-bind:key="search.id"
+              v-on:click="searchPage(search.page)">
               <a href="#" v-html="search.text"></a>
             </li>
           </ul>
@@ -854,10 +821,7 @@
 
       <div class="zoom-wrapper">
         <div class="zoom">
-          <div
-            id="magazine"
-            class="magazine"
-          >
+          <div id="magazine" class="magazine">
             <div class="cover">
             </div>
             <Page1 />
@@ -880,110 +844,110 @@
       </div>
 
       <Sidebar>
-        
+
         <template v-slot:table_of_contents>
           <li>
-            <div
-              v-on:click="
-                turnPage(2);
-                tableOfContent.active = false;
-              "
-            >
+            <div v-on:click="
+  turnPage(2);
+tableOfContent.active = false;
+            ">
               {{ $t("table_of_contents_items.title1") }}
             </div>
           </li>
           <li>
-            <div
-              v-on:click="
-                turnPage(4);
-                tableOfContent.active = false;
-              "
-            >
+            <div v-on:click="
+  turnPage(4);
+tableOfContent.active = false;
+            ">
               {{ $t("table_of_contents_items.title2") }}
             </div>
           </li>
           <li>
-            <div
-              v-on:click="
-                turnPage(6);
-                tableOfContent.active = false;
-              "
-            >
+            <div v-on:click="
+  turnPage(6);
+tableOfContent.active = false;
+            ">
               {{ $t("table_of_contents_items.title3") }}
             </div>
           </li>
           <li>
-            <div
-              v-on:click="
-                turnPage(8);
-                tableOfContent.active = false;
-              "
-            >
+            <div v-on:click="
+  turnPage(8);
+tableOfContent.active = false;
+            ">
               {{ $t("table_of_contents_items.title4") }}
             </div>
           </li>
           <li>
-            <div
-              v-on:click="
-                turnPage(10);
-                tableOfContent.active = false;
-              "
-            >
+            <div v-on:click="
+  turnPage(10);
+tableOfContent.active = false;
+            ">
               {{ $t("table_of_contents_items.title5") }}
             </div>
           </li>
           <li>
-            <div
-              v-on:click="
-                turnPage(12);
-                tableOfContent.active = false;
-              "
-            >
+            <div v-on:click="
+  turnPage(12);
+tableOfContent.active = false;
+            ">
               {{ $t("table_of_contents_items.title6") }}
             </div>
           </li>
           <li>
-            <div
-              v-on:click="
-                turnPage(13);
-                tableOfContent.active = false;
-              "
-            >
+            <div v-on:click="
+  turnPage(13);
+tableOfContent.active = false;
+            ">
               {{ $t("table_of_contents_items.title7") }}
             </div>
           </li>
           <li>
-            <div
-              v-on:click="
-                turnPage(14);
-                tableOfContent.active = false;
-              "
-            >
+            <div v-on:click="
+  turnPage(14);
+tableOfContent.active = false;
+            ">
               {{ $t("table_of_contents_items.title8") }}
             </div>
           </li>
           <li>
-            <div
-              v-on:click="
-                turnPage(16);
-                tableOfContent.active = false;
-              "
-            >
+            <div v-on:click="
+  turnPage(16);
+tableOfContent.active = false;
+            ">
               {{ $t("table_of_contents_items.title9") }}
             </div>
           </li>
-          
+
         </template>
-        <template v-slot:favorit >
-          <li v-for="(star,index) of stars" v-bind:key="star">
-            <div
-              v-on:click="
-                turnPage(star);
-                bookmark.active = false;
-              "
-            >
-              {{ star == 1 ? $t("table_of_contents_items.title1") : ""}} {{ star == 2 ? $t("table_of_contents_items.title1") : ""}} {{ star == 3 ? $t("table_of_contents_items.title2") : ""}} {{ star == 4 ? $t("table_of_contents_items.title2") : ""}} {{ star == 5 ? $t("table_of_contents_items.title2") : ""}} {{ star == 6 ?  $t("table_of_contents_items.title2") : ""}} {{ star == 7 ? $t("table_of_contents_items.title3") : ""}} {{ star == 8 ?  $t("table_of_contents_items.title3") : ""}} {{ star == 9 ? $t("table_of_contents_items.title4") : ""}} {{ star == 10 ? $t("table_of_contents_items.title4") : ""}} {{ star == 11 ? $t("table_of_contents_items.title5") : ""}} {{ star == 12 ? $t("table_of_contents_items.title5") : ""}} {{ star == 13 ? $t("table_of_contents_items.title6") : ""}} {{ star == 14 ? $t("table_of_contents_items.title6") : ""}} {{ star == 15 ? $t("table_of_contents_items.title7") : ""}} {{ star == 16 ? $t("table_of_contents_items.title7") : ""}}
-            </div> <button v-on:click="hpsf(index)" class="ok"><i class="fas fa-trash"></i></button> 
+        <template v-slot:favorit>
+          <li v-for="(star, index) of stars" v-bind:key="star">
+            <div v-on:click="
+  turnPage(star);
+bookmark.active = false;
+            ">
+              {{ star == 1 ? $t("table_of_contents_items.title1") : "" }} {{ star == 2 ?
+                  $t("table_of_contents_items.title1") : ""
+              }} {{ star == 3 ? $t("table_of_contents_items.title2") : "" }} {{
+    star == 4 ? $t("table_of_contents_items.title2") : ""
+}} {{ star == 5 ?
+    $t("table_of_contents_items.title2") : ""
+}} {{ star == 6 ? $t("table_of_contents_items.title2") : "" }} {{
+    star == 7 ? $t("table_of_contents_items.title3") : ""
+}} {{ star == 8 ?
+    $t("table_of_contents_items.title3") : ""
+}} {{ star == 9 ? $t("table_of_contents_items.title4") : "" }} {{
+    star == 10 ? $t("table_of_contents_items.title4") : ""
+}} {{ star == 11 ?
+    $t("table_of_contents_items.title5") : ""
+}} {{ star == 12 ? $t("table_of_contents_items.title5") : "" }} {{
+    star == 13 ? $t("table_of_contents_items.title6") : ""
+}} {{ star == 14 ?
+    $t("table_of_contents_items.title6") : ""
+}} {{ star == 15 ? $t("table_of_contents_items.title7") : "" }} {{
+    star == 16 ? $t("table_of_contents_items.title7") : ""
+}}
+            </div> <button v-on:click="hpsf(index)" class="ok"><i class="fas fa-trash"></i></button>
           </li>
         </template>
       </Sidebar>
@@ -1004,44 +968,31 @@
           <i class="fas fa-angle-double-right fa-lg"></i>
         </Button>
       </div>
-      <Button
-        class="btn-comment"
-        :class="{ active: toggleCommentStatus }"
-        v-on:click.native="toggleComment"
-      >
+      <Button class="btn-comment" :class="{ active: toggleCommentStatus }" v-on:click.native="toggleComment">
         <i class="fas fa-sticky-note"></i>
       </Button>
 
-      <div
-        class="comments-wrapper"
-        :class="{ isActive: toggleCommentStatus, isInput: inputComment }"
-      >
+      <div class="comments-wrapper" :class="{ isActive: toggleCommentStatus, isInput: inputComment }">
         <div class="comments">
           <div class="comments-title">
             <h4 class="title">{{ $t("comment") }}</h4>
             <Button v-on:click.native="toggleCommentInput">
-              <i
-                class="fas"
-                :class="{
-                  'fa-plus': !inputComment,
-                  'fa-arrow-left': inputComment,
-                }"
-              ></i>
+              <i class="fas" :class="{
+                'fa-plus': !inputComment,
+                'fa-arrow-left': inputComment,
+              }"></i>
             </Button>
           </div>
           <div class="comments-card">
             <div class="comment-input" :class="{ active: inputComment }">
               <div class="input-group" :class="{ invalid: !commentText.valid }">
                 <label for="text">{{ $t("comment") }}</label>
-                <textarea
-                  id="tambah"
-                  rows="5"
-                ></textarea>
+                <textarea id="tambah" rows="5"></textarea>
               </div>
               <button v-on:click="tambah">{{ $t("comment_post") }}</button>
             </div>
             <ul class="comments-list" :class="{ active: !inputComment }">
-              <li v-for="(note,index) of selects" :key="note.id" >
+              <li v-for="(note, index) of selects" :key="note.id">
                 <div class="comment">{{ note }}</div>
                 <button v-on:click="hps(index)"><i class="fas fa-trash"></i></button>
               </li>
@@ -1060,121 +1011,115 @@
     <div id="table_of_contents" :class="{ active: tableOfContent.active }">
       <div class="menu-container">
         <span class="title">{{ $t("table_of_contents") }}</span>
-        <Button class="close" v-on:click.native="tableOfContent.active = false"
-          ><i class="fas fa-times"></i
-        ></Button>
+        <Button class="close" v-on:click.native="tableOfContent.active = false"><i class="fas fa-times"></i></Button>
       </div>
       <ul>
         <li>
-          <div
-            v-on:click="
-              turnPage(2);
-              tableOfContent.active = false;
-            "
-          >
+          <div v-on:click="
+  turnPage(2);
+tableOfContent.active = false;
+          ">
             {{ $t("table_of_contents_items.title1") }}
           </div>
         </li>
         <li>
-          <div
-            v-on:click="
-              turnPage(4);
-              tableOfContent.active = false;
-            "
-          >
+          <div v-on:click="
+  turnPage(4);
+tableOfContent.active = false;
+          ">
             {{ $t("table_of_contents_items.title2") }}
           </div>
         </li>
         <li>
-          <div
-            v-on:click="
-              turnPage(6);
-              tableOfContent.active = false;
-            "
-          >
+          <div v-on:click="
+  turnPage(6);
+tableOfContent.active = false;
+          ">
             {{ $t("table_of_contents_items.title3") }}
           </div>
         </li>
         <li>
-          <div
-            v-on:click="
-              turnPage(8);
-              tableOfContent.active = false;
-            "
-          >
+          <div v-on:click="
+  turnPage(8);
+tableOfContent.active = false;
+          ">
             {{ $t("table_of_contents_items.title4") }}
           </div>
         </li>
         <li>
-          <div
-            v-on:click="
-              turnPage(10);
-              tableOfContent.active = false;
-            "
-          >
+          <div v-on:click="
+  turnPage(10);
+tableOfContent.active = false;
+          ">
             {{ $t("table_of_contents_items.title5") }}
           </div>
         </li>
         <li>
-          <div
-            v-on:click="
-              turnPage(12);
-              tableOfContent.active = false;
-            "
-          >
+          <div v-on:click="
+  turnPage(12);
+tableOfContent.active = false;
+          ">
             {{ $t("table_of_contents_items.title6") }}
           </div>
         </li>
         <li>
-          <div
-            v-on:click="
-              turnPage(13);
-              tableOfContent.active = false;
-            "
-          >
+          <div v-on:click="
+  turnPage(13);
+tableOfContent.active = false;
+          ">
             {{ $t("table_of_contents_items.title7") }}
           </div>
         </li>
         <li>
-          <div
-            v-on:click="
-              turnPage(14);
-              tableOfContent.active = false;
-            "
-          >
+          <div v-on:click="
+  turnPage(14);
+tableOfContent.active = false;
+          ">
             {{ $t("table_of_contents_items.title8") }}
           </div>
         </li>
         <li>
-          <div
-            v-on:click="
-              turnPage(16);
-              tableOfContent.active = false;
-            "
-          >
+          <div v-on:click="
+  turnPage(16);
+tableOfContent.active = false;
+          ">
             {{ $t("table_of_contents_items.title9") }}
           </div>
         </li>
       </ul>
     </div>
-    
+
     <div id="table_of_contents" :class="{ active: bookmark.active }">
       <div class="menu-container">
         <span class="title">FAVORIT</span>
-        <Button class="close" v-on:click.native="bookmark.active = false"
-          ><i class="fas fa-times"></i
-        ></Button>
+        <Button class="close" v-on:click.native="bookmark.active = false"><i class="fas fa-times"></i></Button>
       </div>
       <ul>
-        <li v-for="(star,index) of stars" v-bind:key="star">
-          <div
-            v-on:click="
-              turnPage(star);
-              bookmark.active = false;
-            "
-          >
-          {{ star == 1 ? $t("table_of_contents_items.title1") : ""}} {{ star == 2 ? $t("table_of_contents_items.title1") : ""}} {{ star == 3 ? $t("table_of_contents_items.title2") : ""}} {{ star == 4 ? $t("table_of_contents_items.title2") : ""}} {{ star == 5 ? $t("table_of_contents_items.title2") : ""}} {{ star == 6 ?  $t("table_of_contents_items.title2") : ""}} {{ star == 7 ? $t("table_of_contents_items.title3") : ""}} {{ star == 8 ?  $t("table_of_contents_items.title3") : ""}} {{ star == 9 ? $t("table_of_contents_items.title4") : ""}} {{ star == 10 ? $t("table_of_contents_items.title4") : ""}} {{ star == 11 ? $t("table_of_contents_items.title5") : ""}} {{ star == 12 ? $t("table_of_contents_items.title5") : ""}} {{ star == 13 ? $t("table_of_contents_items.title6") : ""}} {{ star == 14 ? $t("table_of_contents_items.title6") : ""}} {{ star == 15 ? $t("table_of_contents_items.title7") : ""}} {{ star == 16 ? $t("table_of_contents_items.title7") : ""}}
-            </div> <button v-on:click="hpsf(index)" class="book"><i class="fas fa-trash"></i></button> 
+        <li v-for="(star, index) of stars" v-bind:key="star">
+          <div v-on:click="
+  turnPage(star);
+bookmark.active = false;
+          ">
+            {{ star == 1 ? $t("table_of_contents_items.title1") : "" }} {{ star == 2 ?
+                $t("table_of_contents_items.title1") : ""
+            }} {{ star == 3 ? $t("table_of_contents_items.title2") : "" }} {{
+    star == 4 ? $t("table_of_contents_items.title2") : ""
+}} {{ star == 5 ? $t("table_of_contents_items.title2")
+    : ""
+}} {{ star == 6 ? $t("table_of_contents_items.title2") : "" }} {{ star == 7 ?
+    $t("table_of_contents_items.title3") : ""
+}} {{ star == 8 ? $t("table_of_contents_items.title3") : "" }} {{
+    star == 9 ? $t("table_of_contents_items.title4") : ""
+}} {{ star == 10 ? $t("table_of_contents_items.title4")
+    : ""
+}} {{ star == 11 ? $t("table_of_contents_items.title5") : "" }} {{ star == 12 ?
+    $t("table_of_contents_items.title5") : ""
+}} {{ star == 13 ? $t("table_of_contents_items.title6") : "" }} {{
+    star == 14 ? $t("table_of_contents_items.title6") : ""
+}} {{ star == 15 ?
+    $t("table_of_contents_items.title7") : ""
+}} {{ star == 16 ? $t("table_of_contents_items.title7") : "" }}
+          </div> <button v-on:click="hpsf(index)" class="book"><i class="fas fa-trash"></i></button>
         </li>
       </ul>
     </div>
@@ -1263,8 +1208,8 @@ export default {
         active: false
       },
       synth: window.speechSynthesis,
-      stars:[],
-      lastSeen : "1",
+      stars: [],
+      lastSeen: "1",
       lang_: "en-EN",
       isSpeak: false
     };
@@ -1278,7 +1223,7 @@ export default {
     } else {
       magazine.turn({ display: "double" });
     }
-    
+
     if (localStorage.selects) {
       this.selects = JSON.parse(localStorage.selects);
     }
@@ -1286,14 +1231,14 @@ export default {
     if (localStorage.stars) {
       this.stars = JSON.parse(localStorage.stars);
     }
-    
+
     if (localStorage.lastSeen) {
       this.lastSeen = localStorage.lastSeen;
     }
-    
+
     magazine.bind('turned', (event, page) => {
       console.log('Page: ', page)
-      this.lastSeen =  window.jQuery(".magazine").turn("page");
+      this.lastSeen = window.jQuery(".magazine").turn("page");
       this.localStorage();
     })
 
@@ -1319,25 +1264,39 @@ export default {
       this.stars.splice(id, 1)
       this.localStorage()
     },
-    speech: function(){
+    speech: function () {
       this.isSpeak = !this.isSpeak;
       var txt = [];
       if (window.getSelection) {
         txt = window.getSelection();
       }
-      let utterance = new SpeechSynthesisUtterance(""+txt);   
-      utterance.lang = 'id-ID'
+      let utterance = new SpeechSynthesisUtterance("" + txt);
+      switch (this.lang_) {
+        case 'en':
+          utterance.lang = 'en-EN'
+          console.log("bahasa" + this.lang_)
+          break;
+        default:
+          utterance.lang = 'id-ID'
+          console.log("bahasa" + this.lang_)
+          break;
+      }
       utterance.rate = 1
+
       if ("" + txt != "") {
-        if(this.isSpeak == true){
+        if (this.isSpeak == true) {
           this.synth.speak(utterance);
-        } 
+        }
         else {
           this.synth.cancel();
         }
       } else {
-          alert("silahkan pilih text terlebih dahulu");
+        alert("silahkan pilih text terlebih dahulu");
       }
+    },
+    ubhbahasa(lang) {
+      this.lang_ = lang
+      console.log(this.lang_)
     },
     getSelText: function () {
       var txt = [];
@@ -1351,7 +1310,7 @@ export default {
       }
       this.localStorage();
     },
-    star: function(){
+    star: function () {
       let text = window.jQuery(".magazine").turn("page");
       if (this.stars.includes(text)) {
         console.log("sudah ada")
@@ -1360,35 +1319,35 @@ export default {
         this.localStorage()
         console.log(this.stars)
       }
-      
+
     },
-    searchSpeak: function (){
-    window.SpeechRecognition =
-    window.SpeechRecognition || 
-    window.webkitSpeechRecognition;
-    const recognition = new window.SpeechRecognition();
-    recognition.lang = this.lang_;
-    recognition.continuous = false;
-    recognition.interimResults = true;
-    recognition.maxAlternatives = 1;
-    // recognition.interimResults = true;
-    recognition.addEventListener("result", event => {      
-      var pages = event.results[0][0].transcript;
-      var page = parseInt(pages)
-      this.turnPage(page+1);
-    });
-    // end of transcription
-    recognition.addEventListener("end", () => {
-      recognition.stop();
-    });
-     recognition.start();
+    searchSpeak: function () {
+      window.SpeechRecognition =
+        window.SpeechRecognition ||
+        window.webkitSpeechRecognition;
+      const recognition = new window.SpeechRecognition();
+      recognition.lang = 'en-EN';
+      recognition.continuous = false;
+      recognition.interimResults = true;
+      recognition.maxAlternatives = 1;
+      // recognition.interimResults = true;
+      recognition.addEventListener("result", event => {
+        var pages = event.results[0][0].transcript;
+        var page = parseInt(pages)
+        this.turnPage(page + 1);
+      });
+      // end of transcription
+      recognition.addEventListener("end", () => {
+        recognition.stop();
+      });
+      recognition.start();
     },
     localStorage: function () {
       localStorage.setItem("selects", JSON.stringify(this.selects));
       localStorage.setItem("stars", JSON.stringify(this.stars));
       localStorage.setItem("lastSeen", JSON.stringify(this.lastSeen));
     },
-    onload(){
+    onload() {
       this.turnPage(this.lastSeen)
     },
     // DARI HIL
@@ -1423,7 +1382,7 @@ export default {
     },
     highlight() {
       const range = window.getSelection().getRangeAt(0),
-      span = document.createElement("mark");
+        span = document.createElement("mark");
       span.appendChild(range.extractContents());
       range.insertNode(span);
     },

@@ -18,7 +18,7 @@
 
   // }
 
-  // @media (min-width: $breakpoint-sm) and (max-width: 480px) { HP
+  // @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) { HP
 
   // }
   //TEMPLATE
@@ -43,7 +43,7 @@
         margin-left: 100px;
       }
 
-      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
         margin-top: 40px;
         margin-left: 80px;
       }
@@ -59,7 +59,7 @@
         font-size: 15px;
       }
 
-        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
           font-size: 12px;
         }
 
@@ -74,7 +74,7 @@
   .content1 {
     color: #ffffff;
 
-    @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
       top: 162px;
     }
 
@@ -97,7 +97,7 @@
         margin-left: 80px;
       }
 
-      @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+      @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
         //HP
         margin-top: 4px;
         margin-left: 80px;
@@ -121,7 +121,7 @@
           margin-left: 0;
         }
 
-        @media (min-width: $breakpoint-sm) and (max-width: 480px) {
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
           font-size: 12px;
         }
 

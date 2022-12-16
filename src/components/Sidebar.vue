@@ -374,6 +374,7 @@ export default {
     changeLanguage(lang) {
       this.$i18n.locale = lang;
       this.language.data = lang;
+      this.$parent.ubhbahasa(lang);
     },
   },
 };
