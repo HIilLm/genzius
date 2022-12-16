@@ -39,6 +39,11 @@
       top: 450px;
       width: 190px;
     }
+    @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        top: 35px;
+        left: 30px;
+        width: 290px;
+      }
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
       top: 50px;

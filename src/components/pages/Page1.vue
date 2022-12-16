@@ -35,7 +35,10 @@
         margin-left: 120px;
       }
 
-      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px)) {}
+      @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        margin-top: 30px;
+        margin-left: 80px;
+      }
 
       @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
         //TABLET
@@ -90,8 +93,7 @@
         margin-left: 120px;
       }
 
-      @media (min-width:$breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-        //LAPTOP MD
+      @media (min-width:$breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) { //LAPTOP MD
         width: 225px;
         margin-top: 10px;
         margin-left: 80px;
@@ -117,9 +119,9 @@
           font-size: 21px;
         }
 
-        @media (min-width:$breakpoint-lg) and (max-width: 1300px) {
-          margin-left: 0;
-        }
+        @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
+        font-size: 15px;
+      }
 
         @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
           font-size: 12px;

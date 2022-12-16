@@ -84,12 +84,11 @@
     }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-
-      font-size: 9px;
-      font-weight: 300;
+      color: orangered;
+      top: 180px;
       width: 300px;
-      top: 40px;
-      left: 0px;
+      left: 25px;
+      text-align: justify;
       line-height: 10px;
       font-size: 8px;
     }
@@ -133,15 +132,14 @@
     }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      font-size: 9px;
-      font-weight: 300;
+      color: orangered;
+      top: 240px;
       width: 300px;
-      top: 95px;
-      left: 0px;
+      left: 25px;
+      text-align: justify;
       line-height: 10px;
       font-size: 8px;
     }
-
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
       // TABLET
       top: 290px;
@@ -181,11 +179,11 @@
     }
 
     @media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1px)) {
-      font-size: 9px;
-      font-weight: 300;
+      color: orangered;
+      top: 330px;
       width: 300px;
-      top: 190px;
-      left: 0px;
+      left: 25px;
+      text-align: justify;
       line-height: 10px;
       font-size: 8px;
     }
