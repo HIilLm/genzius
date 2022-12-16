@@ -791,15 +791,15 @@ menu.toggled = false;
         <Button class="menu-btn" v-on:click.native="getSelText">
           <i class="fas fa-sticky-note"></i>
         </Button>
-        <Button class="menu-btn" v-on:click.native="speech">
+        <!-- <Button class="menu-btn" v-on:click.native="speech">
           <i class="fas fa-volume-up"></i>
-        </Button>
+        </Button> -->
         <Button class="menu-btn" v-on:click.native="star">
           <i class="far fa-star"></i>
         </Button>
-        <Button class="menu-btn" v-on:click.native="searchSpeak">
+        <!-- <Button class="menu-btn" v-on:click.native="searchSpeak">
           <i class="fas fa-microphone"></i>
-        </Button>
+        </Button> -->
       </div>
     </div>
 
