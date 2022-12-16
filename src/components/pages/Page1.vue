@@ -158,7 +158,7 @@
 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
       left: 80px;
-      top: 105px;
+      top: 100px;
     }
     @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
         top: 105px;
@@ -176,7 +176,7 @@
       line-height: 12px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
-        font-size: 6px;
+        font-size: 5px;
         line-height: 7px;
         width: 140px;
 
@@ -237,7 +237,7 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
         font-size: 6px;
-        line-height: 10px;
+        line-height: 7px;
         width: 240px;
       }
       @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
@@ -295,7 +295,7 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
         font-size: 6px;
-        line-height: 10px;
+        line-height: 7px;
         width: 140px;
 
       }
@@ -333,7 +333,7 @@
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
-      top: 300px;
+      top: 295px;
       left: 80px;
     }
     @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
@@ -352,7 +352,7 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
         font-size: 6px;
-        line-height: 10px;
+        line-height: 7px;
         width: 235px;
       }
       @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
@@ -434,7 +434,7 @@
     width: 355px;
 
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
-      top: 400px;
+      top: 405px;
       left: 80px;
     }
     @media (min-width:$breakpoint-lg) and (max-width:($breakpoint-xl - 1px )) {
@@ -454,7 +454,7 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
         font-size: 6px;
-        line-height: 10px;
+        line-height: 7px;
         width: 235px;
 
       }

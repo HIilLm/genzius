@@ -97,7 +97,7 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
-        line-height: 7.5px;
+        line-height: 7px;
         width: 145px;
       }
 
@@ -128,7 +128,7 @@
       text-align: justify;
     }
     @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-      top: 190px;
+      top: 210px;
     }
 
     @media (min-width:$breakpoint-md) and (max-width: ($breakpoint-lg - 1px)) {
@@ -141,7 +141,7 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
-        line-height: 10px;
+        line-height: 7px;
         width: 145px;
       }
 
@@ -184,8 +184,8 @@
       line-height: 13px;
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
-        font-size: 6px;
-        line-height: 8px;
+        font-size: 5px;
+        line-height: 7px;
         width: 135px;
       }
 
@@ -227,7 +227,7 @@
 
       @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-xl - 1px)) {
         font-size: 6px;
-        line-height: 8px;
+        line-height: 7px;
         width: 135px;
 
       }
